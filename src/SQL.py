@@ -23,12 +23,8 @@ class SQL:
         db.commit()
         # получаем результат выполнения запроса
         data = cursor.fetchall()
-        result = list()
-        for item in data:
-            result.append(item[0])
-        # закрываем соединение с БД
         db.close()
-        return result
+        return data
 
     @staticmethod
     def add_user(user_id):
@@ -39,7 +35,10 @@ class SQL:
     def get_categories(user_id):
         sql_query = "SELECT name FROM category WHERE user_id = {};".format(user_id)
         data = SQL.execute_query(sql_query)
-        return data
+        result = list()
+        for item in data:
+            result.append(item[0])
+        return result
 
     @staticmethod
     def add_category(category_name, user_id):
@@ -70,7 +69,7 @@ class SQL:
     def get_category_id(user_id, name):
         sql_query = "SELECT id FROM category WHERE user_id={} and name=\"{}\";".format(user_id, name)
         category_id = SQL.execute_query(sql_query)
-        return category_id[0]
+        return category_id[0][0]
 
     @staticmethod
     def add_constant_operation(user_id, sum, description):
@@ -100,7 +99,7 @@ class SQL:
     def get_history(user_id, date_from, date_to):
         if datetime.datetime.strptime(date_to, "%Y-%m-%d") > datetime.datetime.now():
             date_to = datetime.datetime.now().strftime("%Y-%m-%d")
-        sql_query = "SELECT sum FROM operation WHERE date BETWEEN \"{}\" AND \"{}\" AND id_user={};" \
+        sql_query = "SELECT sum, description FROM operation WHERE date BETWEEN \"{}\" AND \"{}\" AND id_user={};" \
             .format(date_from, date_to, user_id)
         data = SQL.execute_query(sql_query)
         return data
