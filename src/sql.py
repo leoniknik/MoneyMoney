@@ -9,7 +9,7 @@ class SQL:
     database = "money"
     charset = 'utf8'
 
-    const_category = "constant"
+    const_category = "fixed"
 
     @classmethod
     def execute_query(cls, sql_query):
