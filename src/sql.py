@@ -31,6 +31,7 @@ class SQL:
         sql_query = "INSERT INTO user (id) VALUES ({});".format(user_id)
         SQL.execute_query(sql_query)
 
+    #возвращает list
     @staticmethod
     def get_categories(user_id):
         sql_query = "SELECT name FROM category WHERE user_id = {};".format(user_id)
@@ -41,13 +42,6 @@ class SQL:
         return result
 
     @staticmethod
-    def delete_category(category_name, user_id):
-        data = SQL.get_categories(user_id)
-        if category_name in data:
-            sql_query = "DELETE FROM category WHERE name=\"{}\" and user_id={};".format(category_name, user_id)
-            SQL.execute_query(sql_query)
-
-    @staticmethod
     def add_category(category_name, user_id):
         data = SQL.get_categories(user_id)
         for item in data:
@@ -56,6 +50,14 @@ class SQL:
         sql_query = "INSERT INTO category (name, user_id) VALUES (\"{}\", {});".format(category_name, user_id)
         SQL.execute_query(sql_query)
 
+    @staticmethod
+    def delete_category(category_name, user_id):
+        data = SQL.get_categories(user_id)
+        if category_name in data:
+            sql_query = "DELETE FROM category WHERE name=\"{}\" and user_id={};".format(category_name, user_id)
+            SQL.execute_query(sql_query)
+
+    #возвращает int
     @staticmethod
     def get_category_id(user_id, name):
         sql_query = "SELECT id FROM category WHERE user_id={} and name=\"{}\";".format(user_id, name)
@@ -85,7 +87,7 @@ class SQL:
             .format(sum, data_now, user_id, id_category, description)
         SQL.execute_query(sql_query)
 
-    # пока просто возвращает список сумм всех операций за период по всем категориям
+    # пока просто возвращает list сумм всех операций за период по всем категориям
     @staticmethod
     def get_history(user_id, date_from, date_to):
         if datetime.datetime.strptime(date_to, "%Y-%m-%d") > datetime.datetime.now():
@@ -94,3 +96,4 @@ class SQL:
             .format(date_from, date_to, user_id)
         data = SQL.execute_query(sql_query)
         return data
+    
