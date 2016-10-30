@@ -41,15 +41,6 @@ class SQL:
         return result
 
     @staticmethod
-    def add_category(category_name, user_id):
-        data = SQL.get_categories(user_id)
-        for item in data:
-            if item == category_name:
-                return
-        sql_query = "INSERT INTO category (name, user_id) VALUES (\"{}\", {});".format(category_name, user_id)
-        SQL.execute_query(sql_query)
-
-    @staticmethod
     def delete_category(category_name, user_id):
         data = SQL.get_categories(user_id)
         if category_name in data:
