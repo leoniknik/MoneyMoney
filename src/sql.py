@@ -31,7 +31,7 @@ class SQL:
         sql_query = "INSERT INTO user (id) VALUES ({});".format(user_id)
         SQL.execute_query(sql_query)
 
-    #возвращает list
+    # возвращает list
     @staticmethod
     def get_categories(user_id):
         sql_query = "SELECT name FROM category WHERE user_id = {};".format(user_id)
@@ -57,9 +57,9 @@ class SQL:
             sql_query = "DELETE FROM category WHERE name=\"{}\" and user_id={};".format(category_name, user_id)
             SQL.execute_query(sql_query)
 
-    #возвращает int
+    # возвращает int
     @staticmethod
-    def get_category_id(user_id, name):
+    def _get_category_id(user_id, name):
         sql_query = "SELECT id FROM category WHERE user_id={} and name=\"{}\";".format(user_id, name)
         category_id = SQL.execute_query(sql_query)
         return category_id[0][0]
@@ -69,7 +69,7 @@ class SQL:
         data = SQL.get_categories(user_id)
         if SQL.const_category not in data:
             SQL.add_category(SQL.const_category, user_id)
-        id_category = SQL.get_category_id(user_id, SQL.const_category)
+        id_category = SQL._get_category_id(user_id, SQL.const_category)
         data_now = datetime.datetime.now().strftime("%Y-%m-%d")
         sql_query = "INSERT INTO operation (sum, date, id_user, id_cat, description) VALUES ({}, \"{}\", {}, {}, \"{}\");" \
             .format(sum, data_now, user_id, id_category, description)
@@ -96,4 +96,3 @@ class SQL:
             .format(date_from, date_to, user_id)
         data = SQL.execute_query(sql_query)
         return data
-    
