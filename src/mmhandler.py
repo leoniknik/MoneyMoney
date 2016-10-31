@@ -3,14 +3,25 @@ from sql import SQL
 """
 MoneyMoney handler for all calculating functions.
 List of functions:
-add_fixed_income(name, amount, date)
-add_income(amount, name)
-add_expense(amount, category)
-show_categories()
+(+) - completed
+(?) - WTF function
+
+(+) start(user_id)
+    RETURN {int_code, str_message)
+    str_message to user
+    code: 0 - unsuccessful
+    code: 1 - successful
+(?) add_fixed_income(name, amount, date)
+(?) del_fixed_income(name, date)
+(+)add_operation(amount, category, description, date)
+    RETURN str_message
+show_income_categories()
 show_incomes()
 show_daily_operations(category = None)
-add_category(name)
-del_category(name)
+(+) add_category(name)
+    RETURN str_message
+(+) del_category(name)
+    RETURN str_message
 view_report(period, category = None)
 view_custom_report(start_date, end_date = None, category = None)
 
@@ -20,51 +31,70 @@ view_custom_report(start_date, end_date = None, category = None)
 class MmHandler:
     def __init__(self, user_id):
         self.user_id = user_id
+        try:
+            self.sql = SQL()
+        except Exception as e:
+            print('Ошибка при создании базы данных: {}'.format(e))
 
     def start(self):
         try:
-            SQL.add_user(self.user_id)
-            SQL.add_category('other', self.user_id)  # для несортированных расходов
-            SQL.add_category('income', self.user_id) # для доходов
-            SQL.add_category('fixed_income', self.user_id)  # для постоянных доходов
-        except Exception:
-            print("Unsuccessful, undefined error")
-            return 0
+            self.sql.open()
+            self.sql.add_user(self.user_id)
+            self.sql.add_category('other', self.user_id)  # для несортированных
+            self.sql.close()
+        except Exception as e:
+            return 0, 'Ошибка при инициализации: {} '.format(e)
         else:
-            return 1
+            return (1, 'Привет! Чтобы узнать о моих возможностях,'
+                       'воспользуйся командой /help')
 
     def add_fixed_income(self, name, amount, date):
-        # SQL.add_constant_operation(self.user_id, amount, name, date)
-        pass
+        return 'Я пустышка и моя жизнь - тлен'
 
-    def del_fixed_income(self, name, amount, date):
-       # SQL.delete_constant_operation(self.user_id, amount, description)
-        pass
+    def del_fixed_income(self, name, date):
+        return 'Я пустышка и моя жизнь - тлен'
 
-    # в перспективе слить доход\расход в одну ф-ию
-    def add_income(self, amount, name):
-        pass
-
-    def add_expense(self, amount, category):
-        pass
+    def add_operation(self, amount, category = None, description = None, date = None):
+        if category is None:
+            category = 'other'
+        try:
+            self.sql.open()
+            self.sql.add_operation(self.user_id, amount, category, description, date)
+            self.sql.close()
+        except Exception as e:
+            return 'Операция не была добавлена! Ошибка: {} '.format(e)
+        else:
+            return 'Операция успешно добавлена.'
 
     def show_categories(self):
-     #   SQL.get_categories(self.user_id)
+        SQL.get_categories(self.user_id)
         pass
 
     def show_incomes(self):
         pass
 
-    def show_daily_operations(self, category=None):
+    def show_daily_operations(self, category = None):
         pass
 
     def add_category(self, name):
-    #    SQL.add_category(self, name, self.user_id)
-        pass
+        try:
+            self.sql.open()
+            self.sql.add_category(name, self.user_id)
+            self.sql.close()
+        except Exception as e:
+            return 'Категория не была добавлена! Ошибка: {} '.format(e)
+        else:
+            return 'Категория успешно добавлена.'
 
     def del_category(self, name):
-    #    SQL.delete_category(name, self.user_id)
-        pass
+        try:
+            self.sql.open()
+            self.sql.delete_category(name, self.user_id)
+            self.sql.close()
+        except Exception as e:
+            return 'Категория не была удалена! Ошибка: {} '.format(e)
+        else:
+            return 'Категория успешно удалена.'
 
     # в перспективе слить отчеты в одну функцию
     def view_report(self, period, category=None):
@@ -73,3 +103,4 @@ class MmHandler:
 
     def view_custom_report(self, start_date, end_date=None, category=None):
         pass
+
