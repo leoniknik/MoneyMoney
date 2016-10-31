@@ -46,7 +46,15 @@ class SQL:
             result.append(item[0])
         return result
 
-    def get_epense_categories(self,user_id):
+    def get_expense_categories(self,user_id):
+        sql_query = "SELECT name FROM category WHERE user_id = {};".format(user_id)
+        data = self._execute_query(sql_query)
+        result = list()
+        for item in data:
+            result.append(item[0])
+        return result
+
+    def get_income_categories(self,user_id):
         sql_query = "SELECT name FROM category WHERE user_id = {};".format(user_id)
         data = self._execute_query(sql_query)
         result = list()
@@ -81,29 +89,22 @@ class SQL:
         return category_id[0][0]
 
     def _get_unnamed_category_id(self, user_id):
-        self._add_unnamed_category(user_id)
-        id_category = self._get_category_id(user_id, SQL.unnamed_category)
-        return id_category
-
-    def _add_unnamed_category(self, user_id):
         data = self.get_all_categories(user_id)
         if SQL.unnamed_category not in data:
             self.add_category(SQL.unnamed_category, user_id)
-
-    def add_unnamed_operation(self, user_id, amount, description=None):
-        self._add_unnamed_category(user_id)
         id_category = self._get_category_id(user_id, SQL.unnamed_category)
-        date = datetime.datetime.now().strftime("%Y-%m-%d")
+        return id_category
+
+    def add_operation(self, user_id, amount, description=None, date=None, category=None):
         if description is None:
             description = ""
-        sql_query = "INSERT INTO operation (amount, date, id_user, id_cat, description) VALUES ({}, \"{}\", {}, {}, \"{}\");" \
-            .format(amount, date, user_id, id_category, description)
-        self._execute_query(sql_query)
-
-    def add_operation(self, user_id, amount, category, description, date=None):
         if date is None:
             date = datetime.datetime.now().strftime("%Y-%m-%d")
-        id_category = self._get_category_id(user_id, category)
+        if category is None:
+            self._add_unnamed_category(user_id)
+            id_category = self._get_category_id(user_id, SQL.unnamed_category)
+        else:
+            id_category = self._get_category_id(user_id, category)
         sql_query = "INSERT INTO operation (sum, date, id_user, id_cat, description) VALUES ({}, \"{}\", {}, {}, \"{}\");" \
             .format(amount, date, user_id, id_category, description)
         self._execute_query(sql_query)
