@@ -110,12 +110,15 @@ class SQL:
         self._execute_query(sql_query)
 
     # пока просто возвращает list сумм всех операций за период по всем категориям
-    def get_history(self, user_id, date_from, date_to=None):
-        if datetime.datetime.strptime(date_to, "%Y-%m-%d") > datetime.datetime.now():
-            date_to = datetime.datetime.now().strftime("%Y-%m-%d")
-        if date_to is None:
-            date_to = datetime.datetime.now().strftime("%Y-%m-%d")
-        sql_query = "SELECT sum, description FROM operation WHERE date BETWEEN \"{}\" AND \"{}\" AND id_user={};" \
-            .format(date_from, date_to, user_id)
+    def get_history(self, user_id, date_from=None, date_to=None):
+        if date_from is None and date_to is None:
+            sql_query = "SELECT sum, description FROM operation WHERE id_user={}".format(user_id)
+        else:
+            if datetime.datetime.strptime(date_to, "%Y-%m-%d") > datetime.datetime.now():
+                date_to = datetime.datetime.now().strftime("%Y-%m-%d")
+            if date_to is None:
+                date_to = datetime.datetime.now().strftime("%Y-%m-%d")
+            sql_query = "SELECT sum, description FROM operation WHERE date BETWEEN \"{}\" AND \"{}\" AND id_user={};" \
+                .format(date_from, date_to, user_id)
         data = self._execute_query(sql_query)
         return data
