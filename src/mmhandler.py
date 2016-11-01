@@ -7,7 +7,6 @@ MoneyMoney handler for all calculating functions.
 List of functions:
 (+) - completed
 (?) - WTF function
-
 (+) start(user_id)
     RETURN {int_code, str_message)
     str_message to user
@@ -72,7 +71,12 @@ class MmHandler:
     def add_operation(self, amount, category=None, description=None, date=None):
         try:
             with Sqltor(self.sql) as db:
-                db.add_operation(self.user_id, amount, category, description, date)
+                categories = set(db.get_all_categories(self.user_id))
+                if category in categories:
+                    db.add_operation(self.user_id, amount, category, description, date)
+                else:
+                    return 'Такой категории не существует! Воспользуйтесь ' \
+                           'функцией "добавить категорию".'
         except Exception as e:
             return 'Операция не была добавлена! Ошибка: {} '.format(e)
         else:
