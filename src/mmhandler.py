@@ -1,4 +1,4 @@
-from sql import SQL
+from sql_module.sql import SQL
 import datetime
 from dateutil import relativedelta
 
