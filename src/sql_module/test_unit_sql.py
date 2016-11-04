@@ -1,21 +1,20 @@
 import unittest
 from sql_module.sql import *
-import config
 
 
 class SQLTest(unittest.TestCase):
     def setUp(self):
         self.sql = SQL()
-        config.database = MySQLDatabase('mysql', **{'user': 'root', 'password': '1234', 'host': 'localhost'})
-        config.database.execute_sql("CREATE DATABASE money;")
-        config.database.execute_sql("USE money;")
-        config.database.close()
-        config.database = MySQLDatabase('money', **{'user': 'root', 'password': '1234', 'host': 'localhost'})
-        config.database.create_tables([User, Operation, Category])
+        self.database = MySQLDatabase('mysql', **{'user': 'root', 'password': '1234', 'host': 'localhost'})
+        self.database.execute_sql("CREATE DATABASE money;")
+        self.database.execute_sql("USE money;")
+        self.database.close()
+        self.database = MySQLDatabase('money', **{'user': 'root', 'password': '1234', 'host': 'localhost'})
+        self.database.create_tables([User, Operation, Category])
 
     def tearDown(self):
-        config.database.execute_sql("DROP DATABASE money;")
-        config.database.close()
+        self.database.execute_sql("DROP DATABASE money;")
+        self.database.close()
 
     def test_add_user(self):
         user_id = 1

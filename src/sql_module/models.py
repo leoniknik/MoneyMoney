@@ -1,10 +1,8 @@
 from peewee import *
-import config
-
 
 class BaseModel(Model):
     class Meta:
-        database = config.database
+        database = MySQLDatabase('money', **{'user': 'root', 'password': '1234', 'host': 'localhost'})
 
 
 class User(BaseModel):
