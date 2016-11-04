@@ -1,6 +1,6 @@
-class OpenDataBaseException(Exception):
+class UserAlreadyExist(Exception):
     def __init__(self):
-        self.value = "ошибка подключения к базе данных"
+        self.value = "такой пользователь уже существует"
 
     def __str__(self):
         return repr(self.value)
@@ -38,7 +38,7 @@ class ExpenseCategoriesNotExist(Exception):
         return repr(self.value)
 
 
-class AllCategoriesNotExist(Exception):
+class CategoriesNotExist(Exception):
     def __init__(self):
         self.value = "категорий пока нет"
 
