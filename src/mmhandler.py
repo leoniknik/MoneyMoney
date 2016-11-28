@@ -1,5 +1,6 @@
-from sql_module.sql import SQL
 import datetime
+
+from sql_module.sql import SQL
 from dateutil import relativedelta
 
 """
