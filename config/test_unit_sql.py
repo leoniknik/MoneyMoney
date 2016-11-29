@@ -1,5 +1,5 @@
 import unittest
-from sql import *
+from sql_module.sql import *
 
 
 class SQLTest(unittest.TestCase):
