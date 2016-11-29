@@ -79,8 +79,8 @@ def parse(message):
         if str[1] == 'за' and re.match('[а-яА-я]+', str[2]):
             handler.view_report(str[2])
             # отчет за период
-        if str[1] == 'с' and re.match('\d{1,2}.\d{1,2}.\d{4}', str[2]) and str[3] == 'по' and \
-                re.match('\d{1,2}.\d{1,2}.\d{4}', str[4]):
+        if str[1] == 'с' and re.match('\d{1,2}-\d{1,2}-\d{4}', str[2]) and str[3] == 'по' and \
+                re.match('\d{1,2}-\d{1,2}-\d{4}', str[4]):
             handler.view_custom_report(str[2], str[4])
             # отчет с date по date
     else:
