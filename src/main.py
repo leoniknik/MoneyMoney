@@ -26,15 +26,14 @@ handler = MmHandler(0)  # по умолчанию user_id = 0
 # для тестирования
 @bot.message_handler(commands=['start'])
 def start(message):
-    MmHandler.user_id = message.chat.id
-    if MmHandler.start:
-        bot.send_message(message.chat.id, 'Hello. Let\'s start from help command')
-    else:
-        bot.send_message(message.chat.id, 'Undefined error')
+    handler.user_id = message.chat.id
+    handler_message = handler.start()
+    bot.send_message(message.chat.id, handler_message)
 
 
 @bot.message_handler(commands=['help'])
 def help(message):
+    handler.user_id = message.chat.id
     help_str = "добавить доход:\n+ {сумма} {название} {коммент}\nдобавить фиксированный доход:\n+ {сумма} {название} {дата} {коммент}\nдобавить расход:\n- {сумма} {категория} {коммент}\nпоказать категории:\nпокажи категории\nдобавить категорию:\nдобавь категорию {название}\nудалить категорию:\nудали категорию {название}\nпосмотреть отчет за месяц:\nотчет за {месяц}\nпосмотреть отчет за определенный период:\nотчет с {начальная дата} по {конечная дата}\nформат даты: xx.xx.xxxx"
     bot.send_message(message.chat.id, 'Hello. This you can do:')
     bot.send_message(message.chat.id, help_str)
@@ -90,3 +89,4 @@ def parse(message):
 # бесконечная петля опроса
 if __name__ == '__main__':
     bot.polling(none_stop=True)
+

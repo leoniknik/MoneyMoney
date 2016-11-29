@@ -56,10 +56,10 @@ class MmHandler:
         try:
             self.sql.add_user(self.user_id)
         except Exception as e:
-            return 0, 'Ошибка при инициализации: {} '.format(e)
+            return 'Ошибка при инициализации: {} '.format(e)
         else:
-            return (1, 'Привет! Чтобы узнать о моих возможностях,'
-                       'воспользуйся командой /help')
+            return  'Привет! Чтобы узнать о моих возможностях,'\
+                       'воспользуйся командой /help'
 
     def add_fixed_income(self, name, amount, date):
         return 'Я пустышка и моя жизнь - тлен'
@@ -68,12 +68,18 @@ class MmHandler:
         return 'Я пустышка и моя жизнь - тлен'
 
     def add_operation(self, amount, category=None, description=None, date=None):
+        print(amount)
+        print(self.user_id)
+        print(category)
         try:
             if category is None:
                 category = 'other'
             categories = set(self.sql.get_all_categories(self.user_id))
+            print('2')
             if category in categories:
+                print('3')
                 self.sql.add_operation(self.user_id, amount, category, date, description)
+                print('!!!!!!!!!!!!!!!!!!!!!!!!!!!')
             else:
                 return 'Такой категории не существует! Воспользуйтесь ' \
                        'функцией "добавить категорию".'
@@ -156,4 +162,3 @@ class MmHandler:
                 message += ' по {}'.format(date_to)
             str_history = str(history)[1:-1]
             return message + '\n' + str_history
-
