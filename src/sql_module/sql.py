@@ -1,6 +1,6 @@
 import datetime
-from models import *
-from sql_exception import *
+from sql_module.models import *
+from sql_module.sql_exception import *
 
 
 class SQL:
