@@ -58,7 +58,7 @@ class MmHandler:
             with Sqltor(self.sql) as db:
                 db.add_user(self.user_id)
         except Exception as e:
-            return 0, 'Ошибка при инициализации: {} '.format(e)
+            return (0, 'Ошибка при инициализации: {} '.format(e))
         else:
             return (1, 'Привет! Чтобы узнать о моих возможностях,'
                        'воспользуйся командой /help')

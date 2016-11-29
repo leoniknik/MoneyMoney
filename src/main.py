@@ -28,18 +28,19 @@ if __name__ == '__main__':
 
     if args.develop:
         with open('../config/config', 'r') as f:
-            token = re.sub("\'", "", f.readline().split(' = ')[1])
+            token = re.sub("[\'\n]+", "", f.readline().split(' = ')[1])
     elif args.prod:
         with open('/etc/moneymoney.d/config', 'r') as f:
-            token = re.sub("\'", "", f.readline().split(' = ')[1])
+            token = re.sub("\'\n", "", f.readline().split(' = ')[1])
 
+    print(token)
     bot = telebot.TeleBot(token)
     handler = MmHandler(0) # по умолчанию user_id = 0
     # прикрутить вебхуки
     # прикрутить разбор сообщения на естественном языке
 
     # для тестирования
-    @bot.message_handler(commands = ['start'])
+    @bot.message_handler(commands=['start'])
     def start(message):
         MmHandler.user_id = message.chat.id
         if (MmHandler.start):
@@ -47,7 +48,7 @@ if __name__ == '__main__':
         else:
             bot.send_message(message.chat.id, 'Undefined error')
 
-    @bot.message_handler(commands = ['help'])
+    @bot.message_handler(commands=['help'])
     def help(message):
         pass
 

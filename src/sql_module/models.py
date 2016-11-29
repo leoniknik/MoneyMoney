@@ -2,7 +2,7 @@ from peewee import *
 
 class BaseModel(Model):
     class Meta:
-        database = MySQLDatabase('money', **{'user': 'root', 'password': '1234', 'host': 'localhost'})
+        database = MySQLDatabase('money', **{'user': 'root', 'password': '7uy33HZ5', 'host': 'localhost'})
 
 
 class User(BaseModel):
