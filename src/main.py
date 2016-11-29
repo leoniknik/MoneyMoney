@@ -50,20 +50,20 @@ def parse(message):
     elif str[0] == '+':
         if length == 3:
             if re.match('\d+', str[1]) and re.match('[а-яА-я]+', str[2]):
-                handler.add_operation(str[1], str[2])
+                handler.add_operation(str[0]+str[1], str[2])
                 # вызов доход amount category
         elif length >= 4:
             if length >= 4 and re.match('\d+', str[1]) and re.match('[а-яА-я]+', str[2]):
                 buf = ' '.join(str[3:length])
-                handler.add_operation(str[1], str[2], buf)
+                handler.add_operation(str[0]+str[1], str[2], buf)
                 # вызов доход amount category description
     elif str[0] == '-':
         if length == 3 and re.match('\d+', str[1]) and re.match('[а-яА-я]+', str[2]):
-            handler.add_operation(str[1], str[2])
+            handler.add_operation(str[0]+str[1], str[2])
             # расход amount category
         elif length > 3 and re.match('\d+', str[1]) and re.match('[а-яА-я]+', str[2]):
             buf = ' '.join(str[3:length])
-            handler.add_operation(str[1], str[2], buf)
+            handler.add_operation(str[0]+str[1], str[2], buf)
             # расход amount category description
     elif str[0] == 'покажи':
         if str[1] == 'категории':
