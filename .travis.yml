@@ -15,4 +15,4 @@ before_script:
   - echo "USE mysql;\nUPDATE user SET password=PASSWORD('7uy33HZ5') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
 
 script:
-    - python src/sql_module/test_unit_sql.py
+    - python tests/test_unit_sql.py
