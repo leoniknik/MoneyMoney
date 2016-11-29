@@ -1,5 +1,7 @@
+import os, sys
+
 import unittest
-from sql_module.sql import *
+from src.sql_module.sql import *
 
 
 class SQLTest(unittest.TestCase):
