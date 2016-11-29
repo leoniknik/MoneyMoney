@@ -1,7 +1,9 @@
-import os, sys
+import sys
+
+sys.path.insert(0, '../src/sql_module')
 
 import unittest
-from src.sql_module.sql import *
+from sql import *
 
 
 class SQLTest(unittest.TestCase):
