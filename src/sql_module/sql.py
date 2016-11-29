@@ -34,7 +34,8 @@ class SQL:
 
     def get_expense_categories(self, user_id):
         result = list()
-        for item in Category.select().where(Category.user == user_id, (Category.type == SQL._general_category_type) | (Category.type == SQL._expense_category_type)):
+        for item in Category.select().where(Category.user == user_id, (Category.type == SQL._general_category_type) | (
+            Category.type == SQL._expense_category_type)):
             result.append(item.name)
         if len(result) == 0:
             raise ExpenseCategoriesNotExist
@@ -42,7 +43,8 @@ class SQL:
 
     def get_income_categories(self, user_id):
         result = list()
-        for item in Category.select().where(Category.user == user_id, (Category.type == SQL._general_category_type) | (Category.type == SQL._income_category_type)):
+        for item in Category.select().where(Category.user == user_id, (Category.type == SQL._general_category_type) | (
+            Category.type == SQL._income_category_type)):
             result.append(item.name)
         if len(result) == 0:
             raise IncomeCategoriesNotExist
@@ -59,7 +61,8 @@ class SQL:
     def _rename_category_after_delete(self, category_name, user_id):
         id_replaceable_category = self._get_category_id(user_id, category_name)
         id_other_category = self._get_category_id(user_id)
-        Operation.update(id_cat=id_other_category).where(Operation.id_cat == id_replaceable_category, Operation.id_user == user_id).execute()
+        Operation.update(id_cat=id_other_category).where(Operation.id_cat == id_replaceable_category,
+                                                         Operation.id_user == user_id).execute()
 
     def _get_category_id(self, user_id, category_name=None):
         if category_name is None:
@@ -79,7 +82,8 @@ class SQL:
         id_category = self._get_category_id(user_id, category)
         category_type = SQL._change_category_type(self._get_category_type(id_category), amount)
         Category.update(type=category_type).where(Category.id == id_category).execute()
-        Operation.create(amount=amount, date=date, id_cat=id_category, id_user=user_id, description=description, type=category_type)
+        Operation.create(amount=amount, date=date, id_cat=id_category, id_user=user_id, description=description,
+                         type=category_type)
 
     def get_history(self, user_id, date_from=None, date_to=None):
         result = list()
@@ -90,15 +94,20 @@ class SQL:
                 result.append([item.amount, item.description])
         else:
             date_from = datetime.datetime.strptime(date_from, "%Y-%m-%d").date()
-            date_to = datetime.datetime.strptime(date_to, "%Y-%m-%d").date()
             if date_to is None:
                 date_to = date_now
-            data = Operation.select().where(Operation.id_user == user_id,(Operation.date >= date_from)&(Operation.date <= date_to))
+            else:
+                date_to = datetime.datetime.strptime(date_to, "%Y-%m-%d").date()
+            data = Operation.select().where(Operation.id_user == user_id,
+                                            (Operation.date >= date_from) & (Operation.date <= date_to))
             for item in data:
                 result.append([item.amount, item.description])
         if len(result) == 0:
             raise HistoryNotExist
-        return result
+        res = list()
+        for item in result:
+            res.append(item[0])
+        return res
 
     def _get_category_type(self, id_category):
         category_type = Category.get(id=id_category).type

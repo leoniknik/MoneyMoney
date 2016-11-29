@@ -31,17 +31,17 @@ List of functions:
 """
 
 
-# маленький контекстный менеджер для работы с БД
-class Sqltor(object):
-    def __init__(self, sql):
-        self.sql = sql
-        self.sql.open()
-
-    def __enter__(self):
-        return self.sql
-
-    def __exit__(self, *args):
-        self.sql.close()
+# # маленький контекстный менеджер для работы с БД
+# class Sqltor(object):
+#     def __init__(self, sql):
+#         self.sql = sql
+#         self.sql.open()
+#
+#     def __enter__(self):
+#         return self.sql
+#
+#     def __exit__(self, *args):
+#         self.sql.close()
 
 
 class MmHandler:
@@ -54,8 +54,7 @@ class MmHandler:
 
     def start(self):
         try:
-            with Sqltor(self.sql) as db:
-                db.add_user(self.user_id)
+            self.sql.add_user(self.user_id)
         except Exception as e:
             return 0, 'Ошибка при инициализации: {} '.format(e)
         else:
@@ -70,13 +69,14 @@ class MmHandler:
 
     def add_operation(self, amount, category=None, description=None, date=None):
         try:
-            with Sqltor(self.sql) as db:
-                categories = set(db.get_all_categories(self.user_id))
-                if category in categories:
-                    db.add_operation(self.user_id, amount, category, description, date)
-                else:
-                    return 'Такой категории не существует! Воспользуйтесь ' \
-                           'функцией "добавить категорию".'
+            if category is None:
+                category = 'other'
+            categories = set(self.sql.get_all_categories(self.user_id))
+            if category in categories:
+                self.sql.add_operation(self.user_id, amount, category, date, description)
+            else:
+                return 'Такой категории не существует! Воспользуйтесь ' \
+                       'функцией "добавить категорию".'
         except Exception as e:
             return 'Операция не была добавлена! Ошибка: {} '.format(e)
         else:
@@ -84,13 +84,12 @@ class MmHandler:
 
     def show_categories(self, mode=None):
         try:
-            with Sqltor(self.sql) as db:
-                if mode == 'income':
-                    categories_list = db.get_income_categories(self, self.user_id)
-                elif mode == 'expense':
-                    categories_list = db.get_expense_categories(self, self.user_id)
-                else:
-                    categories_list = db.get_all_categories(self, self.user_id)
+            if mode == 'income':
+                categories_list = self.sql.get_income_categories(self.user_id)
+            elif mode == 'expense':
+                categories_list = self.sql.get_expense_categories(self.user_id)
+            else:
+                categories_list = self.sql.get_all_categories(self.user_id)
         except Exception as e:
             return 'Вывод категорий невозможен! Ошибка: {} '.format(e)
         else:
@@ -99,8 +98,7 @@ class MmHandler:
 
     def add_category(self, name):
         try:
-            with Sqltor(self.sql) as db:
-                db.add_category(name, self.user_id)
+            self.sql.add_category(name, self.user_id)
         except Exception as e:
             return 'Категория не была добавлена! Ошибка: {} '.format(e)
         else:
@@ -108,15 +106,14 @@ class MmHandler:
 
     def del_category(self, name):
         try:
-            with Sqltor(self.sql) as db:
-                db.delete_category(name, self.user_id)
+            self.sql.delete_category(name, self.user_id)
         except Exception as e:
             return 'Категория не была удалена! Ошибка: {} '.format(e)
         else:
             return 'Категория успешно удалена.'
 
     # в перспективе слить отчеты в одну функцию
-    def view_report(self, period=None, category=None):
+    def view_report(self, period=None):
         if period == 'year':
             delta = relativedelta.relativedelta(years=1)
         elif period == 'month':
@@ -128,30 +125,35 @@ class MmHandler:
         else:
             delta = None
         try:
-            with Sqltor(self.sql) as db:
-                if delta is None:
-                    history = db.get_history(self.user_id)
-                else:
-                    date_to = datetime.datetime.now()
-                    date_from_str = (date_to - delta).strftime("%Y-%m-%d")
-                    date_to_str = date_to.strftime("%Y-%m-%d")
-                    history = db.get_history(self.user_id, date_from_str, date_to_str)
+            if delta is None:
+                history = self.sql.get_history(self.user_id)
+            else:
+                date_to = datetime.datetime.now()
+                date_from_str = (date_to - delta).strftime("%Y-%m-%d")
+                date_to_str = date_to.strftime("%Y-%m-%d")
+                history = self.sql.get_history(self.user_id, date_from_str, date_to_str)
         except Exception as e:
             return 'Получить историю невозможно! Ошибка: {} '.format(e)
         else:
-            message = 'История операций'
+            message = 'История операций за'
             if period is not None:
                 message += ' {}'.format(period)
-            return message + '\n' + history
+            str_history = str(history)[1:-1]
+            return message + '\n' + str_history
 
-    def view_custom_report(self, date_from, date_to=None, category=None):
+    def view_custom_report(self, date_from, date_to=None):
+
         try:
-            with Sqltor(self.sql) as db:
-                history = db.get_history(self.user_id, date_from, date_to)
+            if date_to is None:
+                history = self.sql.get_history(self.user_id, date_from)
+            else:
+                history = self.sql.get_history(self.user_id, date_from, date_to)
         except Exception as e:
             return 'Получить историю невозможно! Ошибка: {} '.format(e)
         else:
             message = 'История операций c {}'.format(date_from)
             if date_to is not None:
                 message += ' по {}'.format(date_to)
-            return message + '\n' + history
+            str_history = str(history)[1:-1]
+            return message + '\n' + str_history
+
