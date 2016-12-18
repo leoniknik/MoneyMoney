@@ -4,19 +4,8 @@ import config
 import telebot
 import re
 
-"""
-TODO:
-Оповещения (Ты забыл обо мне?)
-Разобрать выражение на естественном языке
-"""
-
 bot = telebot.TeleBot(config.token)
 handler = MmHandler(0)  # по умолчанию user_id = 0
-
-
-# прикрутить вебхуки
-# прикрутить разбор сообщения на естественном языке
-
 
 # для тестирования
 @bot.message_handler(commands=['start'])
