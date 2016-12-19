@@ -5,7 +5,9 @@ import logging
 from raven import Client
 
 client = Client('https://4724d5de1d92423f95ccfc2010f0b138:f4cc360abbd24bda9db016fa99b14145@sentry.io/120805')
-logging.basicConfig(format = u'%(filename)s[LINE:%(lineno)d]# %(levelname)-8s [%(asctime)s]  %(message)s', level = logging.DEBUG, filename=u'database.log')
+logging.basicConfig(format=u'%(filename)s[LINE:%(lineno)d]# %(levelname)-8s [%(asctime)s]  %(message)s',
+                    level=logging.DEBUG, filename=u'database.log')
+
 
 class SQL:
     _other_category = "other"
@@ -74,8 +76,9 @@ class SQL:
             id_replaceable_category = self._get_category_id(user_id, category_name)
             id_other_category = self._get_category_id(user_id)
             Operation.update(id_cat=id_other_category).where(Operation.id_cat == id_replaceable_category,
-                                                         Operation.id_user == user_id).execute()
-            logging.info("Операции категории=" + str(category_name) + " переместились в категорию other для пользвателя с id=" + str(user_id))
+                                                             Operation.id_user == user_id).execute()
+            logging.info("Операции категории=" + str(
+                category_name) + " переместились в категорию other для пользвателя с id=" + str(user_id))
         except Exception:
             client.captureException()
 
@@ -90,7 +93,10 @@ class SQL:
                 category_id = Category.get(user=user_id, name=category_name).id
             return category_id
         except Exception:
-            client.captureException()
+            self.add_category(SQL._other_category, user_id)
+            category_id = Category.get(user=user_id, name=SQL._other_category).id
+            return category_id
+
 
     def add_operation(self, user_id, amount, category=None, date=None, description=None):
         try:
@@ -102,9 +108,11 @@ class SQL:
             category_type = SQL._change_category_type(self._get_category_type(id_category), amount)
             Category.update(type=category_type).where(Category.id == id_category).execute()
             Operation.create(amount=amount, date=date, id_cat=id_category, id_user=user_id, description=description,
-                         type=category_type)
+                             type=category_type)
             logging.info(
-            "Была добавлена операция на сумму=" + str(amount) + " для категории=" + str(category) + " с описанием=" + str(description) + " с датой=" + str(date) + " для пользователя с id=" + str(user_id))
+                "Была добавлена операция на сумму=" + str(amount) + " для категории=" + str(
+                    category) + " с описанием=" + str(description) + " с датой=" + str(
+                    date) + " для пользователя с id=" + str(user_id))
         except Exception:
             client.captureException()
 
@@ -114,7 +122,8 @@ class SQL:
         if date_from is None and date_to is None:
             data = Operation.select().where(Operation.id_user == user_id)
             for item in data:
-                result.append([item.amount, item.description])
+                name = self._get_category_name(item.id_cat)
+                result.append([item.amount, name, str(item.date), item.description ])
         else:
             date_from = datetime.datetime.strptime(date_from, "%Y-%m-%d").date()
             if date_to is None:
@@ -124,15 +133,14 @@ class SQL:
             data = Operation.select().where(Operation.id_user == user_id,
                                             (Operation.date >= date_from) & (Operation.date <= date_to))
             for item in data:
-                result.append([item.amount, item.description])
+                name = self._get_category_name(item.id_cat)
+                result.append([item.amount, name, str(item.date), item.description])
         if len(result) == 0:
             raise HistoryNotExist
-        res = list()
-        for item in result:
-            res.append(item[0])
         logging.info(
-            "Был создан отчет для пользователя с id=" + str(user_id) + " от даты=" + str(date_from) + " по дату=" + str(date_to))
-        return res
+            "Был создан отчет для пользователя с id=" + str(user_id) + " от даты=" + str(date_from) + " по дату=" + str(
+                date_to))
+        return result
 
     def _get_category_type(self, id_category):
         try:
@@ -158,3 +166,13 @@ class SQL:
             return category_type
         except Exception:
             client.captureException()
+
+    #тут не надо оберега, мы у себя
+    def delete_category_other(self, user_id):
+        id = self._get_category_id(user_id)
+        Operation.delete().where(Operation.id_user == user_id, Operation.id_cat == id).execute()
+        self.delete_category(SQL._other_category,user_id)
+
+    def _get_category_name(self, id_cat):
+        name = Category.get(id=id_cat).name
+        return name

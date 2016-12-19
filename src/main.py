@@ -16,6 +16,7 @@ report_periods = {'день', 'неделю', 'месяц', 'год'}
 category_mods = {'расходов', 'доходов'}
 format_error = Exception('Неправильный формат команды!')
 
+
 @bot.message_handler(commands=['start'])
 def start(message):
     handler.user_id = message.chat.id
@@ -41,9 +42,18 @@ def parse(message):
         if length == 0:
             bot.send_message(message.chat.id, 'Забыл список команд? Держи:')
             bot.send_message(message.chat.id, help_message)
+<<<<<<< HEAD
+        #### Оберег от кода Яны
+        elif length == 2 and str_array[0]=="удалить" and str_array[1] == "другое":
+            str_array[1]="other"
+            handler_message = handler.del_category(str_array[1])
+            bot.send_message(message.chat.id, handler_message)
+        #### Конец оберега
+=======
 
+>>>>>>> 868cd01386f7e9e84e21cc7c06e890787492f8de
         # if format +/-....
-        elif str_array[0][0] == '+'  or str_array[0][0] == '-':
+        elif str_array[0][0] == '+' or str_array[0][0] == '-':
             if length == 1:
                 if re.match('[+]\d+', str_array[0]) or re.match('[-]\d+', str_array[0]):
                     handler_message = handler.add_operation(int(str_array[0]))
@@ -62,7 +72,11 @@ def parse(message):
                 else:
                     raise format_error
 
+<<<<<<< HEAD
+        elif length >= 2 and str_array[0] == 'показать' and str_array[1] == 'категории':
+=======
         elif length >= 2 and str_array[0] == 'покажи' and str_array[1] == 'категории':
+>>>>>>> 868cd01386f7e9e84e21cc7c06e890787492f8de
             if length == 3:
                 if str_array[2] in category_mods:
                     handler_message = handler.show_categories(str_array[2])
@@ -74,11 +88,18 @@ def parse(message):
                 bot.send_message(message.chat.id, handler_message)
 
         elif length == 3 and str_array[1] == 'категорию' and re.match('[а-яa-zA-ZА-Я]+', str_array[2]):
-            if str_array[0] == 'удали':
+            if str_array[0] == 'удалить':
+                if str_array[2] == "другое":
+                    bot.send_message(message.chat.id, "Для того чтобы удалить категорию другое и все операции связанные с ней введите команду: удалить другое")
+                    return
                 handler_message = handler.del_category(str_array[2])
                 bot.send_message(message.chat.id, handler_message)
 
+<<<<<<< HEAD
+            elif str_array[0] == 'добавить':
+=======
             elif str_array[0] == 'добавь':
+>>>>>>> 868cd01386f7e9e84e21cc7c06e890787492f8de
                 handler_message = handler.add_category(str_array[2])
                 bot.send_message(message.chat.id, handler_message)
             else:
@@ -89,7 +110,11 @@ def parse(message):
                 if str_array[1] == 'за' and (str_array[2] in report_periods):
                     handler_message = handler.view_report(str_array[2])
                     bot.send_message(message.chat.id, handler_message)
+<<<<<<< HEAD
+                    bot.send_chat_action(message.chat.id, 'typing')
+=======
                     bot.send_chat_action(message.chat.id,'typing')
+>>>>>>> 868cd01386f7e9e84e21cc7c06e890787492f8de
                     image_file = open('tmp/temp.png', 'rb')
                     bot.send_photo(message.chat.id, image_file)
 
@@ -103,7 +128,11 @@ def parse(message):
                     else:
                         handler_message = handler.view_custom_report(date_from)
                     bot.send_message(message.chat.id, handler_message)
+<<<<<<< HEAD
+                    bot.send_chat_action(message.chat.id, 'typing')
+=======
                     bot.send_chat_action(message.chat.id,'typing')
+>>>>>>> 868cd01386f7e9e84e21cc7c06e890787492f8de
                     image_file = open('tmp/temp.png', 'rb')
                     bot.send_photo(message.chat.id, image_file)
                 else:
@@ -131,16 +160,24 @@ def parse(message):
         handler_message = 'Ошибка: {} '.format(e)
         bot.send_message(message.chat.id, handler_message)
 
+
 # handler for inline-keyboard
 @bot.callback_query_handler(func=lambda call: True)
 def callback_inline(call):
     if call.message:
         if call.data in report_periods:
             handler_message = handler.view_report(call.data)
+<<<<<<< HEAD
+            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+                                  text=handler_message)
+            bot.send_chat_action(call.message.chat.id, 'typing')
+=======
             bot.edit_message_text(chat_id = call.message.chat.id, message_id = call.message.message_id, text= handler_message)
             bot.send_chat_action(call.message.chat.id,'typing')
+>>>>>>> 868cd01386f7e9e84e21cc7c06e890787492f8de
             image_file = open('tmp/temp.png', 'rb')
             bot.send_photo(call.message.chat.id, image_file)
+
 
 # бесконечная петля опроса
 if __name__ == '__main__':
