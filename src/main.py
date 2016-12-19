@@ -3,6 +3,8 @@ from mmhandler import MmHandler
 import argparse
 import telebot
 import re
+import logging
+
 
 token = ''
 bot = telebot.TeleBot(token)
@@ -163,6 +165,10 @@ if __name__ == '__main__':
     print(token) # по умолчанию user_id = 0
     # прикрутить вебхуки
     # прикрутить разбор сообщения на естественном языке
+
+
+    logger = telebot.logger
+    telebot.logger.setLevel(logging.DEBUG)
 
     # для тестирования
     @bot.message_handler(commands=['start'])
