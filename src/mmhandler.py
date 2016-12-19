@@ -86,13 +86,13 @@ class MmHandler:
             return 'Категория успешно удалена.'
 
     def view_report(self, period=None):
-        if period == 'year':
+        if period == 'год':
             delta = relativedelta.relativedelta(years=1)
-        elif period == 'month':
+        elif period == 'месяц':
             delta = relativedelta.relativedelta(months=1)
-        elif period == 'week':
+        elif period == 'неделю':
             delta = relativedelta.relativedelta(weeks=1)
-        elif period == 'day':
+        elif period == 'день':
             delta = relativedelta.relativedelta(days=1)
         else:
             delta = None
