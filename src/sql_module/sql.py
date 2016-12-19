@@ -176,7 +176,3 @@ class SQL:
     def _get_category_name(self, id_cat):
         name = Category.get(id=id_cat).name
         return name
-
-sql = SQL()
-list = sql.get_history(224634311)
-pass

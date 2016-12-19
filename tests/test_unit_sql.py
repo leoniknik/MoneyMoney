@@ -1,15 +1,19 @@
+import sys
+
+sys.path.insert(0, '../src/sql_module')
+
 import unittest
-from sql_module.sql import *
+from sql import *
 
 
 class SQLTest(unittest.TestCase):
     def setUp(self):
         self.sql = SQL()
-        self.database = MySQLDatabase('mysql', **{'user': 'root', 'password': '1234', 'host': 'localhost'})
+        self.database = MySQLDatabase('mysql', **{'user': 'root', 'password': '7uy33HZ5', 'host': 'localhost'})
         self.database.execute_sql("CREATE DATABASE money;")
         self.database.execute_sql("USE money;")
         self.database.close()
-        self.database = MySQLDatabase('money', **{'user': 'root', 'password': '1234', 'host': 'localhost'})
+        self.database = MySQLDatabase('money', **{'user': 'root', 'password': '7uy33HZ5', 'host': 'localhost'})
         self.database.create_tables([User, Operation, Category])
 
     def tearDown(self):

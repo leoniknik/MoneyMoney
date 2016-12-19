@@ -1,9 +1,13 @@
 from mmhandler import MmHandler
-import config
+
+import argparse
 import telebot
 import re
+import logging
 
-bot = telebot.TeleBot(config.token)
+
+token = ''
+bot = telebot.TeleBot(token)
 handler = MmHandler(0)  # по умолчанию user_id = 0
 help_file = open('help.txt', 'r')
 help_message = help_file.read()
@@ -38,12 +42,16 @@ def parse(message):
         if length == 0:
             bot.send_message(message.chat.id, 'Забыл список команд? Держи:')
             bot.send_message(message.chat.id, help_message)
+<<<<<<< HEAD
         #### Оберег от кода Яны
         elif length == 2 and str_array[0]=="удалить" and str_array[1] == "другое":
             str_array[1]="other"
             handler_message = handler.del_category(str_array[1])
             bot.send_message(message.chat.id, handler_message)
         #### Конец оберега
+=======
+
+>>>>>>> 868cd01386f7e9e84e21cc7c06e890787492f8de
         # if format +/-....
         elif str_array[0][0] == '+' or str_array[0][0] == '-':
             if length == 1:
@@ -64,7 +72,11 @@ def parse(message):
                 else:
                     raise format_error
 
+<<<<<<< HEAD
         elif length >= 2 and str_array[0] == 'показать' and str_array[1] == 'категории':
+=======
+        elif length >= 2 and str_array[0] == 'покажи' and str_array[1] == 'категории':
+>>>>>>> 868cd01386f7e9e84e21cc7c06e890787492f8de
             if length == 3:
                 if str_array[2] in category_mods:
                     handler_message = handler.show_categories(str_array[2])
@@ -83,7 +95,11 @@ def parse(message):
                 handler_message = handler.del_category(str_array[2])
                 bot.send_message(message.chat.id, handler_message)
 
+<<<<<<< HEAD
             elif str_array[0] == 'добавить':
+=======
+            elif str_array[0] == 'добавь':
+>>>>>>> 868cd01386f7e9e84e21cc7c06e890787492f8de
                 handler_message = handler.add_category(str_array[2])
                 bot.send_message(message.chat.id, handler_message)
             else:
@@ -94,7 +110,11 @@ def parse(message):
                 if str_array[1] == 'за' and (str_array[2] in report_periods):
                     handler_message = handler.view_report(str_array[2])
                     bot.send_message(message.chat.id, handler_message)
+<<<<<<< HEAD
                     bot.send_chat_action(message.chat.id, 'typing')
+=======
+                    bot.send_chat_action(message.chat.id,'typing')
+>>>>>>> 868cd01386f7e9e84e21cc7c06e890787492f8de
                     image_file = open('tmp/temp.png', 'rb')
                     bot.send_photo(message.chat.id, image_file)
 
@@ -108,7 +128,11 @@ def parse(message):
                     else:
                         handler_message = handler.view_custom_report(date_from)
                     bot.send_message(message.chat.id, handler_message)
+<<<<<<< HEAD
                     bot.send_chat_action(message.chat.id, 'typing')
+=======
+                    bot.send_chat_action(message.chat.id,'typing')
+>>>>>>> 868cd01386f7e9e84e21cc7c06e890787492f8de
                     image_file = open('tmp/temp.png', 'rb')
                     bot.send_photo(message.chat.id, image_file)
                 else:
@@ -143,13 +167,46 @@ def callback_inline(call):
     if call.message:
         if call.data in report_periods:
             handler_message = handler.view_report(call.data)
+<<<<<<< HEAD
             bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                   text=handler_message)
             bot.send_chat_action(call.message.chat.id, 'typing')
+=======
+            bot.edit_message_text(chat_id = call.message.chat.id, message_id = call.message.message_id, text= handler_message)
+            bot.send_chat_action(call.message.chat.id,'typing')
+>>>>>>> 868cd01386f7e9e84e21cc7c06e890787492f8de
             image_file = open('tmp/temp.png', 'rb')
             bot.send_photo(call.message.chat.id, image_file)
 
 
 # бесконечная петля опроса
 if __name__ == '__main__':
-    bot.polling(none_stop=True)
+    token = ""
+    parser = argparse.ArgumentParser(description='Process some flags.')
+    # parser.add_argument('-o', '--output')
+    # parser.add_argument('-v', dest='verbose', action='store_true')
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument('--develop', help='Develop dirs', action="store_true")
+    group.add_argument('--prod', help='Production dirs', action="store_true")
+    args = parser.parse_args()
+
+    if args.develop:
+        with open('../config/config', 'r') as f:
+            token = re.sub("[\'\n]+", "", f.readline().split(' = ')[1])
+    elif args.prod:
+        with open('/etc/moneymoney.d/config', 'r') as f:
+            token = re.sub("\'\n", "", f.readline().split(' = ')[1])
+    else:
+        exit()
+
+    print(token) # по умолчанию user_id = 0
+    # прикрутить вебхуки
+    # прикрутить разбор сообщения на естественном языке
+
+
+    logger = telebot.logger
+    telebot.logger.setLevel(logging.DEBUG)
+
+    bot.token = token
+    # The Big polling Loop
+    bot.polling(none_stop = True)
