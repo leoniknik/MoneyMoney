@@ -4,30 +4,6 @@ from dateutil import relativedelta
 
 """
 MoneyMoney handler for all calculating functions.
-List of functions:
-(+) - completed
-(?) - WTF function
-(+) start(user_id)
-    RETURN {int_code, str_message)
-    str_message to user
-    code: 0 - unsuccessful
-    code: 1 - successful
-(?) add_fixed_income(name, amount, date)
-(?) del_fixed_income(name, date)
-(+) add_operation(amount, category, description, date)
-    RETURN str_message
-(+) show_categories(mode) mode may be income, expense, None
-    RETURN str_message
-(?) show_incomes()
-(+) add_category(name)
-    RETURN str_message
-(+) del_category(name)
-    RETURN str_message
-(+) view_report(period, category = None) period may be year, months, week, day
-    RETURN str_message
-(+) view_custom_report(date_from, date_to = None, category = None)
-    RETURN str_message
-
 """
 
 
@@ -61,12 +37,6 @@ class MmHandler:
             return  'Привет! Чтобы узнать о моих возможностях,'\
                        'воспользуйся командой /help'
 
-    def add_fixed_income(self, name, amount, date):
-        return 'Я пустышка и моя жизнь - тлен'
-
-    def del_fixed_income(self, name, date):
-        return 'Я пустышка и моя жизнь - тлен'
-
     def add_operation(self, amount, category=None, description=None, date=None):
         print(amount)
         print(self.user_id)
@@ -75,11 +45,8 @@ class MmHandler:
             if category is None:
                 category = 'other'
             categories = set(self.sql.get_all_categories(self.user_id))
-            print('2')
             if category in categories:
-                print('3')
                 self.sql.add_operation(self.user_id, amount, category, date, description)
-                print('!!!!!!!!!!!!!!!!!!!!!!!!!!!')
             else:
                 return 'Такой категории не существует! Воспользуйтесь ' \
                        'функцией "добавить категорию".'
@@ -118,7 +85,6 @@ class MmHandler:
         else:
             return 'Категория успешно удалена.'
 
-    # в перспективе слить отчеты в одну функцию
     def view_report(self, period=None):
         if period == 'year':
             delta = relativedelta.relativedelta(years=1)
