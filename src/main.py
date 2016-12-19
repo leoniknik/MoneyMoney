@@ -94,6 +94,9 @@ def parse(message):
                     else:
                         handler_message = handler.view_custom_report(date_from)
                     bot.send_message(message.chat.id, handler_message)
+                else:
+                    raise format_error
+                    
             elif length == 1:
                 keyboard = telebot.types.InlineKeyboardMarkup()
                 button_month = telebot.types.InlineKeyboardButton(text="месяц", callback_data="месяц")
