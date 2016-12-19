@@ -57,9 +57,9 @@ class MmHandler:
 
     def show_categories(self, mode=None):
         try:
-            if mode == 'income':
+            if mode == 'доходов':
                 categories_list = self.sql.get_income_categories(self.user_id)
-            elif mode == 'expense':
+            elif mode == 'расходов':
                 categories_list = self.sql.get_expense_categories(self.user_id)
             else:
                 categories_list = self.sql.get_all_categories(self.user_id)
