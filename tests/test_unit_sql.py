@@ -1,10 +1,10 @@
 import sys
 
-sys.path.append('../src')
+sys.path.append('../src/sql_modules')
 
 import unittest
 
-from sql_module.sql import *
+from sql import *
 
 
 class SQLTest(unittest.TestCase):
