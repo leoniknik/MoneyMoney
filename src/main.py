@@ -4,7 +4,8 @@ import argparse
 import telebot
 import re
 
-bot = telebot.TeleBot(config.token)
+token = ''
+bot = telebot.TeleBot(token)
 handler = MmHandler(0)  # по умолчанию user_id = 0
 help_file = open('help.txt', 'r')
 help_message = help_file.read()
@@ -159,9 +160,7 @@ if __name__ == '__main__':
     else:
         exit()
 
-    print(token)
-    bot = telebot.TeleBot(token)
-    handler = MmHandler(0) # по умолчанию user_id = 0
+    print(token) # по умолчанию user_id = 0
     # прикрутить вебхуки
     # прикрутить разбор сообщения на естественном языке
 
