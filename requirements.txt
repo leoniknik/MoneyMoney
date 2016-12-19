@@ -3,3 +3,4 @@ peewee>=2.8.5
 pyTelegramBotAPI>=2.2.3
 python-dateutil>=2.6.0
 PyMySQL>=0.7.9
+raven>=5.32.0
