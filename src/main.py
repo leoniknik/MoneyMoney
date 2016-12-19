@@ -81,7 +81,7 @@ def parse(message):
                 bot.send_message(message.chat.id, handler_message)
 
         else:
-            bot.send_message(message.chat.id, 'Привет! Список моих команд:')
+            bot.send_message(message.chat.id, 'Не знаю такой команды! Список моих команд:')
             bot.send_message(message.chat.id, help_message)
             
     except Exception as e:
