@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append('../src/sql_modules')
+sys.path.append('/src/sql_modules')
 
 import unittest
 
