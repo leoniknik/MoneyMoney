@@ -5,9 +5,6 @@ import telebot
 import re
 import logging
 
-
-token = ''
-bot = telebot.TeleBot(token)
 handler = MmHandler(0)  # по умолчанию user_id = 0
 help_file = open('help.txt', 'r')
 help_message = help_file.read()
@@ -182,6 +179,8 @@ if __name__ == '__main__':
     @bot.message_handler(commands=['help'])
     def help(message):
         pass
+
+    bot = telebot.TeleBot(token)
 
     # The Big polling Loop
     bot.polling(none_stop = True)
