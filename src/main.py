@@ -33,7 +33,7 @@ def parse(message):
     try:
         str_array = message.text.lower().split()
         length = len(str_array)
-
+ 
         # if empty line
         if length == 0:
             bot.send_message(message.chat.id, 'Забыл список команд? Держи:')
