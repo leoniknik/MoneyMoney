@@ -38,9 +38,11 @@ class MmHandler:
                        'воспользуйся командой /help'
 
     def add_operation(self, amount, category=None, description=None, date=None):
+        # test information
         print(amount)
         print(self.user_id)
         print(category)
+        #
         try:
             if category is None:
                 category = 'other'
