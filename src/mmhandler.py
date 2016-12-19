@@ -28,7 +28,7 @@ def make_autopct(values):
     def my_autopct(pct):
         total = sum(values)
         val = int(round(pct*total/100.0))
-        return '{v:d}'.format(v=val)
+        return '{p:.1f}%\n ({v:d})'.format(p = pct, v = val)
     return my_autopct
 
 
@@ -131,7 +131,7 @@ class MmHandler:
             values = [215, 130, 245, 210]
             
             # color scheme
-            color_map = cm.get_cmap('Pastel2')
+            color_map = cm.get_cmap('Pastel1')
             num_of_colors = len(values)
             colors = color_map([x / float(num_of_colors) for x in range(num_of_colors)])
 
