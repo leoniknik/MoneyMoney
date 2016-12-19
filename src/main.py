@@ -5,7 +5,7 @@ import re
 
 bot = telebot.TeleBot(config.token)
 handler = MmHandler(0)  # по умолчанию user_id = 0
-help_message = "добавить доход:\n+ {сумма} {название} {коммент}\nдобавить фиксированный доход:\n+ {сумма} {название} {дата} {коммент}\nдобавить расход:\n- {сумма} {категория} {коммент}\nпоказать категории:\nпокажи категории\nдобавить категорию:\nдобавь категорию {название}\nудалить категорию:\nудали категорию {название}\nпосмотреть отчет за месяц:\nотчет за {месяц}\nпосмотреть отчет за определенный период:\nотчет с {начальная дата} по {конечная дата}\nформат даты: xx-xx-xxxx"
+help_message = "добавить доход:\n+{сумма} {категория} {комментарий}\nдобавить расход:\n-{сумма} {категория} {комментарий}\nпоказать категории:\nпокажи категории {расходов} {доходов}\nдобавить категорию:\nдобавь категорию {название}\nудалить категорию:\nудали категорию {название}\nпосмотреть отчет за месяц:\nотчет за {месяц}\nпосмотреть отчет за определенный период:\nотчет с {начальная дата} по {конечная дата}\nформат даты: xx-xx-xxxx"
 report_periods = {'день', 'неделю', 'месяц', 'год'}
 
 @bot.message_handler(commands=['start'])
@@ -29,36 +29,27 @@ def parse(message):
         str_array = message.text.lower().split()
         length = len(str_array)
         if length == 0:
-            bot.send_message(message.chat.id, 'Привет! Список моих команд:')
+            bot.send_message(message.chat.id, 'Забыл список команд? Держи:')
             bot.send_message(message.chat.id, help_message)
-            
-        elif str_array[0] == '+':
-            if length == 3:
-                if re.match('\d+', str_array[1]) and re.match('[а-яa-z]+', str_array[2]):
-                    handler_message = handler.add_operation(int(str[0] + str_array[1]), str_array[2])
+        
+        # if format +/-....
+        elif str_array[0][0] == '+'  or str_array[0][0] == '-':
+            if length == 1:
+                if re.match('[+]\d+', str_array[0]) or re.match('[-]\d+', str_array[0]):
+                    handler_message = handler.add_operation(int(str_array[0]))
                     bot.send_message(message.chat.id, handler_message)
-                    # call income amount category
-                    
-            elif length >= 4:
-                if length >= 4 and re.match('\d+', str_array[1]) and re.match('[а-яa-z]+', str_array[2]):
-                    buf = ' '.join(str[3:length])
-                    handler_message = handler.add_operation(int(str_array[0] + str_array[1]), str_array[2], buf)
-                    bot.send_message(message.chat.id, handler_message)
-                    # вызов доход amount category description
-                    
-        elif str_array[0] == '-':
-            if length == 3 and re.match('\d+', str_array[1]) and re.match('[а-яa-z]+', str_array[2]):
-                handler_message = handler.add_operation(int(str_array[0] + str_array[1]), str_array[2])
-                bot.send_message(message.chat.id, handler_message)
-                # расход amount category
                 
-            elif length > 3 and re.match('\d+', str_array[1]) and re.match('[а-яa-z]+', str_array[2]):
-                buf = ' '.join(str_array[3:length])
-                handler_message = handler.add_operation(int(str_array[0] + str_array[1]), str_array[2], buf)
-                bot.send_message(message.chat.id, handler_message)
-                # расход amount category description
+            elif length >= 2 and re.match('[а-яa-zА-ЯA-Z]+', str_array[1]):
+                if re.match('[+]\d+', str_array[0]) or re.match('[-]\d+', str_array[0]):
+                    if length >= 3:
+                        description_buf = ' '.join(str_array[2:length])
+                        handler_message = handler.add_operation(int(str_array[0]), str_array[1], description_buf)
+                    else:
+                        handler_message = handler.add_operation(int(str_array[0]), str_array[1])
+                    bot.send_message(message.chat.id, handler_message)
                 
         elif str_array[0] == 'покажи' and str_array[1] == 'категории':
+            if 
             handler_message = handler.show_categories()
             bot.send_message(message.chat.id, handler_message)
             
