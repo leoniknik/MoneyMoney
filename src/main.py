@@ -60,6 +60,7 @@ def parse(message):
             if length == 3:
                 if str_array[2] in category_mods:
                     handler_message = handler.show_categories(str_array[2])
+                    bot.send_message(message.chat.id, handler_message)
                 else:
                     raise Exception('Неправильный формат команды!')
             else:
