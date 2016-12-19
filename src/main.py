@@ -49,7 +49,6 @@ def parse(message):
                     bot.send_message(message.chat.id, handler_message)
                 
         elif str_array[0] == 'покажи' and str_array[1] == 'категории':
-            if 
             handler_message = handler.show_categories()
             bot.send_message(message.chat.id, handler_message)
             
