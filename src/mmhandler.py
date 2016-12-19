@@ -123,6 +123,7 @@ class MmHandler:
         else:
             # graph design
             plt.rcParams['font.size'] = 24.0
+            # for windows!
             #font = {'family': 'Verdana'}
             #rc('font', **font)
             
