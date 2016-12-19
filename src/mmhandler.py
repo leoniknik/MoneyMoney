@@ -1,6 +1,5 @@
-import datetime
-
 from sql_module.sql import SQL
+import datetime
 from dateutil import relativedelta
 import matplotlib.pyplot as plt
 from matplotlib import rc
@@ -129,13 +128,8 @@ class MmHandler:
             # graph design
             plt.rcParams['font.size'] = 24.0
             # for windows!
-<<<<<<< HEAD
             # font = {'family': 'Verdana'}
             # rc('font', **font)
-=======
-            #font = {'family': 'Verdana'}
-            #rc('font', **font)
->>>>>>> 868cd01386f7e9e84e21cc7c06e890787492f8de
 
             # info from database!!
             labels = 'шоппинг', 'кино', 'учеба', 'подарки'
