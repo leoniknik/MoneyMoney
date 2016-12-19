@@ -136,9 +136,6 @@ def callback_inline(call):
         if call.data in report_periods:
             handler_message = handler.view_report(call.data)
             bot.edit_message_text(chat_id = call.message.chat.id, message_id = call.message.message_id, text= handler_message)
-            bot.send_chat_action(call.message.chat.id,'typing')
-            image_file = open('tmp/temp.png', 'rb') 
-            bot.send_photo(call.message.chat.id, image_file)
 
 # бесконечная петля опроса
 if __name__ == '__main__':
