@@ -78,21 +78,33 @@ def parse(message):
             else:
                 raise format_error
             
-        elif length >= 3 and str_array[0] == 'отчет':
-            if str_array[1] == 'за' and (str_array[2] in report_periods):
-                handler_message = handler.view_report(str_array[2])
-                bot.send_message(message.chat.id, handler_message)
-                
-            elif str_array[1] == 'с' and re.match('\d{1,2}-\d{1,2}-\d{4}', str_array[2]):
-                date_from_split_reverse = str_array[2].split('-')[::-1]
-                date_from = '-'.join(date_from_split_reverse)
-                if length >= 4 and str_array[3] == 'по' and re.match('\d{1,2}-\d{1,2}-\d{4}', str_array[4]):
-                    date_to_split_reverse = str_array[4].split('-')[::-1]
-                    date_to = '-'.join(date_to_split_reverse)
-                    handler_message = handler.view_custom_report(date_from, date_to)
-                else:
-                    handler_message = handler.view_custom_report(date_from)
-                bot.send_message(message.chat.id, handler_message)
+        elif str_array[0] == 'отчет':
+            if length >= 3:
+                if str_array[1] == 'за' and (str_array[2] in report_periods):
+                    handler_message = handler.view_report(str_array[2])
+                    bot.send_message(message.chat.id, handler_message)
+                    
+                elif str_array[1] == 'с' and re.match('\d{1,2}-\d{1,2}-\d{4}', str_array[2]):
+                    date_from_split_reverse = str_array[2].split('-')[::-1]
+                    date_from = '-'.join(date_from_split_reverse)
+                    if length >= 4 and str_array[3] == 'по' and re.match('\d{1,2}-\d{1,2}-\d{4}', str_array[4]):
+                        date_to_split_reverse = str_array[4].split('-')[::-1]
+                        date_to = '-'.join(date_to_split_reverse)
+                        handler_message = handler.view_custom_report(date_from, date_to)
+                    else:
+                        handler_message = handler.view_custom_report(date_from)
+                    bot.send_message(message.chat.id, handler_message)
+            elif length == 1:
+                keyboard = telebot.types.InlineKeyboardMarkup()
+                button_month = telebot.types.InlineKeyboardButton(text="месяц", callback_data="месяц")
+                button_day = telebot.types.InlineKeyboardButton(text="день", callback_data="день")
+                button_week = telebot.types.InlineKeyboardButton(text="неделя", callback_data="неделю")
+                button_year = telebot.types.InlineKeyboardButton(text="год", callback_data="год")
+                keyboard.add(button_day)
+                keyboard.add(button_week)
+                keyboard.add(button_month)
+                keyboard.add(button_year)
+                bot.send_message(message.chat.id, "Выбери период", reply_markup=keyboard)
             else:
                 raise format_error
 
@@ -103,7 +115,15 @@ def parse(message):
     except Exception as e:
         handler_message = 'Ошибка: {} '.format(e)
         bot.send_message(message.chat.id, handler_message)
-        
+
+# handler for inline-keyboard
+@bot.callback_query_handler(func=lambda call: True)
+def callback_inline(call):
+    if call.message:
+        if call.data in report_periods:
+            handler_message = handler.view_report(call.data)
+            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text= handler_message)
+
 # бесконечная петля опроса
 if __name__ == '__main__':
     bot.polling(none_stop=True)
