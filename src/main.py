@@ -5,12 +5,13 @@ import re
 
 bot = telebot.TeleBot(config.token)
 handler = MmHandler(0)  # по умолчанию user_id = 0
-help_file = open('help.txt', 'r')  
+help_file = open('help.txt', 'r')
 help_message = help_file.read()
 help_file.close()
 report_periods = {'день', 'неделю', 'месяц', 'год'}
 category_mods = {'расходов', 'доходов'}
 format_error = Exception('Неправильный формат команды!')
+
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -32,21 +33,26 @@ def parse(message):
     try:
         str_array = message.text.lower().split()
         length = len(str_array)
-        
+
         # if empty line
         if length == 0:
             bot.send_message(message.chat.id, 'Забыл список команд? Держи:')
             bot.send_message(message.chat.id, help_message)
-        
+        #### Оберег от кода Яны
+        elif length == 2 and str_array[0]=="удалить" and str_array[1] == "другое":
+            str_array[1]="other"
+            handler_message = handler.del_category(str_array[1])
+            bot.send_message(message.chat.id, handler_message)
+        #### Конец оберега
         # if format +/-....
-        elif str_array[0][0] == '+'  or str_array[0][0] == '-':
+        elif str_array[0][0] == '+' or str_array[0][0] == '-':
             if length == 1:
                 if re.match('[+]\d+', str_array[0]) or re.match('[-]\d+', str_array[0]):
                     handler_message = handler.add_operation(int(str_array[0]))
                     bot.send_message(message.chat.id, handler_message)
                 else:
                     raise format_error
-                
+
             elif length >= 2 and re.match('[а-яa-zА-ЯA-Z]+', str_array[1]):
                 if re.match('[+]\d+', str_array[0]) or re.match('[-]\d+', str_array[0]):
                     if length >= 3:
@@ -57,8 +63,8 @@ def parse(message):
                     bot.send_message(message.chat.id, handler_message)
                 else:
                     raise format_error
-                       
-        elif length >= 2 and str_array[0] == 'покажи' and str_array[1] == 'категории':
+
+        elif length >= 2 and str_array[0] == 'показать' and str_array[1] == 'категории':
             if length == 3:
                 if str_array[2] in category_mods:
                     handler_message = handler.show_categories(str_array[2])
@@ -68,27 +74,30 @@ def parse(message):
             else:
                 handler_message = handler.show_categories()
                 bot.send_message(message.chat.id, handler_message)
-            
+
         elif length == 3 and str_array[1] == 'категорию' and re.match('[а-яa-zA-ZА-Я]+', str_array[2]):
-            if str_array[0] == 'удали':
+            if str_array[0] == 'удалить':
+                if str_array[2] == "другое":
+                    bot.send_message(message.chat.id, "Для того чтобы удалить категорию другое и все операции связанные с ней введите команду: удалить другое")
+                    return
                 handler_message = handler.del_category(str_array[2])
                 bot.send_message(message.chat.id, handler_message)
-                
-            elif str_array[0] == 'добавь':
+
+            elif str_array[0] == 'добавить':
                 handler_message = handler.add_category(str_array[2])
                 bot.send_message(message.chat.id, handler_message)
             else:
                 raise format_error
-            
+
         elif str_array[0] == 'отчет':
             if length >= 3:
                 if str_array[1] == 'за' and (str_array[2] in report_periods):
                     handler_message = handler.view_report(str_array[2])
                     bot.send_message(message.chat.id, handler_message)
-                    bot.send_chat_action(message.chat.id,'typing')
-                    image_file = open('tmp/temp.png', 'rb') 
+                    bot.send_chat_action(message.chat.id, 'typing')
+                    image_file = open('tmp/temp.png', 'rb')
                     bot.send_photo(message.chat.id, image_file)
-                    
+
                 elif str_array[1] == 'с' and re.match('\d{1,2}-\d{1,2}-\d{4}', str_array[2]):
                     date_from_split_reverse = str_array[2].split('-')[::-1]
                     date_from = '-'.join(date_from_split_reverse)
@@ -99,12 +108,12 @@ def parse(message):
                     else:
                         handler_message = handler.view_custom_report(date_from)
                     bot.send_message(message.chat.id, handler_message)
-                    bot.send_chat_action(message.chat.id,'typing')
-                    image_file = open('tmp/temp.png', 'rb') 
+                    bot.send_chat_action(message.chat.id, 'typing')
+                    image_file = open('tmp/temp.png', 'rb')
                     bot.send_photo(message.chat.id, image_file)
                 else:
                     raise format_error
-                    
+
             elif length == 1:
                 keyboard = telebot.types.InlineKeyboardMarkup()
                 button_month = telebot.types.InlineKeyboardButton(text="месяц", callback_data="месяц")
@@ -122,10 +131,11 @@ def parse(message):
         else:
             bot.send_message(message.chat.id, 'Не знаю такой команды! Список моих команд:')
             bot.send_message(message.chat.id, help_message)
-            
+
     except Exception as e:
         handler_message = 'Ошибка: {} '.format(e)
         bot.send_message(message.chat.id, handler_message)
+
 
 # handler for inline-keyboard
 @bot.callback_query_handler(func=lambda call: True)
@@ -133,10 +143,12 @@ def callback_inline(call):
     if call.message:
         if call.data in report_periods:
             handler_message = handler.view_report(call.data)
-            bot.edit_message_text(chat_id = call.message.chat.id, message_id = call.message.message_id, text= handler_message)
-            bot.send_chat_action(call.message.chat.id,'typing')
-            image_file = open('tmp/temp.png', 'rb') 
+            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+                                  text=handler_message)
+            bot.send_chat_action(call.message.chat.id, 'typing')
+            image_file = open('tmp/temp.png', 'rb')
             bot.send_photo(call.message.chat.id, image_file)
+
 
 # бесконечная петля опроса
 if __name__ == '__main__':

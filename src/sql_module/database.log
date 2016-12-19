@@ -1,0 +1,51 @@
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:26:34,492]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+base.py[LINE:681]# DEBUG    [2016-12-20 00:26:34,523]  Sending message of length 1058 to https://sentry.io/api/120805/store/
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:26:34,548]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [None])
+base.py[LINE:681]# DEBUG    [2016-12-20 00:26:34,557]  Sending message of length 1777 to https://sentry.io/api/120805/store/
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:26:34,585]  ('UPDATE `category` SET `type` = %s WHERE (`category`.`id` IS %s)', [None, None])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:26:34,605]  ('INSERT INTO `operation` (`amount`, `date`, `description`, `id_cat`, `id_user`) VALUES (%s, %s, %s, %s, %s)', [500, '2016-12-20', '', None, 224634311])
+base.py[LINE:681]# DEBUG    [2016-12-20 00:26:34,631]  Sending message of length 3590 to https://sentry.io/api/120805/store/
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:27:26,301]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:51:47,888]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+sql.py[LINE:143]# INFO     [2016-12-20 01:51:47,899]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:52:57,986]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+sql.py[LINE:143]# INFO     [2016-12-20 01:52:57,995]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:53:02,921]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+sql.py[LINE:143]# INFO     [2016-12-20 01:53:02,926]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:53:17,280]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+sql.py[LINE:143]# INFO     [2016-12-20 01:53:17,290]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+base.py[LINE:681]# DEBUG    [2016-12-20 01:53:29,024]  Sending message of length 7243 to https://sentry.io/api/120805/store/
+base.py[LINE:681]# DEBUG    [2016-12-20 01:53:34,588]  Sending message of length 6824 to https://sentry.io/api/120805/store/
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:53:37,626]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+sql.py[LINE:143]# INFO     [2016-12-20 01:53:37,636]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:53:45,413]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+sql.py[LINE:143]# INFO     [2016-12-20 01:53:45,422]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:53:58,191]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+sql.py[LINE:143]# INFO     [2016-12-20 01:53:58,200]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:55:47,695]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+sql.py[LINE:143]# INFO     [2016-12-20 01:55:47,705]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:56:15,096]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+base.py[LINE:681]# DEBUG    [2016-12-20 01:57:08,836]  Sending message of length 6856 to https://sentry.io/api/120805/store/
+sql.py[LINE:143]# INFO     [2016-12-20 01:57:11,414]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:57:16,421]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+sql.py[LINE:143]# INFO     [2016-12-20 01:57:16,431]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:57:57,116]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+sql.py[LINE:143]# INFO     [2016-12-20 01:57:57,125]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:58:02,883]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+sql.py[LINE:143]# INFO     [2016-12-20 01:58:02,892]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+base.py[LINE:681]# DEBUG    [2016-12-20 01:58:16,375]  Sending message of length 6944 to https://sentry.io/api/120805/store/
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:58:25,396]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+sql.py[LINE:143]# INFO     [2016-12-20 01:58:25,407]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 02:04:08,183]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 02:04:08,194]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [19])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 02:04:08,211]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [20])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 02:04:08,228]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [21])
+sql.py[LINE:145]# INFO     [2016-12-20 02:04:08,245]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 02:06:01,964]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE (`t1`.`id_user` = %s)', [224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 02:06:01,975]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [19])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 02:06:01,977]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [19])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 02:06:01,995]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [20])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 02:06:01,996]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [20])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 02:06:02,014]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [21])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 02:06:02,015]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [21])
+sql.py[LINE:145]# INFO     [2016-12-20 02:06:02,032]  Был создан отчет для пользователя с id=224634311 от даты=None по дату=None

@@ -27,8 +27,9 @@ MoneyMoney handler for all calculating functions.
 def make_autopct(values):
     def my_autopct(pct):
         total = sum(values)
-        val = int(round(pct*total/100.0))
-        return '{p:.1f}%\n ({v:d})'.format(p = pct, v = val)
+        val = int(round(pct * total / 100.0))
+        return '{p:.1f}%\n ({v:d})'.format(p=pct, v=val)
+
     return my_autopct
 
 
@@ -46,15 +47,10 @@ class MmHandler:
         except Exception as e:
             return 'Ошибка при инициализации: {} '.format(e)
         else:
-            return  'Привет! Чтобы узнать о моих возможностях,'\
-                       'воспользуйся командой /help'
+            return 'Привет! Чтобы узнать о моих возможностях,' \
+                   'воспользуйся командой /help'
 
     def add_operation(self, amount, category=None, description=None, date=None):
-        # test information
-        print(amount)
-        print(self.user_id)
-        print(category)
-        #
         try:
             if category is None:
                 category = 'other'
@@ -80,7 +76,10 @@ class MmHandler:
         except Exception as e:
             return 'Вывод категорий невозможен! Ошибка: {} '.format(e)
         else:
-            message = 'Список категорий:' + ', '.join(categories_list)
+            if categories_list.count("other") != 0:
+                categories_list.remove("other")
+                categories_list.append("другое")
+            message = 'Список категорий: ' + ', '.join(categories_list)
             return message
 
     def add_category(self, name):
@@ -93,7 +92,12 @@ class MmHandler:
 
     def del_category(self, name):
         try:
-            self.sql.delete_category(name, self.user_id)
+            ### оберег
+            if name=="other":
+                self.sql.delete_category_other(self.user_id)
+            ### конец оберега
+            else:
+                self.sql.delete_category(name, self.user_id)
         except Exception as e:
             return 'Категория не была удалена! Ошибка: {} '.format(e)
         else:
@@ -124,13 +128,13 @@ class MmHandler:
             # graph design
             plt.rcParams['font.size'] = 24.0
             # for windows!
-            #font = {'family': 'Verdana'}
-            #rc('font', **font)
-            
+            # font = {'family': 'Verdana'}
+            # rc('font', **font)
+
             # info from database!!
             labels = 'шоппинг', 'кино', 'учеба', 'подарки'
             values = [215, 130, 245, 210]
-            
+
             # color scheme
             color_map = cm.get_cmap('Pastel1')
             num_of_colors = len(values)
@@ -144,7 +148,7 @@ class MmHandler:
             if not os.path.exists('tmp'):
                 os.makedirs('tmp')
             fig.savefig('tmp/temp.png')
-            
+
             message = 'История операций за'
             if period is not None:
                 message += ' {}'.format(period)

@@ -1,0 +1,1023 @@
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:12:15,723]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:12:25,886]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 321
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:12:25,962]  ('INSERT INTO `user` (`id`) VALUES (%s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:12:25,965]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:22]# INFO     [2016-12-20 00:12:26,128]  Был добавлен пользователь с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:12:26,130]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:12:26,341]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21+%D0%A7%D1%82%D0%BE%D0%B1%D1%8B+%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C+%D0%BE+%D0%BC%D0%BE%D0%B8%D1%85+%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8F%D1%85%2C%D0%B2%D0%BE%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B9%D1%81%D1%8F+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BE%D0%B9+%2Fhelp HTTP/1.1" 200 628
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:12:31,098]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068498&timeout=20 HTTP/1.1" 200 320
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:12:31,104]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:12:31,104]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:12:31,336]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A HTTP/1.1" 200 368
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:12:31,342]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:12:31,573]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%3A%0A%2B%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%3A%0A-%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8%3A%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8+%7B%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D+%7B%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B3%D0%BE%D0%B4+%2B+%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%7B%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%B3%D0%BE%D0%B4%7D+%0A%D0%B8%D0%BB%D0%B8%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D1%81+%7B%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D+%D0%BF%D0%BE+%7B%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D%0A%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82+%D0%B4%D0%B0%D1%82%D1%8B%3A+xx-xx-xxxx%0A HTTP/1.1" 200 2476
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:12:51,291]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068499&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:12:51,294]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:13:11,494]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068499&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:13:11,497]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:13:31,697]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068499&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:13:31,700]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:13:51,895]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068499&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:13:51,899]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:14:12,099]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068499&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:14:12,102]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:14:21,942]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068499&timeout=20 HTTP/1.1" 200 321
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:14:21,946]  Starting new HTTPS connection (1): api.telegram.org
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:14:21,946]  ('INSERT INTO `user` (`id`) VALUES (%s)', [224634311])
+base.py[LINE:681]# DEBUG    [2016-12-20 00:14:22,003]  Sending message of length 3085 to https://sentry.io/api/120805/store/
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:14:22,005]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:14:22,209]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+ HTTP/1.1" 200 552
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:14:33,075]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068500&timeout=20 HTTP/1.1" 200 320
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:14:33,078]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:14:33,080]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:14:33,275]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A HTTP/1.1" 200 368
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:14:33,281]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:14:33,506]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%3A%0A%2B%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%3A%0A-%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8%3A%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8+%7B%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D+%7B%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B3%D0%BE%D0%B4+%2B+%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%7B%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%B3%D0%BE%D0%B4%7D+%0A%D0%B8%D0%BB%D0%B8%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D1%81+%7B%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D+%D0%BF%D0%BE+%7B%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D%0A%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82+%D0%B4%D0%B0%D1%82%D1%8B%3A+xx-xx-xxxx%0A HTTP/1.1" 200 2476
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:14:47,094]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068501&timeout=20 HTTP/1.1" 200 287
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:14:47,098]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:14:47,099]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:14:47,342]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22callback_data%22%3A+%22%5Cu0434%5Cu0435%5Cu043d%5Cu044c%22%2C+%22text%22%3A+%22%5Cu0434%5Cu0435%5Cu043d%5Cu044c%22%7D%5D%2C+%5B%7B%22callback_data%22%3A+%22%5Cu043d%5Cu0435%5Cu0434%5Cu0435%5Cu043b%5Cu044e%22%2C+%22text%22%3A+%22%5Cu043d%5Cu0435%5Cu0434%5Cu0435%5Cu043b%5Cu044f%22%7D%5D%2C+%5B%7B%22callback_data%22%3A+%22%5Cu043c%5Cu0435%5Cu0441%5Cu044f%5Cu0446%22%2C+%22text%22%3A+%22%5Cu043c%5Cu0435%5Cu0441%5Cu044f%5Cu0446%22%7D%5D%2C+%5B%7B%22callback_data%22%3A+%22%5Cu0433%5Cu043e%5Cu0434%22%2C+%22text%22%3A+%22%5Cu0433%5Cu043e%5Cu0434%22%7D%5D%5D%7D&chat_id=224634311&text=%D0%92%D1%8B%D0%B1%D0%B5%D1%80%D0%B8+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4 HTTP/1.1" 200 304
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:14:57,863]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068502&timeout=20 HTTP/1.1" 200 527
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:14:57,867]  Starting new HTTPS connection (1): api.telegram.org
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:14:57,881]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE ((`t1`.`id_user` = %s) AND ((`t1`.`date` >= %s) AND (`t1`.`date` <= %s)))', [224634311, datetime.date(2016, 12, 19), datetime.date(2016, 12, 20)])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:14:57,899]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:14:58,104]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/editMessageText?message_id=619&chat_id=224634311&text=%D0%9F%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C+%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8E+%D0%BD%D0%B5%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%21+%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+%27%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9+%D0%B7%D0%B0+%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4+%D0%BD%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+ HTTP/1.1" 200 634
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:14:58,108]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:14:58,305]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendChatAction?action=typing&chat_id=224634311 HTTP/1.1" 200 25
+base.py[LINE:681]# DEBUG    [2016-12-20 00:14:58,353]  Sending message of length 2645 to https://sentry.io/api/120805/store/
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:21:17,955]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:21:18,167]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 526
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:21:18,179]  Starting new HTTPS connection (1): api.telegram.org
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:21:18,179]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:21:18,182]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:21:18,188]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:21:18,385]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22callback_data%22%3A+%22%5Cu0434%5Cu0435%5Cu043d%5Cu044c%22%2C+%22text%22%3A+%22%5Cu0434%5Cu0435%5Cu043d%5Cu044c%22%7D%5D%2C+%5B%7B%22callback_data%22%3A+%22%5Cu043d%5Cu0435%5Cu0434%5Cu0435%5Cu043b%5Cu044e%22%2C+%22text%22%3A+%22%5Cu043d%5Cu0435%5Cu0434%5Cu0435%5Cu043b%5Cu044f%22%7D%5D%2C+%5B%7B%22callback_data%22%3A+%22%5Cu043c%5Cu0435%5Cu0441%5Cu044f%5Cu0446%22%2C+%22text%22%3A+%22%5Cu043c%5Cu0435%5Cu0441%5Cu044f%5Cu0446%22%7D%5D%2C+%5B%7B%22callback_data%22%3A+%22%5Cu0433%5Cu043e%5Cu0434%22%2C+%22text%22%3A+%22%5Cu0433%5Cu043e%5Cu0434%22%7D%5D%5D%7D&text=%D0%92%D1%8B%D0%B1%D0%B5%D1%80%D0%B8+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4&chat_id=224634311 HTTP/1.1" 200 304
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:21:18,407]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F+%D0%BD%D0%B5+%D0%B1%D1%8B%D0%BB%D0%B0+%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B0%21+%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+%27%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9+%D0%BF%D0%BE%D0%BA%D0%B0+%D0%BD%D0%B5%D1%82%27+&chat_id=224634311 HTTP/1.1" 200 512
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:21:38,377]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068505&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:21:38,380]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:21:58,563]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068505&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:21:58,567]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:22:09,277]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068505&timeout=20 HTTP/1.1" 200 321
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:22:09,280]  ('INSERT INTO `user` (`id`) VALUES (%s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:22:09,283]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 00:22:09,292]  Sending message of length 3069 to https://sentry.io/api/120805/store/
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:22:09,294]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:22:09,733]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+&chat_id=224634311 HTTP/1.1" 200 552
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:22:22,934]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068506&timeout=20 HTTP/1.1" 200 320
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:22:22,937]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:22:22,939]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:22:23,145]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A&chat_id=224634311 HTTP/1.1" 200 368
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:22:23,149]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:22:23,360]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%3A%0A%2B%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%3A%0A-%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8%3A%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8+%7B%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D+%7B%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B3%D0%BE%D0%B4+%2B+%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%7B%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%B3%D0%BE%D0%B4%7D+%0A%D0%B8%D0%BB%D0%B8%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D1%81+%7B%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D+%D0%BF%D0%BE+%7B%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D%0A%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82+%D0%B4%D0%B0%D1%82%D1%8B%3A+xx-xx-xxxx%0A&chat_id=224634311 HTTP/1.1" 200 2476
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:22:43,133]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068507&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:22:43,136]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:22:58,468]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068507&timeout=20 HTTP/1.1" 200 262
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:22:58,472]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:22:58,472]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:22:58,475]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:22:58,682]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F+%D0%BD%D0%B5+%D0%B1%D1%8B%D0%BB%D0%B0+%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B0%21+%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+%27%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9+%D0%BF%D0%BE%D0%BA%D0%B0+%D0%BD%D0%B5%D1%82%27+&chat_id=224634311 HTTP/1.1" 200 512
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:23:18,667]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:23:18,670]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:23:38,869]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:23:38,872]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:23:59,056]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:23:59,060]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:24:19,244]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:24:19,249]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:24:39,443]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:24:39,446]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:24:59,633]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:24:59,637]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:25:19,831]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:25:19,834]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:25:40,023]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:25:40,028]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:26:00,212]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:26:00,216]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:26:20,398]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:26:20,401]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:26:40,590]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:26:40,593]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:27:00,773]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:27:00,776]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:27:20,973]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:27:20,979]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:27:41,169]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:27:41,173]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:28:01,401]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:28:01,404]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:28:21,594]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:28:21,597]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:28:41,785]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:28:41,789]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:29:01,979]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:29:01,982]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:29:22,198]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:29:22,202]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:29:42,400]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:29:42,403]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:30:02,596]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:30:02,599]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:30:22,779]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:30:22,782]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:30:42,965]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:30:42,968]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:31:03,149]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:31:03,153]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:31:23,331]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:31:23,335]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:31:43,530]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:31:43,536]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:32:03,718]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:32:03,721]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:32:23,915]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:32:23,918]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:32:44,109]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:32:44,112]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:33:04,302]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:33:04,306]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:33:24,488]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:33:24,491]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:33:44,687]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:33:44,691]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:34:04,943]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:34:04,947]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:34:25,159]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:34:25,163]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:34:45,352]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:34:45,355]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:35:05,549]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:35:05,552]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:35:14,080]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068508&timeout=20 HTTP/1.1" 200 262
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:35:14,083]  Starting new HTTPS connection (1): api.telegram.org
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:35:14,084]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:35:14,086]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:35:14,300]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F+%D0%BD%D0%B5+%D0%B1%D1%8B%D0%BB%D0%B0+%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B0%21+%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+%27%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9+%D0%BF%D0%BE%D0%BA%D0%B0+%D0%BD%D0%B5%D1%82%27+&chat_id=224634311 HTTP/1.1" 200 512
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:35:25,957]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:35:25,961]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:35:25,962]  ('INSERT INTO `category` (`name`, `type`, `user_id`) VALUES (%s, %s, %s)', ['other', 0, 224634311])
+sql.py[LINE:32]# INFO     [2016-12-20 00:35:25,998]  Была добавлена категория=other для пользвателя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:35:25,999]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:35:26,000]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [17])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:35:26,000]  ('UPDATE `category` SET `type` = %s WHERE (`category`.`id` = %s)', [1, 17])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:35:26,032]  ('INSERT INTO `operation` (`amount`, `date`, `description`, `id_cat`, `id_user`) VALUES (%s, %s, %s, %s, %s)', [500, '2016-12-20', '', 17, 224634311])
+sql.py[LINE:115]# INFO     [2016-12-20 00:35:26,065]  Была добавлена операция на сумму=500 для категории=None с описанием= с датой=2016-12-20 для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:35:26,234]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:35:32,684]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 262
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:35:32,695]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:35:32,697]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 00:35:32,698]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:35:32,699]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:35:32,699]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [17])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:35:32,700]  ('UPDATE `category` SET `type` = %s WHERE (`category`.`id` = %s)', [1, 17])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:35:32,748]  ('INSERT INTO `operation` (`amount`, `date`, `description`, `id_cat`, `id_user`) VALUES (%s, %s, %s, %s, %s)', [1000, '2016-12-20', '', 17, 224634311])
+sql.py[LINE:115]# INFO     [2016-12-20 00:35:32,781]  Была добавлена операция на сумму=1000 для категории=other с описанием= с датой=2016-12-20 для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:35:32,783]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:35:32,989]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F+%D1%83%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D0%BE+%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B0. HTTP/1.1" 200 378
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:35:52,894]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068510 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:35:52,897]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:36:13,091]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068510 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:36:13,094]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:36:33,282]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068510 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:36:33,286]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:36:53,478]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068510 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:36:53,482]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:37:13,677]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068510 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:37:13,681]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:37:33,912]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068510 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:37:33,916]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:37:54,102]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068510 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:37:54,105]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:38:14,307]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068510 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:38:14,311]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:38:34,499]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068510 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:38:34,503]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:38:49,510]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068510 HTTP/1.1" 200 280
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:38:49,512]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:38:49,514]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 00:38:49,514]  Были получены все категории для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:38:49,516]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:38:49,729]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%A2%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8+%D0%BD%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%21+%D0%92%D0%BE%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B9%D1%82%D0%B5%D1%81%D1%8C+%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B5%D0%B9+%22%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%22. HTTP/1.1" 200 634
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:39:09,704]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068511 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:39:09,707]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:39:23,733]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068511 HTTP/1.1" 200 261
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:39:23,737]  Starting new HTTPS connection (1): api.telegram.org
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:39:23,737]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+sql.py[LINE:42]# INFO     [2016-12-20 00:39:23,738]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:39:23,739]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:39:23,739]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [17])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:39:23,740]  ('UPDATE `category` SET `type` = %s WHERE (`category`.`id` = %s)', [3, 17])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:39:23,773]  ('INSERT INTO `operation` (`amount`, `date`, `description`, `id_cat`, `id_user`) VALUES (%s, %s, %s, %s, %s)', [-123, '2016-12-20', '', 17, 224634311])
+sql.py[LINE:115]# INFO     [2016-12-20 00:39:23,806]  Была добавлена операция на сумму=-123 для категории=other с описанием= с датой=2016-12-20 для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:39:23,807]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:39:24,009]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F+%D1%83%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D0%BE+%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B0. HTTP/1.1" 200 378
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:39:43,926]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068512 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:39:43,930]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:40:04,111]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068512 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:40:04,114]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:40:24,317]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068512 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:40:24,321]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:40:40,505]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068512 HTTP/1.1" 200 348
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:40:40,508]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+sql.py[LINE:42]# INFO     [2016-12-20 00:40:40,510]  Были получены все категории для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:40:40,512]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:40:40,512]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:40:40,726]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9%3Aother HTTP/1.1" 200 328
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:41:00,713]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:41:00,718]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:41:20,907]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:41:20,912]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:41:41,101]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:41:41,105]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:42:01,291]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:42:01,296]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:42:21,518]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:42:21,521]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:42:41,706]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:42:41,710]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:43:01,897]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:43:01,900]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:43:22,081]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:43:22,084]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:43:42,274]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:43:42,279]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:44:02,460]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:44:02,464]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:44:22,654]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:44:22,657]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:44:42,849]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:44:42,853]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:45:03,038]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:45:03,041]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:45:23,222]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:45:23,228]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:45:43,412]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:45:43,415]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:46:03,602]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:46:03,606]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:46:11,552]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068513 HTTP/1.1" 200 348
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:46:11,554]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+sql.py[LINE:42]# INFO     [2016-12-20 00:46:11,555]  Были получены все категории для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:46:11,557]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:46:11,559]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:46:11,771]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9%3Aother HTTP/1.1" 200 328
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:46:19,935]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+sql.py[LINE:42]# INFO     [2016-12-20 00:46:19,939]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:46:19,940]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:46:19,941]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [17])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:46:19,941]  ('UPDATE `category` SET `type` = %s WHERE (`category`.`id` = %s)', [3, 17])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:46:19,978]  ('INSERT INTO `operation` (`amount`, `date`, `description`, `id_cat`, `id_user`) VALUES (%s, %s, %s, %s, %s)', [500, '2016-12-20', '', 17, 224634311])
+sql.py[LINE:115]# INFO     [2016-12-20 00:46:20,012]  Была добавлена операция на сумму=500 для категории=None с описанием= с датой=2016-12-20 для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:46:20,179]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:46:28,807]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 348
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:46:28,818]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:46:28,820]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 00:46:28,821]  Были получены все категории для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:46:28,824]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:46:29,018]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9%3A+%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5 HTTP/1.1" 200 360
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:46:49,010]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068515&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:46:49,013]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:47:09,197]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068515&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:47:09,201]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:47:29,383]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068515&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:47:29,386]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:47:40,168]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068515&timeout=20 HTTP/1.1" 200 360
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:47:40,171]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:47:40,173]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:47:40,383]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9D%D0%B5+%D0%B7%D0%BD%D0%B0%D1%8E+%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A HTTP/1.1" 200 443
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:47:40,387]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:47:40,597]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%3A%0A%2B%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%3A%0A-%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8%3A%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8+%7B%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D+%7B%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B3%D0%BE%D0%B4+%2B+%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%7B%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%B3%D0%BE%D0%B4%7D+%0A%D0%B8%D0%BB%D0%B8%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D1%81+%7B%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D+%D0%BF%D0%BE+%7B%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D%0A%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82+%D0%B4%D0%B0%D1%82%D1%8B%3A+xx-xx-xxxx%0A HTTP/1.1" 200 2476
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:48:00,364]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068516&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:48:00,367]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:48:05,480]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068516&timeout=20 HTTP/1.1" 200 403
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:48:05,486]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:48:05,486]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:48:05,686]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+%D0%9D%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%21+ HTTP/1.1" 200 422
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:48:25,667]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068517&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:48:25,672]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:48:45,861]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068517&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:48:45,864]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:49:06,053]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068517&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:49:06,056]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:49:26,250]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068517&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:49:26,254]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:49:46,441]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068517&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:49:46,446]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:50:06,627]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068517&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:50:06,630]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:50:26,809]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068517&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:50:26,812]  Starting new HTTPS connection (1): api.telegram.org
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:50:34,431]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+sql.py[LINE:42]# INFO     [2016-12-20 00:50:34,435]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:50:34,435]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:50:34,436]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [17])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:50:34,436]  ('UPDATE `category` SET `type` = %s WHERE (`category`.`id` = %s)', [3, 17])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:50:34,460]  ('INSERT INTO `operation` (`amount`, `date`, `description`, `id_cat`, `id_user`) VALUES (%s, %s, %s, %s, %s)', [500, '2016-12-20', '', 17, 224634311])
+sql.py[LINE:115]# INFO     [2016-12-20 00:50:34,493]  Была добавлена операция на сумму=500 для категории=None с описанием= с датой=2016-12-20 для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:50:34,660]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:50:49,496]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 403
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:50:49,507]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['подарки', 224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:50:49,510]  Starting new HTTPS connection (1): api.telegram.org
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:50:49,512]  ('INSERT INTO `category` (`name`, `type`, `user_id`) VALUES (%s, %s, %s)', ['подарки', 0, 224634311])
+sql.py[LINE:32]# INFO     [2016-12-20 00:50:49,577]  Была добавлена категория=подарки для пользвателя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:50:49,579]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:50:49,824]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F+%D1%83%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D0%BE+%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B0. HTTP/1.1" 200 384
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:51:09,710]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068518 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:51:09,714]  Starting new HTTPS connection (1): api.telegram.org
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:51:15,764]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+sql.py[LINE:42]# INFO     [2016-12-20 00:51:15,768]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:51:15,768]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:51:15,769]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [17])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:51:15,769]  ('UPDATE `category` SET `type` = %s WHERE (`category`.`id` = %s)', [3, 17])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:51:15,795]  ('INSERT INTO `operation` (`amount`, `date`, `description`, `id_cat`, `id_user`) VALUES (%s, %s, %s, %s, %s)', [500, '2016-12-20', '', 17, 224634311])
+sql.py[LINE:115]# INFO     [2016-12-20 00:51:15,828]  Была добавлена операция на сумму=500 для категории=None с описанием= с датой=2016-12-20 для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:51:16,008]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:51:36,199]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:51:36,213]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:51:56,413]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:51:56,416]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:52:16,603]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:52:16,606]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:52:26,883]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 348
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:52:26,885]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:52:26,887]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 00:52:26,887]  Были получены все категории для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:52:26,889]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:52:27,186]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9%3A+%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BA%D0%B8%2C+%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5 HTTP/1.1" 200 404
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:52:47,168]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068519&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:52:47,172]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:53:07,361]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068519&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:53:07,364]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:53:27,549]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068519&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:53:27,555]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:53:47,731]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068519&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:53:47,735]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:54:07,915]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068519&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:54:07,919]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:54:28,105]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068519&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:54:28,109]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:54:48,297]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068519&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:54:48,300]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:55:08,483]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068519&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:55:08,486]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:55:14,141]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:55:34,321]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:55:34,333]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:55:35,056]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 354
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:55:35,060]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:55:35,061]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:55:35,268]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9D%D0%B5+%D0%B7%D0%BD%D0%B0%D1%8E+%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A HTTP/1.1" 200 443
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:55:35,273]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:55:35,485]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%3A%0A%2B%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%3A%0A-%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8%3A%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8+%7B%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D+%7B%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B3%D0%BE%D0%B4+%2B+%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%7B%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%B3%D0%BE%D0%B4%7D+%0A%D0%B8%D0%BB%D0%B8%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D1%81+%7B%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D+%D0%BF%D0%BE+%7B%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D%0A%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82+%D0%B4%D0%B0%D1%82%D1%8B%3A+xx-xx-xxxx%0A HTTP/1.1" 200 2500
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:55:45,039]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068520&timeout=20 HTTP/1.1" 200 397
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:55:45,042]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:55:45,044]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 00:55:45,048]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:55:45,048]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['подарки', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:55:45,049]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+sql.py[LINE:42]# INFO     [2016-12-20 00:55:45,049]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:55:45,049]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:55:45,050]  ('UPDATE `operation` SET `id_cat` = %s WHERE ((`operation`.`id_cat` = %s) AND (`operation`.`id_user` = %s))', [17, 18, 224634311])
+sql.py[LINE:81]# INFO     [2016-12-20 00:55:45,050]  Операции категории=подарки переместились в категорию other для пользвателя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:55:45,050]  ('DELETE FROM `category` WHERE ((`user_id` = %s) AND (`name` = %s))', [224634311, 'подарки'])
+sql.py[LINE:70]# INFO     [2016-12-20 00:55:45,151]  Была удалена категория=подарки для пользвателя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:55:45,153]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:55:45,353]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F+%D1%83%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D0%BE+%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B0. HTTP/1.1" 200 372
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:55:52,976]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068521&timeout=20 HTTP/1.1" 200 360
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:55:52,979]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:55:52,981]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 00:55:52,982]  Были получены все категории для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:55:52,983]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:55:53,182]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9%3A+%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5 HTTP/1.1" 200 360
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:56:13,174]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068522&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:56:13,177]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:56:17,929]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068522&timeout=20 HTTP/1.1" 200 391
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:56:17,931]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:56:17,933]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 00:56:17,934]  Были получены все категории для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:56:17,935]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:56:18,155]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F+%D0%BD%D0%B5+%D0%B1%D1%8B%D0%BB%D0%B0+%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B0%21+%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8+%D0%BD%D0%B5%D1%82%27+ HTTP/1.1" 200 512
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:56:33,994]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068523&timeout=20 HTTP/1.1" 200 360
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:56:33,997]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:56:33,999]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 00:56:33,999]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:56:34,000]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:56:34,000]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+sql.py[LINE:42]# INFO     [2016-12-20 00:56:34,001]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:56:34,001]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:56:34,002]  ('UPDATE `operation` SET `id_cat` = %s WHERE ((`operation`.`id_cat` = %s) AND (`operation`.`id_user` = %s))', [17, 17, 224634311])
+sql.py[LINE:81]# INFO     [2016-12-20 00:56:34,002]  Операции категории=other переместились в категорию other для пользвателя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 00:56:34,002]  ('DELETE FROM `category` WHERE ((`user_id` = %s) AND (`name` = %s))', [224634311, 'other'])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:56:34,005]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:56:34,201]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F+%D0%BD%D0%B5+%D0%B1%D1%8B%D0%BB%D0%B0+%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B0%21+%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+%281451%2C+%27Cannot+delete+or+update+a+parent+row%3A+a+foreign+key+constraint+fails+%28%60money%60.%60operation%60%2C+CONSTRAINT+%60operation_category_id_fk%60+FOREIGN+KEY+%28%60id_cat%60%29+REFERENCES+%60category%60+%28%60id%60%29%29%27%29+ HTTP/1.1" 200 597
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:56:54,188]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068524&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:56:54,191]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:57:14,371]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068524&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:57:14,375]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:57:34,554]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068524&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:57:34,558]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:57:54,738]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068524&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:57:54,741]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:58:14,928]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068524&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:58:14,931]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:58:35,368]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068524&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:58:35,372]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:58:55,569]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068524&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:58:55,572]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:59:15,765]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068524&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:59:15,769]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 00:59:35,956]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068524&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:59:35,959]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 00:59:47,201]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:00:04,651]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 360
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:00:04,662]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:00:04,663]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 01:00:04,669]  Были получены все категории для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:00:04,672]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:00:04,873]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9%3A+%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5&chat_id=224634311 HTTP/1.1" 200 360
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:00:11,075]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068525&timeout=20 HTTP/1.1" 200 391
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:00:11,078]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:00:11,080]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 01:00:11,081]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:00:11,081]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:00:11,082]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+sql.py[LINE:42]# INFO     [2016-12-20 01:00:11,082]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:00:11,083]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:00:11,084]  ('UPDATE `operation` SET `id_cat` = %s WHERE ((`operation`.`id_cat` = %s) AND (`operation`.`id_user` = %s))', [17, 17, 224634311])
+sql.py[LINE:81]# INFO     [2016-12-20 01:00:11,084]  Операции категории=other переместились в категорию other для пользвателя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:00:11,084]  ('DELETE FROM `category` WHERE ((`user_id` = %s) AND (`name` = %s))', [224634311, 'other'])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:00:11,087]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:00:11,297]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F+%D0%BD%D0%B5+%D0%B1%D1%8B%D0%BB%D0%B0+%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B0%21+%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+%281451%2C+%27Cannot+delete+or+update+a+parent+row%3A+a+foreign+key+constraint+fails+%28%60money%60.%60operation%60%2C+CONSTRAINT+%60operation_category_id_fk%60+FOREIGN+KEY+%28%60id_cat%60%29+REFERENCES+%60category%60+%28%60id%60%29%29%27%29+&chat_id=224634311 HTTP/1.1" 200 597
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:00:31,258]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:00:31,262]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:00:51,448]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:00:51,451]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:01:11,656]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:01:11,659]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:01:31,837]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:01:31,840]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:01:52,028]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:01:52,032]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:02:12,221]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:02:12,224]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:02:32,402]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:02:32,405]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:02:52,635]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:02:52,638]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:03:12,836]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:03:12,839]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:03:33,049]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:03:33,052]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:03:53,236]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:03:53,239]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:04:13,426]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:04:13,429]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:04:33,628]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:04:33,632]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:04:53,819]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:04:53,822]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:05:14,009]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:05:14,012]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:05:34,210]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:05:34,213]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:05:54,394]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:05:54,397]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:06:14,596]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:06:14,600]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:06:34,778]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:06:34,782]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:06:54,970]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:06:54,974]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:07:15,161]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:07:15,164]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:07:35,357]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:07:35,361]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:07:55,564]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:07:55,568]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:08:15,776]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:08:15,781]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:08:35,979]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:08:35,983]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:08:56,202]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:08:56,205]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:09:16,401]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:09:16,407]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:09:36,590]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:09:36,594]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:09:56,773]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:09:56,776]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:10:16,967]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:10:16,971]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:10:37,151]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:10:37,155]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:10:57,342]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:10:57,346]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:11:17,552]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:11:17,556]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:11:37,735]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:11:37,739]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:11:57,923]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:11:57,927]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:12:18,120]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:12:18,123]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:12:38,325]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:12:38,328]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:12:58,565]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:12:58,568]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:13:18,747]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:13:18,750]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:13:38,937]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:13:38,941]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:13:59,141]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:13:59,144]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:14:19,334]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:14:19,338]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:14:39,528]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:14:39,532]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:14:59,719]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:14:59,723]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:15:19,900]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:15:19,904]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:15:40,091]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:15:40,095]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:16:00,285]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:16:00,288]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:16:20,468]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:16:20,472]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:16:40,667]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:16:40,670]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:17:00,853]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:17:00,858]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:17:21,046]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:17:21,050]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:17:41,240]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:17:41,243]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:18:01,426]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:18:01,429]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:18:21,630]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:18:21,634]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:18:41,867]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:18:41,870]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:19:02,058]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:19:02,062]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:19:22,242]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:19:22,245]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:19:42,436]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:19:42,440]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:20:02,628]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:20:02,631]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:20:22,827]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:20:22,831]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:20:43,017]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:20:43,020]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:21:03,229]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:21:03,233]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:21:23,408]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:21:23,412]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:21:43,635]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:21:43,639]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:22:03,841]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:22:03,844]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:22:24,031]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:22:24,034]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:22:44,225]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:22:44,229]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:23:04,466]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:23:04,469]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:23:24,657]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:23:24,660]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:23:44,843]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:23:44,846]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:24:05,040]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:24:05,045]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:24:25,230]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:24:25,233]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:24:45,423]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:24:45,427]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:25:05,623]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:25:05,627]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:25:25,817]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:25:25,820]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:25:46,008]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068526&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:25:46,012]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:25:52,056]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:26:03,280]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 360
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:26:03,292]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:26:12,197]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068527&timeout=20 HTTP/1.1" 409 96
+__init__.py[LINE:220]# ERROR    [2016-12-20 01:26:12,199]  A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other long poll or webhook"}']
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:26:12,451]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:26:13,121]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068527&timeout=20 HTTP/1.1" 409 96
+__init__.py[LINE:220]# ERROR    [2016-12-20 01:26:13,124]  A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other long poll or webhook"}']
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:26:13,626]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:26:14,543]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068527&timeout=20 HTTP/1.1" 409 96
+__init__.py[LINE:220]# ERROR    [2016-12-20 01:26:14,545]  A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other long poll or webhook"}']
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:26:15,549]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:26:16,946]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068527&timeout=20 HTTP/1.1" 409 96
+__init__.py[LINE:220]# ERROR    [2016-12-20 01:26:16,947]  A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other long poll or webhook"}']
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:26:18,950]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:26:27,653]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068527&timeout=20 HTTP/1.1" 200 320
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:26:27,657]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:26:27,659]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:26:27,881]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A&chat_id=224634311 HTTP/1.1" 200 368
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:26:27,884]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:26:28,149]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%3A%0A%2B%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%3A%0A-%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8%3A%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8+%7B%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D+%7B%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B3%D0%BE%D0%B4+%2B+%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%7B%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%B3%D0%BE%D0%B4%7D+%0A%D0%B8%D0%BB%D0%B8%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D1%81+%7B%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D+%D0%BF%D0%BE+%7B%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D%0A%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82+%D0%B4%D0%B0%D1%82%D1%8B%3A+xx-xx-xxxx%0A&chat_id=224634311 HTTP/1.1" 200 2500
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:26:33,823]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068528&timeout=20 HTTP/1.1" 200 360
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:26:33,827]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:26:54,008]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:26:54,011]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:27:14,201]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:27:14,206]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:27:34,397]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:27:34,401]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:27:54,579]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:27:54,582]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:28:14,766]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:28:14,770]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:28:34,960]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:28:34,964]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:28:55,248]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:28:55,252]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:29:15,440]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:29:15,443]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:29:35,620]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:29:35,623]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:29:55,823]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:29:55,826]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:30:16,013]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:30:16,016]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:30:36,200]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:30:36,204]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:30:56,397]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:30:56,400]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:31:16,589]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068529&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:31:16,593]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:31:33,923]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:31:46,862]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 348
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:31:46,873]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:31:51,760]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068530 HTTP/1.1" 200 360
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:31:51,763]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:32:11,941]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068531 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:32:11,944]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:32:32,139]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068531 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:32:32,142]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:32:52,333]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068531 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:32:52,336]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:33:12,574]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068531 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:33:12,577]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:33:32,756]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068531 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:33:32,759]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:33:47,148]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:33:54,756]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 360
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:33:54,766]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:33:54,768]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 01:33:54,773]  Были получены все категории для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:33:54,774]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:33:54,981]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9%3A+%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5 HTTP/1.1" 200 360
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:34:03,721]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068532 HTTP/1.1" 200 391
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:34:03,726]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:34:03,726]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:34:03,920]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%94%D0%BB%D1%8F+%D1%82%D0%BE%D0%B3%D0%BE+%D1%87%D1%82%D0%BE%D0%B1%D1%8B+%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5+%D0%B8+%D0%B2%D1%81%D0%B5+%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8+%D1%81%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5+%D1%81+%D0%BD%D0%B5%D0%B9+%D0%B2%D0%B2%D0%B5%D0%B4%D0%B8%D1%82%D0%B5+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%83%3A+%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5 HTTP/1.1" 200 763
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:34:11,525]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068533 HTTP/1.1" 200 336
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:34:11,529]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:34:11,531]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:34:11,723]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+list+index+out+of+range+ HTTP/1.1" 200 292
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:34:31,723]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068534 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:34:31,726]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:34:51,907]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068534 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:34:51,911]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:34:56,603]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068534 HTTP/1.1" 200 336
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:34:56,607]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:34:56,608]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:34:56,815]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+list+index+out+of+range+ HTTP/1.1" 200 292
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:35:02,641]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:35:10,481]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 360
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:35:10,491]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:35:10,493]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 01:35:10,498]  Были получены все категории для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:35:10,499]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:35:10,724]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9%3A+%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5 HTTP/1.1" 200 360
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:35:19,787]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068536&timeout=20 HTTP/1.1" 200 391
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:35:19,791]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:35:19,792]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:35:20,000]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%94%D0%BB%D1%8F+%D1%82%D0%BE%D0%B3%D0%BE+%D1%87%D1%82%D0%BE%D0%B1%D1%8B+%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5+%D0%B8+%D0%B2%D1%81%D0%B5+%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8+%D1%81%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5+%D1%81+%D0%BD%D0%B5%D0%B9+%D0%B2%D0%B2%D0%B5%D0%B4%D0%B8%D1%82%D0%B5+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%83%3A+%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5 HTTP/1.1" 200 763
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:35:24,393]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068537&timeout=20 HTTP/1.1" 200 336
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:35:24,397]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:35:24,399]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:35:24,600]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?chat_id=224634311&text=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F+%D0%BD%D0%B5+%D0%B1%D1%8B%D0%BB%D0%B0+%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B0%21+%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+%27MmHandler%27+object+has+no+attribute+%27delete_category_other%27+ HTTP/1.1" 200 465
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:35:44,584]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068538&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:35:44,587]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:36:04,774]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068538&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:36:04,777]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:36:24,963]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?offset=798068538&timeout=20 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:36:24,969]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:36:34,054]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:36:54,235]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:36:54,247]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:36:58,819]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 336
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:36:58,823]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:36:58,823]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 01:36:58,830]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:36:58,830]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:36:58,831]  ('DELETE FROM `operation` WHERE ((`id_user` = %s) AND (`id_cat` = %s))', [224634311, 17])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:36:58,872]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+sql.py[LINE:42]# INFO     [2016-12-20 01:36:58,873]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:36:58,873]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:36:58,874]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+sql.py[LINE:42]# INFO     [2016-12-20 01:36:58,874]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:36:58,874]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['other', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:36:58,875]  ('UPDATE `operation` SET `id_cat` = %s WHERE ((`operation`.`id_cat` = %s) AND (`operation`.`id_user` = %s))', [17, 17, 224634311])
+sql.py[LINE:81]# INFO     [2016-12-20 01:36:58,940]  Операции категории=other переместились в категорию other для пользвателя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:36:58,940]  ('DELETE FROM `category` WHERE ((`user_id` = %s) AND (`name` = %s))', [224634311, 'other'])
+sql.py[LINE:70]# INFO     [2016-12-20 01:36:58,973]  Была удалена категория=other для пользвателя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:36:58,974]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:36:59,186]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F+%D1%83%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D0%BE+%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B0.&chat_id=224634311 HTTP/1.1" 200 372
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:37:19,020]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068539 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:37:19,024]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:37:39,220]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068539 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:37:39,223]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:37:59,407]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068539 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:37:59,411]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:38:02,095]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068539 HTTP/1.1" 200 360
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:38:02,097]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:38:02,098]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:38:02,100]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:38:02,315]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%92%D1%8B%D0%B2%D0%BE%D0%B4+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9+%D0%BD%D0%B5%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%B5%D0%BD%21+%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+%27%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9+%D0%BF%D0%BE%D0%BA%D0%B0+%D0%BD%D0%B5%D1%82%27+&chat_id=224634311 HTTP/1.1" 200 517
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:38:22,303]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068540 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:38:22,306]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:38:42,496]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068540 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:38:42,499]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:39:02,737]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068540 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:39:02,740]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:39:22,932]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068540 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:39:22,936]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:39:42,652]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068540 HTTP/1.1" 200 403
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:39:42,654]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['шоппинг', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:39:42,656]  ('INSERT INTO `category` (`name`, `type`, `user_id`) VALUES (%s, %s, %s)', ['шоппинг', 0, 224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:39:42,657]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:32]# INFO     [2016-12-20 01:39:42,686]  Была добавлена категория=шоппинг для пользвателя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:39:42,687]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:39:42,912]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F+%D1%83%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D0%BE+%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B0.&chat_id=224634311 HTTP/1.1" 200 384
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:39:54,521]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068541 HTTP/1.1" 200 391
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:39:54,523]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:39:54,525]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 01:39:54,526]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:39:54,526]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['шоппинг', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:39:54,527]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [19])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:39:54,527]  ('UPDATE `category` SET `type` = %s WHERE (`category`.`id` = %s)', [1, 19])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:39:54,558]  ('INSERT INTO `operation` (`amount`, `date`, `description`, `id_cat`, `id_user`) VALUES (%s, %s, %s, %s, %s)', [500, '2016-12-20', 'я купила сумочку', 19, 224634311])
+sql.py[LINE:115]# INFO     [2016-12-20 01:39:54,591]  Была добавлена операция на сумму=500 для категории=шоппинг с описанием=я купила сумочку с датой=2016-12-20 для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:39:54,593]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:39:54,788]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F+%D1%83%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D0%BE+%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B0.&chat_id=224634311 HTTP/1.1" 200 378
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:40:14,712]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068542 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:40:14,716]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:40:34,911]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068542 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:40:34,915]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:40:35,097]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068542 HTTP/1.1" 200 409
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:40:35,100]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['зарплата', 224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:40:35,102]  Starting new HTTPS connection (1): api.telegram.org
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:40:35,102]  ('INSERT INTO `category` (`name`, `type`, `user_id`) VALUES (%s, %s, %s)', ['зарплата', 0, 224634311])
+sql.py[LINE:32]# INFO     [2016-12-20 01:40:35,133]  Была добавлена категория=зарплата для пользвателя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:40:35,134]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:40:35,345]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F+%D1%83%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D0%BE+%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B0.&chat_id=224634311 HTTP/1.1" 200 384
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:40:55,296]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068543 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:40:55,299]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:41:01,914]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068543 HTTP/1.1" 200 423
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:41:01,916]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:41:01,918]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 01:41:01,918]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:41:01,918]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['зарплата', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:41:01,919]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [20])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:41:01,920]  ('UPDATE `category` SET `type` = %s WHERE (`category`.`id` = %s)', [1, 20])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:41:01,952]  ('INSERT INTO `operation` (`amount`, `date`, `description`, `id_cat`, `id_user`) VALUES (%s, %s, %s, %s, %s)', [35000, '2016-12-20', 'наконец-то заплатили', 20, 224634311])
+sql.py[LINE:115]# INFO     [2016-12-20 01:41:01,986]  Была добавлена операция на сумму=35000 для категории=зарплата с описанием=наконец-то заплатили с датой=2016-12-20 для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:41:01,987]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:41:02,191]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F+%D1%83%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D0%BE+%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B0.&chat_id=224634311 HTTP/1.1" 200 378
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:41:22,103]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068544 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:41:22,106]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:41:42,299]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068544 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:41:42,303]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:41:42,490]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068544 HTTP/1.1" 200 391
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:41:42,493]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['шлюхи', 224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:41:42,495]  Starting new HTTPS connection (1): api.telegram.org
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:41:42,495]  ('INSERT INTO `category` (`name`, `type`, `user_id`) VALUES (%s, %s, %s)', ['шлюхи', 0, 224634311])
+sql.py[LINE:32]# INFO     [2016-12-20 01:41:42,531]  Была добавлена категория=шлюхи для пользвателя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:41:42,533]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:41:42,737]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F+%D1%83%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D0%BE+%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B0.&chat_id=224634311 HTTP/1.1" 200 384
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:41:55,687]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068545 HTTP/1.1" 200 293
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:41:55,690]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:41:55,693]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 01:41:55,694]  Были получены все категории для пользователя с id=224634311
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:41:55,694]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['шлюхи', 224634311])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:41:55,695]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1 OFFSET 0', [21])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:41:55,696]  ('UPDATE `category` SET `type` = %s WHERE (`category`.`id` = %s)', [2, 21])
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:41:55,724]  ('INSERT INTO `operation` (`amount`, `date`, `description`, `id_cat`, `id_user`) VALUES (%s, %s, %s, %s, %s)', [-8000, '2016-12-20', '', 21, 224634311])
+sql.py[LINE:115]# INFO     [2016-12-20 01:41:55,746]  Была добавлена операция на сумму=-8000 для категории=шлюхи с описанием= с датой=2016-12-20 для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:41:55,748]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:41:55,956]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F+%D1%83%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D0%BE+%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B0.&chat_id=224634311 HTTP/1.1" 200 378
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:42:15,874]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068546 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:42:15,877]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:42:17,884]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068546 HTTP/1.1" 200 292
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:42:17,887]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE (`t1`.`user_id` = %s)', [224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:42:17,889]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:42]# INFO     [2016-12-20 01:42:17,890]  Были получены все категории для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:42:17,892]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:42:18,114]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%A2%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8+%D0%BD%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%21+%D0%92%D0%BE%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B9%D1%82%D0%B5%D1%81%D1%8C+%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B5%D0%B9+%22%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%22.&chat_id=224634311 HTTP/1.1" 200 634
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:42:37,505]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068547 HTTP/1.1" 200 403
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:42:37,508]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 INNER JOIN `user` AS t2 ON (`t1`.`user_id` = `t2`.`id`) WHERE ((`t1`.`name` = %s) AND (`t1`.`user_id` = %s)) LIMIT 1 OFFSET 0', ['шоппинг', 224634311])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:42:37,510]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:42:37,511]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:42:37,710]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F+%D0%BD%D0%B5+%D0%B1%D1%8B%D0%BB%D0%B0+%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B0%21+%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+%27%D1%82%D0%B0%D0%BA%D0%B0%D1%8F+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F+%D1%83%D0%B6%D0%B5+%D0%B5%D1%81%D1%82%D1%8C%27+&chat_id=224634311 HTTP/1.1" 200 549
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:42:57,707]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068548 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:42:57,711]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:43:01,004]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068548 HTTP/1.1" 200 409
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:43:01,006]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE ((`t1`.`user_id` = %s) AND ((`t1`.`type` = %s) OR (`t1`.`type` = %s)))', [224634311, 3, 2])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:43:01,008]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:52]# INFO     [2016-12-20 01:43:01,008]  Были получены категории расходов для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:43:01,010]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:43:01,218]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9%3A+%D1%88%D0%BB%D1%8E%D1%85%D0%B8&chat_id=224634311 HTTP/1.1" 200 354
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:43:08,506]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068549 HTTP/1.1" 200 403
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:43:08,508]  ('SELECT `t1`.`id`, `t1`.`name`, `t1`.`type`, `t1`.`user_id` FROM `category` AS t1 WHERE ((`t1`.`user_id` = %s) AND ((`t1`.`type` = %s) OR (`t1`.`type` = %s)))', [224634311, 3, 1])
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:43:08,510]  Starting new HTTPS connection (1): api.telegram.org
+sql.py[LINE:62]# INFO     [2016-12-20 01:43:08,510]  Были получены категории доходов для пользователя с id=224634311
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:43:08,512]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:43:08,722]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B9%3A+%D1%88%D0%BE%D0%BF%D0%BF%D0%B8%D0%BD%D0%B3%2C+%D0%B7%D0%B0%D1%80%D0%BF%D0%BB%D0%B0%D1%82%D0%B0&chat_id=224634311 HTTP/1.1" 200 416
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:43:28,694]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068550 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:43:28,698]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:43:48,893]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068550 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:43:48,896]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:44:02,017]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068550 HTTP/1.1" 200 287
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:44:02,021]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:44:02,022]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:44:02,222]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%92%D1%8B%D0%B1%D0%B5%D1%80%D0%B8+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%5Cu0434%5Cu0435%5Cu043d%5Cu044c%22%2C+%22callback_data%22%3A+%22%5Cu0434%5Cu0435%5Cu043d%5Cu044c%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%5Cu043d%5Cu0435%5Cu0434%5Cu0435%5Cu043b%5Cu044f%22%2C+%22callback_data%22%3A+%22%5Cu043d%5Cu0435%5Cu0434%5Cu0435%5Cu043b%5Cu044e%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%5Cu043c%5Cu0435%5Cu0441%5Cu044f%5Cu0446%22%2C+%22callback_data%22%3A+%22%5Cu043c%5Cu0435%5Cu0441%5Cu044f%5Cu0446%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%5Cu0433%5Cu043e%5Cu0434%22%2C+%22callback_data%22%3A+%22%5Cu0433%5Cu043e%5Cu0434%22%7D%5D%5D%7D&chat_id=224634311 HTTP/1.1" 200 304
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:44:10,918]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068551 HTTP/1.1" 200 527
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:44:10,922]  Starting new HTTPS connection (1): api.telegram.org
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 01:44:10,924]  ('SELECT `t1`.`id`, `t1`.`amount`, `t1`.`date`, `t1`.`description`, `t1`.`id_cat`, `t1`.`id_user` FROM `operation` AS t1 WHERE ((`t1`.`id_user` = %s) AND ((`t1`.`date` >= %s) AND (`t1`.`date` <= %s)))', [224634311, datetime.date(2016, 12, 19), datetime.date(2016, 12, 20)])
+sql.py[LINE:143]# INFO     [2016-12-20 01:44:10,924]  Был создан отчет для пользователя с id=224634311 от даты=2016-12-19 по дату=2016-12-20
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:44:11,452]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:44:11,818]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/editMessageText?text=%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9+%D0%B7%D0%B0+%D0%B4%D0%B5%D0%BD%D1%8C%0A500%2C+35000%2C+-8000&message_id=715&chat_id=224634311 HTTP/1.1" 200 379
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:44:11,822]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:44:12,032]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendChatAction?chat_id=224634311&action=typing HTTP/1.1" 200 25
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:44:12,037]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:44:12,423]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendPhoto?chat_id=224634311 HTTP/1.1" 200 570
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:44:31,395]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:44:31,399]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:44:51,580]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:44:51,583]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:45:11,767]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:45:11,771]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:45:31,958]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:45:31,962]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:45:52,156]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:45:52,160]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:46:12,348]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:46:12,352]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:46:32,534]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:46:32,537]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:46:52,721]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:46:52,725]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:47:12,914]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:47:12,917]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:47:33,118]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:47:33,122]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:47:53,305]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:47:53,308]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:48:13,504]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:48:13,508]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:48:33,694]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:48:33,697]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:48:53,889]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:48:53,892]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:49:14,177]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:49:14,181]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:49:34,363]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:49:34,367]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:49:54,551]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:49:54,554]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:50:14,737]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:50:14,742]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:50:34,930]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:50:34,934]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:50:55,155]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:50:55,159]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:51:15,347]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:51:15,351]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:51:35,539]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:51:35,542]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:51:55,737]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:51:55,741]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:52:15,953]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:52:15,957]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:52:36,137]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:52:36,140]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:52:56,329]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:52:56,332]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:53:16,528]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:53:16,533]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:53:36,713]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:53:36,718]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:53:56,914]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:53:56,917]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:54:17,104]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:54:17,107]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:54:37,296]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:54:37,300]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:54:57,479]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:54:57,483]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:55:17,672]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:55:17,675]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:55:37,864]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:55:37,867]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:55:58,051]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:55:58,055]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:56:18,241]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:56:18,245]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:56:38,428]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:56:38,432]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:56:58,616]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:56:58,620]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:57:18,808]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:57:18,811]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:57:38,991]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:57:38,995]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:57:59,184]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:57:59,188]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:58:19,379]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:58:19,383]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:58:39,574]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:58:39,578]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:58:59,757]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:58:59,761]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:59:20,049]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:59:20,053]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 01:59:40,233]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 01:59:40,236]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:00:00,438]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:00:00,442]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:00:20,627]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:00:20,631]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:00:40,822]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:00:40,825]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:01:01,005]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:01:01,008]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:01:21,195]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:01:21,200]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:01:41,387]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:01:41,390]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:02:01,572]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:02:01,575]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:02:21,753]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:02:21,757]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:02:41,947]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:02:41,950]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:03:02,138]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:03:02,142]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:03:22,367]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:03:22,371]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:03:42,580]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:03:42,583]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:04:02,775]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:04:02,778]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:04:22,966]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:04:22,970]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:04:43,158]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:04:43,162]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:05:03,347]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:05:03,351]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:05:23,545]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:05:23,550]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:05:43,737]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:05:43,740]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:06:03,928]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:06:03,931]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:06:24,127]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:06:24,130]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:06:41,272]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068552 HTTP/1.1" 200 320
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:06:41,276]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:06:41,278]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:06:41,481]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A&chat_id=224634311 HTTP/1.1" 200 368
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:06:41,485]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:06:41,687]  https://api.telegram.org:443 "POST /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/sendMessage?text=%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%3A%0A%2B%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%3A%0A-%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8%3A%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8+%7B%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D+%7B%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B3%D0%BE%D0%B4+%2B+%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%7B%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%B3%D0%BE%D0%B4%7D+%0A%D0%B8%D0%BB%D0%B8%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D1%81+%7B%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D+%D0%BF%D0%BE+%7B%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D%0A%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82+%D0%B4%D0%B0%D1%82%D1%8B%3A+xx-xx-xxxx%0A&chat_id=224634311 HTTP/1.1" 200 2500
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:07:01,462]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068553 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:07:01,467]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:07:21,660]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068553 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:07:21,664]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:07:41,853]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068553 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:07:41,857]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:08:02,051]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068553 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:08:02,055]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:08:22,240]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068553 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:08:22,243]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:08:42,426]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068553 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:08:42,430]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:09:02,621]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068553 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:09:02,625]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:09:22,907]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068553 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:09:22,911]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:09:43,092]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068553 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:09:43,095]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:10:03,289]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068553 HTTP/1.1" 200 23
+connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:10:03,293]  Starting new HTTPS connection (1): api.telegram.org
