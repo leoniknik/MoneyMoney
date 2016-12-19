@@ -156,6 +156,8 @@ if __name__ == '__main__':
     elif args.prod:
         with open('/etc/moneymoney.d/config', 'r') as f:
             token = re.sub("\'\n", "", f.readline().split(' = ')[1])
+    else:
+        exit()
 
     print(token)
     bot = telebot.TeleBot(token)
