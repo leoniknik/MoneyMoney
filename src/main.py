@@ -5,9 +5,9 @@ import re
 
 bot = telebot.TeleBot(config.token)
 handler = MmHandler(0)  # по умолчанию user_id = 0
-f = open('help.txt', 'r')  
-help_message = f.read()
-#help_message = "добавить доход:\n+{сумма} {категория} {комментарий}\nдобавить расход:\n-{сумма} {категория} {комментарий}\nпоказать категории:\nпокажи категории {расходов} {доходов}\nдобавить категорию:\nдобавь категорию {название}\nудалить категорию:\nудали категорию {название}\nпосмотреть отчет за месяц:\nотчет за {месяц}\nпосмотреть отчет за определенный период:\nотчет с {начальная дата} по {конечная дата}\nформат даты: xx-xx-xxxx"
+help_file = open('help.txt', 'r')  
+help_message = help_file.read()
+help_file.close()
 report_periods = {'день', 'неделю', 'месяц', 'год'}
 category_mods = {'расходов', 'доходов'}
 format_error = Exception('Неправильный формат команды!')
@@ -85,6 +85,10 @@ def parse(message):
                 if str_array[1] == 'за' and (str_array[2] in report_periods):
                     handler_message = handler.view_report(str_array[2])
                     bot.send_message(message.chat.id, handler_message)
+                    bot.send_chat_action(message.chat.id,'typing')
+                    image_file = open('tmp/temp.png', 'rb') 
+                    bot.send_photo(message.chat.id, image_file)
+                    image_file.close()
                     
                 elif str_array[1] == 'с' and re.match('\d{1,2}-\d{1,2}-\d{4}', str_array[2]):
                     date_from_split_reverse = str_array[2].split('-')[::-1]
@@ -96,6 +100,10 @@ def parse(message):
                     else:
                         handler_message = handler.view_custom_report(date_from)
                     bot.send_message(message.chat.id, handler_message)
+                    bot.send_chat_action(message.chat.id,'typing')
+                    image_file = open('tmp/temp.png', 'rb') 
+                    bot.send_photo(message.chat.id, image_file)
+                    image_file.close()
                 else:
                     raise format_error
                     
@@ -128,6 +136,10 @@ def callback_inline(call):
         if call.data in report_periods:
             handler_message = handler.view_report(call.data)
             bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text= handler_message)
+            bot.send_chat_action(message.chat.id,'typing')
+            image_file = open('tmp/temp.png', 'rb') 
+            bot.send_photo(message.chat.id, image_file)
+            image_file.close()
 
 # бесконечная петля опроса
 if __name__ == '__main__':
