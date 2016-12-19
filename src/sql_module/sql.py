@@ -1,18 +1,8 @@
 import datetime
-<<<<<<< HEAD
-
-import sys
-
-sys.path.insert(0, '../sql_module')
-
-from models import *
-from sql_exception import *
-=======
 from sql_module.models import *
 from sql_module.sql_exception import *
 import logging
 from raven import Client
->>>>>>> 09eaa303a7e5f4493a85f207b2036970b5088b57
 
 client = Client('https://4724d5de1d92423f95ccfc2010f0b138:f4cc360abbd24bda9db016fa99b14145@sentry.io/120805')
 logging.basicConfig(format = u'%(filename)s[LINE:%(lineno)d]# %(levelname)-8s [%(asctime)s]  %(message)s', level = logging.DEBUG, filename=u'database.log')

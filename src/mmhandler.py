@@ -45,11 +45,7 @@ class MmHandler:
         try:
             self.sql.add_user(self.user_id)
         except Exception as e:
-<<<<<<< HEAD
-            return (0, 'Ошибка при инициализации: {} '.format(e))
-=======
             return 'Ошибка при инициализации: {} '.format(e)
->>>>>>> 09eaa303a7e5f4493a85f207b2036970b5088b57
         else:
             return  'Привет! Чтобы узнать о моих возможностях,'\
                        'воспользуйся командой /help'
@@ -131,11 +127,11 @@ class MmHandler:
             # for windows!
             #font = {'family': 'Verdana'}
             #rc('font', **font)
-            
+
             # info from database!!
             labels = 'шоппинг', 'кино', 'учеба', 'подарки'
             values = [215, 130, 245, 210]
-            
+
             # color scheme
             color_map = cm.get_cmap('Pastel1')
             num_of_colors = len(values)
@@ -149,7 +145,7 @@ class MmHandler:
             if not os.path.exists('tmp'):
                 os.makedirs('tmp')
             fig.savefig('tmp/temp.png')
-            
+
             message = 'История операций за'
             if period is not None:
                 message += ' {}'.format(period)
