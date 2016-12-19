@@ -66,7 +66,7 @@ def parse(message):
                 handler_message = handler.show_categories()
                 bot.send_message(message.chat.id, handler_message)
             
-        elif length == 3 and and str_array[1] == 'категорию' and re.match('[а-яa-zA-ZА-Я]+', str_array[2]):
+        elif length == 3 and str_array[1] == 'категорию' and re.match('[а-яa-zA-ZА-Я]+', str_array[2]):
             if str_array[0] == 'удали':
                 handler_message = handler.del_category(str_array[2])
                 bot.send_message(message.chat.id, handler_message)
