@@ -27,54 +27,57 @@ def parse(message):
     handler.user_id = message.chat.id
     try:
         str_array = message.text.lower().split()
-        length = len(str)
+        length = len(str_array)
         if length == 0:
             bot.send_message(message.chat.id, 'Привет! Список моих команд:')
             bot.send_message(message.chat.id, help_message)
+            
         elif str_array[0] == '+':
             if length == 3:
-                if re.match('\d+', str[1]) and re.match('[а-яa-z]+', str[2]):
-                    handler_message = handler.add_operation(int(str[0] + str[1]), str[2])
+                if re.match('\d+', str_array[1]) and re.match('[а-яa-z]+', str_array[2]):
+                    handler_message = handler.add_operation(int(str[0] + str_array[1]), str_array[2])
                     bot.send_message(message.chat.id, handler_message)
-                    # вызов доход amount category
+                    # call income amount category
+                    
             elif length >= 4:
-                if length >= 4 and re.match('\d+', str[1]) and re.match('[а-яa-z]+', str[2]):
+                if length >= 4 and re.match('\d+', str_array[1]) and re.match('[а-яa-z]+', str_array[2]):
                     buf = ' '.join(str[3:length])
-                    handler_message = handler.add_operation(int(str[0] + str[1]), str[2], buf)
+                    handler_message = handler.add_operation(int(str_array[0] + str_array[1]), str_array[2], buf)
                     bot.send_message(message.chat.id, handler_message)
                     # вызов доход amount category description
                     
-        elif str[0] == '-':
-            if length == 3 and re.match('\d+', str[1]) and re.match('[а-яa-z]+', str[2]):
-                handler_message = handler.add_operation(int(str[0] + str[1]), str[2])
+        elif str_array[0] == '-':
+            if length == 3 and re.match('\d+', str_array[1]) and re.match('[а-яa-z]+', str_array[2]):
+                handler_message = handler.add_operation(int(str_array[0] + str_array[1]), str_array[2])
                 bot.send_message(message.chat.id, handler_message)
                 # расход amount category
-            elif length > 3 and re.match('\d+', str[1]) and re.match('[а-яa-z]+', str[2]):
-                buf = ' '.join(str[3:length])
-                handler_message = handler.add_operation(int(str[0] + str[1]), str[2], buf)
+                
+            elif length > 3 and re.match('\d+', str_array[1]) and re.match('[а-яa-z]+', str_array[2]):
+                buf = ' '.join(str_array[3:length])
+                handler_message = handler.add_operation(int(str_array[0] + str_array[1]), str_array[2], buf)
                 bot.send_message(message.chat.id, handler_message)
                 # расход amount category description
                 
-        elif str[0] == 'покажи' and str[1] == 'категории':
+        elif str_array[0] == 'покажи' and str_array[1] == 'категории':
             handler_message = handler.show_categories()
             bot.send_message(message.chat.id, handler_message)
             
-        elif len(str) == 3 and str[0] == 'добавь' and str[1] == 'категорию': #and re.match('[а-яa-z]+', str[2]):
-            handler_message = handler.add_category(str[2])
+        elif len(str_array) == 3 and str_array[0] == 'добавь' and str_array[1] == 'категорию': #and re.match('[а-яa-z]+', str[2]):
+            handler_message = handler.add_category(str_array[2])
             bot.send_message(message.chat.id, handler_message)
             
-        elif str[0] == 'удали' and str[1] == 'категорию': #and re.match('[а-яa-z]+', str[2]):
-            handler_message = handler.del_category(str[2])
+        elif str_array[0] == 'удали' and str_array[1] == 'категорию': #and re.match('[а-яa-z]+', str[2]):
+            handler_message = handler.del_category(str_array[2])
             bot.send_message(message.chat.id, handler_message)
             
-        elif len(str) >= 2 and str[0] == 'отчет':
-            if str[1] == 'за' and (str[2] in report_periods):
-                handler_message = handler.view_report(str[2])
+        elif len(str_array) >= 2 and str_array[0] == 'отчет':
+            if str_array[1] == 'за' and (str_array[2] in report_periods):
+                handler_message = handler.view_report(str_array[2])
                 bot.send_message(message.chat.id, handler_message)
                 # отчет за период
-            elif str[1] == 'с' and re.match('\d{1,2}-\d{1,2}-\d{4}', str[2]) and str[3] == 'по' and \
-                    re.match('\d{1,2}-\d{1,2}-\d{4}', str[4]):
-                handler_message = handler.view_custom_report(str[2], str[4])
+            elif str_array[1] == 'с' and re.match('\d{1,2}-\d{1,2}-\d{4}', str_array[2]) and str_array[3] == 'по' and \
+                    re.match('\d{1,2}-\d{1,2}-\d{4}', str_array[4]):
+                handler_message = handler.view_custom_report(str_array[2], str_array[4])
                 bot.send_message(message.chat.id, handler_message)
 
         else:
