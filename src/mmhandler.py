@@ -1,6 +1,10 @@
 from sql_module.sql import SQL
 import datetime
 from dateutil import relativedelta
+import matplotlib.pyplot as plt
+from matplotlib import rc
+import matplotlib.cm as cm
+import os
 
 """
 MoneyMoney handler for all calculating functions.
@@ -18,6 +22,14 @@ MoneyMoney handler for all calculating functions.
 #
 #     def __exit__(self, *args):
 #         self.sql.close()
+
+# function for graph design
+def make_autopct(values):
+    def my_autopct(pct):
+        total = sum(values)
+        val = int(round(pct*total/100.0))
+        return '{v:d}'.format(v=val)
+    return my_autopct
 
 
 class MmHandler:
@@ -109,6 +121,29 @@ class MmHandler:
         except Exception as e:
             return 'Получить историю невозможно! Ошибка: {} '.format(e)
         else:
+            # graph design
+            plt.rcParams['font.size'] = 24.0
+            font = {'family': 'Verdana'}
+            rc('font', **font)
+            
+            # info from database!!
+            labels = 'шоппинг', 'кино', 'учеба', 'подарки'
+            values = [215, 130, 245, 210]
+            
+            # color scheme
+            color_map = cm.get_cmap('Pastel2')
+            num_of_colors = len(values)
+            colors = color_map([x / float(num_of_colors) for x in range(num_of_colors)])
+
+            fig = plt.figure()
+            plt.pie(values, labels=labels, colors=colors, autopct=make_autopct(values), startangle=140)
+            plt.axis('equal')
+            plt.close()
+
+            if not os.path.exists('tmp'):
+                os.makedirs('tmp')
+            fig.savefig('tmp/temp.png')
+            
             message = 'История операций за'
             if period is not None:
                 message += ' {}'.format(period)
