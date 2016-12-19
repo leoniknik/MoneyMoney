@@ -77,7 +77,7 @@ def parse(message):
             else:
                 raise format_error
             
-        elif length >= 3 and str_array[0] == 'отчет' and :
+        elif length >= 3 and str_array[0] == 'отчет':
             if str_array[1] == 'за' and (str_array[2] in report_periods):
                 handler_message = handler.view_report(str_array[2])
                 bot.send_message(message.chat.id, handler_message)
