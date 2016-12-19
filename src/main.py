@@ -139,7 +139,6 @@ def callback_inline(call):
             bot.send_chat_action(call.message.chat.id,'typing')
             image_file = open('tmp/temp.png', 'rb') 
             bot.send_photo(call.message.chat.id, image_file)
-            image_file.close()
 
 # бесконечная петля опроса
 if __name__ == '__main__':
