@@ -123,8 +123,8 @@ class MmHandler:
         else:
             # graph design
             plt.rcParams['font.size'] = 24.0
-            font = {'family': 'Cyrillic'}
-            rc('font', **font)
+            #font = {'family': 'Verdana'}
+            #rc('font', **font)
             
             # info from database!!
             labels = 'шоппинг', 'кино', 'учеба', 'подарки'
