@@ -22,7 +22,15 @@ format_error = Exception('Неправильный формат команды!'
 def start(message):
     handler.user_id = message.chat.id
     handler_message = handler.start()
-    bot.send_message(message.chat.id, handler_message)
+
+    markup = telebot.types.ReplyKeyboardMarkup(row_width=2)
+    itembtn1 = telebot.types.KeyboardButton('a')
+    itembtn2 = telebot.types.KeyboardButton('v')
+    itembtn3 = telebot.types.KeyboardButton('d')
+    markup.add(itembtn1, itembtn2, itembtn3)
+    bot.send_message(message.chat.id, "Choose one letter:", reply_markup=markup)
+
+    # bot.send_message(message.chat.id, handler_message)
 
 
 @bot.message_handler(commands=['help'])

@@ -1,13 +1,19 @@
 from peewee import *
 
 class BaseModel(Model):
-    class Meta:
-        database = MySQLDatabase('money', **{'user': 'root', 'password': '7uy33HZ5', 'host': 'localhost'})
+    """A base model that will use our MySQL database"""
+    database = MySQLDatabase(
+        'money',
+        **{
+            'user': 'root',
+            'password': '7uy33HZ5',
+            'host': 'localhost'
+            }
+        )
 
 
 class User(BaseModel):
-    class Meta:
-        db_table = 'user'
+    db_table = 'user'
 
 
 class Category(BaseModel):
@@ -15,8 +21,7 @@ class Category(BaseModel):
     type = IntegerField()
     user = ForeignKeyField(db_column='user_id', rel_model=User, to_field='id')
 
-    class Meta:
-        db_table = 'category'
+    db_table = 'category'
 
 
 class Operation(BaseModel):
@@ -26,5 +31,4 @@ class Operation(BaseModel):
     id_cat = ForeignKeyField(db_column='id_cat', rel_model=Category, to_field='id')
     id_user = ForeignKeyField(db_column='id_user', rel_model=User, to_field='id')
 
-    class Meta:
-        db_table = 'operation'
+    db_table = 'operation'
