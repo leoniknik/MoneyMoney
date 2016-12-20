@@ -2,6 +2,7 @@
 # So we need yaml parser :)
 from yaml import load, dump
 
+import getopt
 import config
 import telebot
 import re
