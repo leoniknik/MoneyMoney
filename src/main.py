@@ -1,6 +1,6 @@
 # We store our config in config.yaml
 # So we need yaml parser :)
-from yaml import load, dump
+import yaml
 
 import argparse
 import telebot
