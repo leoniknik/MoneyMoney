@@ -158,7 +158,8 @@ def callback_inline(call):
 
 
 # бесконечная петля опроса
-if __name__ == '__main__':    token = ""
+if __name__ == '__main__':
+    token = ""
     parser = argparse.ArgumentParser(description='Process some flags.')
     # parser.add_argument('-o', '--output')
     # parser.add_argument('-v', dest='verbose', action='store_true')
