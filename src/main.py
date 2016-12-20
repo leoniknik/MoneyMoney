@@ -1,10 +1,9 @@
-# We store our config in config.yaml
-# So we need yaml parser :)
-import yaml
-
 import argparse
-import telebot
 import re
+import logging
+
+import yaml
+import telebot
 
 from mmhandler import MmHandler
 
@@ -180,6 +179,10 @@ if __name__ == '__main__':
     print(token) # по умолчанию user_id = 0
     # прикрутить вебхуки
     # прикрутить разбор сообщения на естественном языке
+
+
+    logger = telebot.logger
+    telebot.logger.setLevel(logging.DEBUG)
 
     bot.token = token
     bot.polling(none_stop=True)
