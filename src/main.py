@@ -167,22 +167,19 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.develop:
-        with open('../config/config.yaml', 'r') as f:
-            config = yaml.load(f)
-            TOKEN = config['token']
+        yaml_config = file('../config/config.yaml', 'r')
     elif args.prod:
-        with open('/etc/moneymoney.d/config.yaml', 'r') as f:
-            TOKEN = re.sub("\'\n", "", f.readline().split(' = ')[1])
+        yaml_config = file('/etc/moneymoney.d/config.yaml', 'r')
     else:
         ArgumentParser.error("You should specify either --develop or --production option!")
 
-    print(token) # по умолчанию user_id = 0
-    # прикрутить вебхуки
-    # прикрутить разбор сообщения на естественном языке
+    config = yaml.load(yaml_config)
+    TOKEN = config['token']
 
+    print(TOKEN)
 
     logger = telebot.logger
     telebot.logger.setLevel(logging.DEBUG)
 
-    bot.token = token
+    bot.token = TOKEN
     bot.polling(none_stop=True)
