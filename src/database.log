@@ -1021,3 +1021,903 @@ connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:09:43,092]  https://api.tel
 connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:09:43,095]  Starting new HTTPS connection (1): api.telegram.org
 connectionpool.py[LINE:400]# DEBUG    [2016-12-20 02:10:03,289]  https://api.telegram.org:443 "GET /bot280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg/getUpdates?timeout=20&offset=798068553 HTTP/1.1" 200 23
 connectionpool.py[LINE:809]# DEBUG    [2016-12-20 02:10:03,293]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 15:50:37,456]  Sending message of length 3772 to https://sentry.io/api/120805/store/
+base.py[LINE:681]# DEBUG    [2016-12-20 15:59:28,742]  Sending message of length 4447 to https://sentry.io/api/120805/store/
+__init__.py[LINE:201]# INFO     [2016-12-20 16:00:27,494]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 16:00:27,495]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:00:27,496]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 1, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:00:27,534]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:00:49,166]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:00:49,291]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:00:49,292]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:00:49,292]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:00:49,293]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:00:49,293]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 1, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:00:49,296]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:01:09,517]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:01:09,522]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:01:09,523]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:01:09,523]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:01:09,524]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:01:09,524]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 1, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:01:09,529]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:01:16,653]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 515
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:01:16,660]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077716,\n"message":{"message_id":1,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482238876,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:01:16,661]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:01:16,662]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:01:16,662]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 16:01:16,665]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 16:01:16,666]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:01:16,666]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077717, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:01:16,673]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 16:01:16,710]  Sending message of length 2172 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:01:16,712]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'text': 'Choose your destiny:', 'reply_markup': '{"keyboard": [[{"text": "a"}, {"text": "v"}], [{"text": "d"}]]}', 'chat_id': '47111815'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:01:16,719]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:01:16,942]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?text=Choose+your+destiny%3A&reply_markup=%7B%22keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22a%22%7D%2C+%7B%22text%22%3A+%22v%22%7D%5D%2C+%5B%7B%22text%22%3A+%22d%22%7D%5D%5D%7D&chat_id=47111815 HTTP/1.1" 200 365
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:01:16,947]  The server returned: 'b'{"ok":true,"result":{"message_id":2,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482238876,"text":"Choose your destiny:"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 16:01:16,949]  Task complete
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:01:20,319]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=559077717&timeout=20 HTTP/1.1" 200 452
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:01:20,323]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077717,\n"message":{"message_id":3,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482238880,"text":"a"}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:01:20,324]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:01:20,325]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:01:20,325]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:01:20,326]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'text': 'Не знаю такой команды! Список моих команд:', 'chat_id': '47111815'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:01:20,332]  Starting new HTTPS connection (1): api.telegram.org
+util.py[LINE:51]# DEBUG    [2016-12-20 16:01:20,327]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:01:20,333]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077718, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:01:20,335]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:01:20,539]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?text=%D0%9D%D0%B5+%D0%B7%D0%BD%D0%B0%D1%8E+%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A&chat_id=47111815 HTTP/1.1" 200 557
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:01:20,546]  The server returned: 'b'{"ok":true,"result":{"message_id":4,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482238880,"text":"\\u041d\\u0435 \\u0437\\u043d\\u0430\\u044e \\u0442\\u0430\\u043a\\u043e\\u0439 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434\\u044b! \\u0421\\u043f\\u0438\\u0441\\u043e\\u043a \\u043c\\u043e\\u0438\\u0445 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434:"}}''
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:01:20,549]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'text': "Ошибка: name 'types' is not defined ", 'chat_id': '47111815'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:01:20,554]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:01:20,780]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+name+%27types%27+is+not+defined+&chat_id=47111815 HTTP/1.1" 200 410
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:01:20,785]  The server returned: 'b'{"ok":true,"result":{"message_id":5,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482238880,"text":"\\u041e\\u0448\\u0438\\u0431\\u043a\\u0430: name \'types\' is not defined"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 16:01:20,786]  Task complete
+__init__.py[LINE:235]# INFO     [2016-12-20 16:01:32,103]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 16:01:32,104]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 16:11:03,278]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 16:11:03,279]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:11:03,279]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 1, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:11:03,300]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:11:03,532]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 515
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:11:03,564]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077718,\n"message":{"message_id":6,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239454,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:11:03,565]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:11:03,565]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:11:03,566]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 16:11:03,569]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 16:11:03,569]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:11:03,570]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077719, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:11:03,574]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 16:11:03,591]  Sending message of length 2166 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:11:03,593]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'reply_markup': '{"keyboard": [[{"text": "a"}, {"text": "v"}], [{"text": "d"}]]}', 'chat_id': '47111815', 'text': 'Choose your destiny:'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:11:03,599]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:11:03,841]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?reply_markup=%7B%22keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22a%22%7D%2C+%7B%22text%22%3A+%22v%22%7D%5D%2C+%5B%7B%22text%22%3A+%22d%22%7D%5D%5D%7D&chat_id=47111815&text=Choose+your+destiny%3A HTTP/1.1" 200 365
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:11:03,847]  The server returned: 'b'{"ok":true,"result":{"message_id":7,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239463,"text":"Choose your destiny:"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 16:11:03,848]  Task complete
+base.py[LINE:645]# ERROR    [2016-12-20 16:11:05,122]  Sentry responded with an error: The read operation timed out (url: https://sentry.io/api/120805/store/)
+Traceback (most recent call last):
+  File "/home/krautcat/technopark/python/moneymoney/MoneyMoney/virtenv/lib/python3.5/site-packages/raven/transport/threaded.py", line 174, in send_sync
+    super(ThreadedHTTPTransport, self).send(data, headers)
+  File "/home/krautcat/technopark/python/moneymoney/MoneyMoney/virtenv/lib/python3.5/site-packages/raven/transport/http.py", line 47, in send
+    ca_certs=self.ca_certs,
+  File "/home/krautcat/technopark/python/moneymoney/MoneyMoney/virtenv/lib/python3.5/site-packages/raven/utils/http.py", line 66, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib64/python3.5/urllib/request.py", line 465, in open
+    response = self._open(req, data)
+  File "/usr/lib64/python3.5/urllib/request.py", line 483, in _open
+    '_open', req)
+  File "/usr/lib64/python3.5/urllib/request.py", line 443, in _call_chain
+    result = func(*args)
+  File "/home/krautcat/technopark/python/moneymoney/MoneyMoney/virtenv/lib/python3.5/site-packages/raven/utils/http.py", line 46, in https_open
+    return self.do_open(ValidHTTPSConnection, req)
+  File "/usr/lib64/python3.5/urllib/request.py", line 1243, in do_open
+    r = h.getresponse()
+  File "/home/krautcat/technopark/python/moneymoney/MoneyMoney/virtenv/lib/python3.5/site-packages/raven/breadcrumbs.py", line 346, in getresponse
+    rv = real_getresponse(self, *args, **kwargs)
+  File "/usr/lib64/python3.5/http/client.py", line 1174, in getresponse
+    response.begin()
+  File "/usr/lib64/python3.5/http/client.py", line 282, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib64/python3.5/http/client.py", line 243, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib64/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib64/python3.5/ssl.py", line 924, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib64/python3.5/ssl.py", line 786, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib64/python3.5/ssl.py", line 570, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+base.py[LINE:667]# ERROR    [2016-12-20 16:11:05,235]  ['OperationalError: no such table: user', '  File "/home/krautcat/technopark/python/moneymoney/MoneyMoney/src/sql_module/sql.py", line 21, in add_user', '  File "site-packages/peewee.py", line 4784, in create', '  File "site-packages/peewee.py", line 4990, in save', '  File "site-packages/peewee.py", line 3442, in execute', '  File "site-packages/peewee.py", line 2833, in _execute', '  File "site-packages/peewee.py", line 3690, in execute_sql', '  File "site-packages/peewee.py", line 3514, in __exit__', '  File "site-packages/peewee.py", line 134, in reraise', '  File "site-packages/peewee.py", line 3683, in execute_sql']
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:11:09,255]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=559077719&timeout=20 HTTP/1.1" 200 452
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:11:09,259]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077719,\n"message":{"message_id":8,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239469,"text":"a"}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:11:09,261]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:11:09,261]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:11:09,262]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:11:09,263]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'chat_id': '47111815', 'text': 'Не знаю такой команды! Список моих команд:'} files=None
+util.py[LINE:51]# DEBUG    [2016-12-20 16:11:09,263]  Received task
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:11:09,267]  Starting new HTTPS connection (1): api.telegram.org
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:11:09,268]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077720, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:11:09,270]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:11:09,509]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?chat_id=47111815&text=%D0%9D%D0%B5+%D0%B7%D0%BD%D0%B0%D1%8E+%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A HTTP/1.1" 200 557
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:11:09,515]  The server returned: 'b'{"ok":true,"result":{"message_id":9,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239469,"text":"\\u041d\\u0435 \\u0437\\u043d\\u0430\\u044e \\u0442\\u0430\\u043a\\u043e\\u0439 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434\\u044b! \\u0421\\u043f\\u0438\\u0441\\u043e\\u043a \\u043c\\u043e\\u0438\\u0445 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434:"}}''
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:11:09,517]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'chat_id': '47111815', 'text': "Ошибка: name 'types' is not defined "} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:11:09,521]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:11:09,747]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?chat_id=47111815&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+name+%27types%27+is+not+defined+ HTTP/1.1" 200 411
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:11:09,752]  The server returned: 'b'{"ok":true,"result":{"message_id":10,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239469,"text":"\\u041e\\u0448\\u0438\\u0431\\u043a\\u0430: name \'types\' is not defined"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 16:11:09,752]  Task complete
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:11:29,493]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=559077720&timeout=20 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:11:29,497]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:11:29,498]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:11:29,498]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:11:29,499]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:11:29,499]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077720, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:11:29,502]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:11:49,707]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=559077720&timeout=20 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:11:49,713]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:11:49,713]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:11:49,713]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:11:49,714]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:11:49,715]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077720, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:11:49,719]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:12:09,960]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=559077720&timeout=20 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:12:09,965]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:12:09,966]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:12:09,966]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:12:09,967]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:12:09,967]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077720, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:12:09,970]  Starting new HTTPS connection (1): api.telegram.org
+__init__.py[LINE:235]# INFO     [2016-12-20 16:12:28,377]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 16:12:28,378]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 16:12:38,282]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 16:12:38,283]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:12:38,283]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 1} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:12:38,304]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:12:44,908]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 453
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:12:44,941]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077720,\n"message":{"message_id":11,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239564,"text":"a"}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:12:44,942]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:12:44,942]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:12:44,943]  Received task
+util.py[LINE:51]# DEBUG    [2016-12-20 16:12:44,944]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:12:44,944]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'chat_id': '47111815', 'text': 'Не знаю такой команды! Список моих команд:'} files=None
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:12:44,945]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077721} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:12:44,950]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:12:44,953]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:12:45,182]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?chat_id=47111815&text=%D0%9D%D0%B5+%D0%B7%D0%BD%D0%B0%D1%8E+%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A HTTP/1.1" 200 558
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:12:45,187]  The server returned: 'b'{"ok":true,"result":{"message_id":12,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239565,"text":"\\u041d\\u0435 \\u0437\\u043d\\u0430\\u044e \\u0442\\u0430\\u043a\\u043e\\u0439 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434\\u044b! \\u0421\\u043f\\u0438\\u0441\\u043e\\u043a \\u043c\\u043e\\u0438\\u0445 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434:"}}''
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:12:45,189]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'chat_id': '47111815', 'text': "Ошибка: name 'types' is not defined "} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:12:45,193]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:12:45,424]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?chat_id=47111815&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+name+%27types%27+is+not+defined+ HTTP/1.1" 200 411
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:12:45,427]  The server returned: 'b'{"ok":true,"result":{"message_id":13,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239565,"text":"\\u041e\\u0448\\u0438\\u0431\\u043a\\u0430: name \'types\' is not defined"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 16:12:45,428]  Task complete
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:13:05,165]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077721 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:13:05,169]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:13:05,171]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:13:05,171]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:13:05,172]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:13:05,173]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077721} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:13:05,176]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:13:25,400]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077721 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:13:25,404]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:13:25,405]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:13:25,405]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:13:25,405]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:13:25,406]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077721} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:13:25,409]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:13:44,516]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077721 HTTP/1.1" 200 453
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:13:44,521]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077721,\n"message":{"message_id":14,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239624,"text":"a"}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:13:44,522]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:13:44,523]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:13:44,523]  Received task
+util.py[LINE:51]# DEBUG    [2016-12-20 16:13:44,524]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:13:44,525]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'chat_id': '47111815', 'text': 'Не знаю такой команды! Список моих команд:'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:13:44,529]  Starting new HTTPS connection (1): api.telegram.org
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:13:44,525]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077722} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:13:44,533]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:13:44,783]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?chat_id=47111815&text=%D0%9D%D0%B5+%D0%B7%D0%BD%D0%B0%D1%8E+%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A HTTP/1.1" 200 558
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:13:44,788]  The server returned: 'b'{"ok":true,"result":{"message_id":15,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239624,"text":"\\u041d\\u0435 \\u0437\\u043d\\u0430\\u044e \\u0442\\u0430\\u043a\\u043e\\u0439 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434\\u044b! \\u0421\\u043f\\u0438\\u0441\\u043e\\u043a \\u043c\\u043e\\u0438\\u0445 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434:"}}''
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:13:44,789]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'chat_id': '47111815', 'text': "Ошибка: name 'types' is not defined "} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:13:44,793]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:13:45,017]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?chat_id=47111815&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+name+%27types%27+is+not+defined+ HTTP/1.1" 200 411
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:13:45,020]  The server returned: 'b'{"ok":true,"result":{"message_id":16,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239624,"text":"\\u041e\\u0448\\u0438\\u0431\\u043a\\u0430: name \'types\' is not defined"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 16:13:45,021]  Task complete
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:13:51,873]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077722 HTTP/1.1" 200 453
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:13:51,878]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077722,\n"message":{"message_id":17,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239631,"text":"v"}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:13:51,879]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:13:51,879]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:13:51,880]  Received task
+util.py[LINE:51]# DEBUG    [2016-12-20 16:13:51,881]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:13:51,881]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'chat_id': '47111815', 'text': 'Не знаю такой команды! Список моих команд:'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:13:51,885]  Starting new HTTPS connection (1): api.telegram.org
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:13:51,882]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077723} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:13:51,889]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:13:52,111]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?chat_id=47111815&text=%D0%9D%D0%B5+%D0%B7%D0%BD%D0%B0%D1%8E+%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A HTTP/1.1" 200 558
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:13:52,116]  The server returned: 'b'{"ok":true,"result":{"message_id":18,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239632,"text":"\\u041d\\u0435 \\u0437\\u043d\\u0430\\u044e \\u0442\\u0430\\u043a\\u043e\\u0439 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434\\u044b! \\u0421\\u043f\\u0438\\u0441\\u043e\\u043a \\u043c\\u043e\\u0438\\u0445 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434:"}}''
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:13:52,118]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'chat_id': '47111815', 'text': "Ошибка: name 'types' is not defined "} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:13:52,122]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:13:52,385]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?chat_id=47111815&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+name+%27types%27+is+not+defined+ HTTP/1.1" 200 411
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:13:52,388]  The server returned: 'b'{"ok":true,"result":{"message_id":19,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239632,"text":"\\u041e\\u0448\\u0438\\u0431\\u043a\\u0430: name \'types\' is not defined"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 16:13:52,389]  Task complete
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:14:12,109]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077723 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:14:12,112]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:14:12,114]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:14:12,114]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:14:12,115]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:14:12,115]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077723} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:14:12,118]  Starting new HTTPS connection (1): api.telegram.org
+__init__.py[LINE:235]# INFO     [2016-12-20 16:14:18,583]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 16:14:18,583]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 16:14:20,305]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 16:14:20,305]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:14:20,305]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 1} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:14:20,326]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:14:24,666]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 453
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:14:24,697]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077723,\n"message":{"message_id":20,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239664,"text":"a"}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:14:24,697]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:14:24,698]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:14:24,698]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:14:24,699]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'text': 'Не знаю такой команды! Список моих команд:', 'chat_id': '47111815'} files=None
+util.py[LINE:51]# DEBUG    [2016-12-20 16:14:24,706]  Received task
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:14:24,708]  Starting new HTTPS connection (1): api.telegram.org
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:14:24,708]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077724} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:14:24,713]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:14:24,986]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?text=%D0%9D%D0%B5+%D0%B7%D0%BD%D0%B0%D1%8E+%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A&chat_id=47111815 HTTP/1.1" 200 558
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:14:24,991]  The server returned: 'b'{"ok":true,"result":{"message_id":21,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239664,"text":"\\u041d\\u0435 \\u0437\\u043d\\u0430\\u044e \\u0442\\u0430\\u043a\\u043e\\u0439 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434\\u044b! \\u0421\\u043f\\u0438\\u0441\\u043e\\u043a \\u043c\\u043e\\u0438\\u0445 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434:"}}''
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:14:24,992]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'text': "Ошибка: module 'telebot' has no attribute 'ypes' ", 'chat_id': '47111815'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:14:24,996]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:14:25,595]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%3A+module+%27telebot%27+has+no+attribute+%27ypes%27+&chat_id=47111815 HTTP/1.1" 200 424
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:14:25,597]  The server returned: 'b'{"ok":true,"result":{"message_id":22,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239665,"text":"\\u041e\\u0448\\u0438\\u0431\\u043a\\u0430: module \'telebot\' has no attribute \'ypes\'"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 16:14:25,598]  Task complete
+__init__.py[LINE:235]# INFO     [2016-12-20 16:14:28,932]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 16:14:28,932]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 16:14:35,087]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 16:14:35,087]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:14:35,088]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 1} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:14:35,112]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:14:38,312]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 453
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:14:38,343]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077724,\n"message":{"message_id":23,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239678,"text":"a"}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:14:38,344]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:14:38,344]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:14:38,344]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:14:38,346]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'text': 'Не знаю такой команды! Список моих команд:', 'chat_id': '47111815'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:14:38,354]  Starting new HTTPS connection (1): api.telegram.org
+util.py[LINE:51]# DEBUG    [2016-12-20 16:14:38,346]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:14:38,355]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077725} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:14:38,358]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:14:38,617]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?text=%D0%9D%D0%B5+%D0%B7%D0%BD%D0%B0%D1%8E+%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A&chat_id=47111815 HTTP/1.1" 200 558
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:14:38,623]  The server returned: 'b'{"ok":true,"result":{"message_id":24,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239678,"text":"\\u041d\\u0435 \\u0437\\u043d\\u0430\\u044e \\u0442\\u0430\\u043a\\u043e\\u0439 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434\\u044b! \\u0421\\u043f\\u0438\\u0441\\u043e\\u043a \\u043c\\u043e\\u0438\\u0445 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434:"}}''
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:14:38,625]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'reply_markup': '{"hide_keyboard": true}', 'text': 'добавить доход:\n+{сумма} {категория} {комментарий}\nдобавить расход:\n-{сумма} {категория} {комментарий}\nпоказать категории:\nпокажи категории {расходов} {доходов}\nдобавить категорию:\nдобавить категорию {название}\nудалить категорию:\nудалить категорию {название}\nпосмотреть отчет за день/неделю/месяц/год + график:\nотчет за {месяц/день/неделю/год} \nили\nотчет\nпосмотреть отчет за определенный период:\nотчет с {начальная дата} по {конечная дата}\nформат даты: xx-xx-xxxx\n', 'chat_id': '47111815'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:14:38,633]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:14:38,873]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?reply_markup=%7B%22hide_keyboard%22%3A+true%7D&text=%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%3A%0A%2B%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%3A%0A-%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8%3A%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8+%7B%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D+%7B%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B3%D0%BE%D0%B4+%2B+%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%7B%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%B3%D0%BE%D0%B4%7D+%0A%D0%B8%D0%BB%D0%B8%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D1%81+%7B%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D+%D0%BF%D0%BE+%7B%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D%0A%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82+%D0%B4%D0%B0%D1%82%D1%8B%3A+xx-xx-xxxx%0A&chat_id=47111815 HTTP/1.1" 200 2615
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:14:38,877]  The server returned: 'b'{"ok":true,"result":{"message_id":25,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482239678,"text":"\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u0434\\u043e\\u0445\\u043e\\u0434:\\n+{\\u0441\\u0443\\u043c\\u043c\\u0430} {\\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f} {\\u043a\\u043e\\u043c\\u043c\\u0435\\u043d\\u0442\\u0430\\u0440\\u0438\\u0439}\\n\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u0440\\u0430\\u0441\\u0445\\u043e\\u0434:\\n-{\\u0441\\u0443\\u043c\\u043c\\u0430} {\\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f} {\\u043a\\u043e\\u043c\\u043c\\u0435\\u043d\\u0442\\u0430\\u0440\\u0438\\u0439}\\n\\u043f\\u043e\\u043a\\u0430\\u0437\\u0430\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438:\\n\\u043f\\u043e\\u043a\\u0430\\u0436\\u0438 \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438 {\\u0440\\u0430\\u0441\\u0445\\u043e\\u0434\\u043e\\u0432} {\\u0434\\u043e\\u0445\\u043e\\u0434\\u043e\\u0432}\\n\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e:\\n\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e {\\u043d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435}\\n\\u0443\\u0434\\u0430\\u043b\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e:\\n\\u0443\\u0434\\u0430\\u043b\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e {\\u043d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435}\\n\\u043f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0435\\u0442\\u044c \\u043e\\u0442\\u0447\\u0435\\u0442 \\u0437\\u0430 \\u0434\\u0435\\u043d\\u044c/\\u043d\\u0435\\u0434\\u0435\\u043b\\u044e/\\u043c\\u0435\\u0441\\u044f\\u0446/\\u0433\\u043e\\u0434 + \\u0433\\u0440\\u0430\\u0444\\u0438\\u043a:\\n\\u043e\\u0442\\u0447\\u0435\\u0442 \\u0437\\u0430 {\\u043c\\u0435\\u0441\\u044f\\u0446/\\u0434\\u0435\\u043d\\u044c/\\u043d\\u0435\\u0434\\u0435\\u043b\\u044e/\\u0433\\u043e\\u0434} \\n\\u0438\\u043b\\u0438\\n\\u043e\\u0442\\u0447\\u0435\\u0442\\n\\u043f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0435\\u0442\\u044c \\u043e\\u0442\\u0447\\u0435\\u0442 \\u0437\\u0430 \\u043e\\u043f\\u0440\\u0435\\u0434\\u0435\\u043b\\u0435\\u043d\\u043d\\u044b\\u0439 \\u043f\\u0435\\u0440\\u0438\\u043e\\u0434:\\n\\u043e\\u0442\\u0447\\u0435\\u0442 \\u0441 {\\u043d\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0430\\u044f \\u0434\\u0430\\u0442\\u0430} \\u043f\\u043e {\\u043a\\u043e\\u043d\\u0435\\u0447\\u043d\\u0430\\u044f \\u0434\\u0430\\u0442\\u0430}\\n\\u0444\\u043e\\u0440\\u043c\\u0430\\u0442 \\u0434\\u0430\\u0442\\u044b: xx-xx-xxxx"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 16:14:38,878]  Task complete
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 16:14:58,586]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077725 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 16:14:58,589]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 16:14:58,590]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 16:14:58,591]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 16:14:58,591]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 16:14:58,592]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077725} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 16:14:58,594]  Starting new HTTPS connection (1): api.telegram.org
+__init__.py[LINE:235]# INFO     [2016-12-20 16:15:17,581]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 16:15:17,582]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 18:46:50,898]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 18:46:50,929]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:46:50,930]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 1, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:46:50,974]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:47:03,114]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 516
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:47:03,257]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077725,\n"message":{"message_id":26,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482248823,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:47:03,258]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:47:03,259]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:47:03,259]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 18:47:03,261]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 18:47:03,262]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:47:03,262]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077726, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:47:03,266]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 18:47:03,348]  Sending message of length 2195 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:47:03,350]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'text': "Ошибка при инициализации: 'такой пользователь уже существует' ", 'chat_id': '47111815', 'reply_markup': <function create_reply_keyboard at 0x7f32a5588f28>} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:47:03,359]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:47:03,601]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+&chat_id=47111815&reply_markup=%3Cfunction+create_reply_keyboard+at+0x7f32a5588f28%3E HTTP/1.1" 400 104
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:47:03,606]  The server returned: 'b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}''
+util.py[LINE:60]# DEBUG    [2016-12-20 18:47:03,609]  Exception occurred
+__init__.py[LINE:224]# ERROR    [2016-12-20 18:47:03,610]  A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}']
+__init__.py[LINE:231]# INFO     [2016-12-20 18:47:03,610]  Waiting for 0.25 seconds until retry
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:47:23,510]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=559077726&timeout=20 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:47:23,514]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:47:23,515]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:47:23,515]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:47:23,516]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:47:23,516]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077726, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:47:23,520]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:47:27,196]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=559077726&timeout=20 HTTP/1.1" 200 516
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:47:27,202]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077726,\n"message":{"message_id":27,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482248847,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:47:27,203]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:47:27,203]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:47:27,204]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 18:47:27,205]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 18:47:27,205]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:47:27,206]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077727, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:47:27,210]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 18:47:27,223]  Sending message of length 2191 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:47:27,223]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'text': "Ошибка при инициализации: 'такой пользователь уже существует' ", 'chat_id': '47111815', 'reply_markup': <function create_reply_keyboard at 0x7f32a5588f28>} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:47:27,227]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:47:27,461]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+&chat_id=47111815&reply_markup=%3Cfunction+create_reply_keyboard+at+0x7f32a5588f28%3E HTTP/1.1" 400 104
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:47:27,466]  The server returned: 'b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}''
+util.py[LINE:60]# DEBUG    [2016-12-20 18:47:27,467]  Exception occurred
+__init__.py[LINE:224]# ERROR    [2016-12-20 18:47:27,467]  A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}']
+__init__.py[LINE:231]# INFO     [2016-12-20 18:47:27,468]  Waiting for 0.25 seconds until retry
+__init__.py[LINE:235]# INFO     [2016-12-20 18:47:30,817]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 18:47:30,818]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 18:48:38,761]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 18:48:38,761]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:48:38,762]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 1, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:48:38,794]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:48:54,436]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 516
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:48:54,471]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077727,\n"message":{"message_id":28,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482248934,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:48:54,472]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:48:54,472]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:48:54,472]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 18:48:54,476]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 18:48:54,476]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:48:54,478]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077728, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:48:54,483]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 18:48:54,504]  Sending message of length 2193 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:48:54,505]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'chat_id': '47111815', 'reply_markup': <function create_reply_keyboard at 0x7fb12a1e8f28>, 'text': "Ошибка при инициализации: 'такой пользователь уже существует' "} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:48:54,515]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:48:54,741]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?chat_id=47111815&reply_markup=%3Cfunction+create_reply_keyboard+at+0x7fb12a1e8f28%3E&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+ HTTP/1.1" 400 104
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:48:54,745]  The server returned: 'b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}''
+util.py[LINE:60]# DEBUG    [2016-12-20 18:48:54,747]  Exception occurred
+__init__.py[LINE:224]# ERROR    [2016-12-20 18:48:54,747]  A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}']
+__init__.py[LINE:231]# INFO     [2016-12-20 18:48:54,748]  Waiting for 0.25 seconds until retry
+__init__.py[LINE:235]# INFO     [2016-12-20 18:49:02,237]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 18:49:02,238]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 18:49:48,533]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 18:49:48,534]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:49:48,534]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 1} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:49:48,568]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:49:51,642]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 516
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:49:51,669]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077728,\n"message":{"message_id":29,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482248991,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:49:51,670]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:49:51,670]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:49:51,670]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 18:49:51,673]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 18:49:51,671]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:49:51,674]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077729} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:49:51,677]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 18:49:51,693]  Sending message of length 2199 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:49:51,695]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'reply_markup': <function create_reply_keyboard at 0x7ff296baaf28>, 'chat_id': '47111815', 'text': "Ошибка при инициализации: 'такой пользователь уже существует' "} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:49:51,701]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:49:51,943]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+&chat_id=47111815&reply_markup=%3Cfunction+create_reply_keyboard+at+0x7ff296baaf28%3E HTTP/1.1" 400 104
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:49:51,948]  The server returned: 'b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}''
+util.py[LINE:60]# DEBUG    [2016-12-20 18:49:51,950]  Exception occurred
+__init__.py[LINE:224]# ERROR    [2016-12-20 18:49:51,950]  A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}']
+__init__.py[LINE:231]# INFO     [2016-12-20 18:49:51,951]  Waiting for 0.25 seconds until retry
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:50:11,902]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077729 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:50:11,905]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:50:11,906]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:50:11,906]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:50:11,907]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:50:11,907]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077729} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:50:11,909]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:50:32,136]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077729 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:50:32,141]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:50:32,142]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:50:32,142]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:50:32,143]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:50:32,143]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077729} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:50:32,147]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:50:52,370]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077729 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:50:52,373]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:50:52,374]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:50:52,374]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:50:52,375]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:50:52,375]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077729} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:50:52,378]  Starting new HTTPS connection (1): api.telegram.org
+__init__.py[LINE:235]# INFO     [2016-12-20 18:50:57,598]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 18:50:57,599]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 18:51:05,977]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 18:51:05,979]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:51:05,979]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 1} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:51:05,998]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:51:10,043]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 516
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:51:10,073]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077729,\n"message":{"message_id":30,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249070,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:51:10,074]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:51:10,075]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:51:10,075]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 18:51:10,078]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 18:51:10,076]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:51:10,079]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077730} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:51:10,081]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 18:51:10,102]  Sending message of length 2196 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:51:10,104]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'chat_id': '47111815', 'text': "Ошибка при инициализации: 'такой пользователь уже существует' ", 'reply_markup': <function create_reply_keyboard at 0x7fa0ee3aff28>} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:51:10,110]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:51:10,341]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?chat_id=47111815&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+&reply_markup=%3Cfunction+create_reply_keyboard+at+0x7fa0ee3aff28%3E HTTP/1.1" 400 104
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:51:10,346]  The server returned: 'b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}''
+util.py[LINE:60]# DEBUG    [2016-12-20 18:51:10,347]  Exception occurred
+__init__.py[LINE:224]# ERROR    [2016-12-20 18:51:10,348]  A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}']
+__init__.py[LINE:231]# INFO     [2016-12-20 18:51:10,349]  Waiting for 0.25 seconds until retry
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:51:30,308]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077730 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:51:30,313]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:51:30,314]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:51:30,314]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:51:30,314]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:51:30,315]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077730} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:51:30,319]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:51:39,590]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077730 HTTP/1.1" 200 516
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:51:39,595]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077730,\n"message":{"message_id":31,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249099,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:51:39,596]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:51:39,597]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:51:39,597]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 18:51:39,602]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 18:51:39,608]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:51:39,608]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077731} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:51:39,612]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 18:51:39,626]  Sending message of length 2967 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:51:39,628]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'chat_id': '47111815', 'text': "Ошибка при инициализации: 'такой пользователь уже существует' ", 'reply_markup': <function create_reply_keyboard at 0x7fa0ee3aff28>} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:51:39,638]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:51:39,860]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?chat_id=47111815&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+&reply_markup=%3Cfunction+create_reply_keyboard+at+0x7fa0ee3aff28%3E HTTP/1.1" 400 104
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:51:39,862]  The server returned: 'b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}''
+util.py[LINE:60]# DEBUG    [2016-12-20 18:51:39,863]  Exception occurred
+__init__.py[LINE:224]# ERROR    [2016-12-20 18:51:39,863]  A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}']
+__init__.py[LINE:231]# INFO     [2016-12-20 18:51:39,864]  Waiting for 0.25 seconds until retry
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:51:59,835]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077731 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:51:59,839]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:51:59,841]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:51:59,841]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:51:59,842]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:51:59,842]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077731} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:51:59,846]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:52:08,998]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077731 HTTP/1.1" 200 516
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:52:09,004]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077731,\n"message":{"message_id":32,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249129,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:52:09,006]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:52:09,006]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:52:09,007]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 18:52:09,008]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 18:52:09,009]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:52:09,010]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077732} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:52:09,015]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 18:52:09,032]  Sending message of length 2194 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:52:09,032]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'chat_id': '47111815', 'text': "Ошибка при инициализации: 'такой пользователь уже существует' ", 'reply_markup': <function create_reply_keyboard at 0x7fa0ee3aff28>} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:52:09,041]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:52:09,274]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?chat_id=47111815&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+&reply_markup=%3Cfunction+create_reply_keyboard+at+0x7fa0ee3aff28%3E HTTP/1.1" 400 104
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:52:09,279]  The server returned: 'b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}''
+util.py[LINE:60]# DEBUG    [2016-12-20 18:52:09,281]  Exception occurred
+__init__.py[LINE:224]# ERROR    [2016-12-20 18:52:09,282]  A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}']
+__init__.py[LINE:231]# INFO     [2016-12-20 18:52:09,282]  Waiting for 0.25 seconds until retry
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:52:29,238]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077732 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:52:29,242]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:52:29,244]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:52:29,244]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:52:29,244]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:52:29,245]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077732} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:52:29,248]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:52:49,560]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077732 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:52:49,564]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:52:49,566]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:52:49,566]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:52:49,567]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:52:49,567]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077732} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:52:49,570]  Starting new HTTPS connection (1): api.telegram.org
+__init__.py[LINE:235]# INFO     [2016-12-20 18:52:54,020]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 18:52:54,021]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 18:53:10,196]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 18:53:10,196]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:53:10,197]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 1} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:53:10,226]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:53:10,462]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 516
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:53:10,500]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077732,\n"message":{"message_id":33,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249184,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:53:10,501]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:53:10,502]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:53:10,502]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 18:53:10,506]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 18:53:10,507]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:53:10,507]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077733} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:53:10,511]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 18:53:10,530]  Sending message of length 2203 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:53:10,532]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'text': "Ошибка при инициализации: 'такой пользователь уже существует' ", 'chat_id': '47111815', 'reply_markup': <function create_reply_keyboard at 0x7f8313877f28>} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:53:10,538]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:53:10,787]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+&chat_id=47111815&reply_markup=%3Cfunction+create_reply_keyboard+at+0x7f8313877f28%3E HTTP/1.1" 400 104
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:53:10,791]  The server returned: 'b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}''
+util.py[LINE:60]# DEBUG    [2016-12-20 18:53:10,792]  Exception occurred
+__init__.py[LINE:224]# ERROR    [2016-12-20 18:53:10,792]  A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: Can\'t parse reply keyboard markup JSON object"}']
+__init__.py[LINE:231]# INFO     [2016-12-20 18:53:10,793]  Waiting for 0.25 seconds until retry
+__init__.py[LINE:235]# INFO     [2016-12-20 18:53:16,284]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 18:53:16,285]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 18:53:51,123]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 18:53:51,123]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:53:51,124]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 1, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:53:51,144]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:53:57,360]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 516
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:53:57,390]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077733,\n"message":{"message_id":34,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249237,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:53:57,391]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:53:57,392]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:53:57,392]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 18:53:57,394]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 18:53:57,395]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:53:57,395]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077734, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:53:57,398]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 18:53:57,411]  Sending message of length 2183 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:53:57,412]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'reply_markup': '{"keyboard": []}', 'text': "Ошибка при инициализации: 'такой пользователь уже существует' ", 'chat_id': '47111815'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:53:57,417]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:53:57,680]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?reply_markup=%7B%22keyboard%22%3A+%5B%5D%7D&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+&chat_id=47111815 HTTP/1.1" 200 667
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:53:57,684]  The server returned: 'b'{"ok":true,"result":{"message_id":35,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249237,"text":"\\u041e\\u0448\\u0438\\u0431\\u043a\\u0430 \\u043f\\u0440\\u0438 \\u0438\\u043d\\u0438\\u0446\\u0438\\u0430\\u043b\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438: \'\\u0442\\u0430\\u043a\\u043e\\u0439 \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c \\u0443\\u0436\\u0435 \\u0441\\u0443\\u0449\\u0435\\u0441\\u0442\\u0432\\u0443\\u0435\\u0442\'"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 18:53:57,685]  Task complete
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:54:17,625]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=559077734&timeout=20 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:54:17,627]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:54:17,627]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:54:17,627]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:54:17,628]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:54:17,628]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077734, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:54:17,629]  Starting new HTTPS connection (1): api.telegram.org
+__init__.py[LINE:235]# INFO     [2016-12-20 18:54:24,467]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 18:54:24,468]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 18:54:26,828]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 18:54:26,829]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:54:26,830]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 1} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:54:26,853]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:54:30,173]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 516
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:54:30,206]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077734,\n"message":{"message_id":36,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249270,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:54:30,207]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:54:30,207]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:54:30,208]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 18:54:30,211]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 18:54:30,208]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:54:30,211]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077735} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:54:30,214]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 18:54:30,236]  Sending message of length 2175 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:54:30,237]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'reply_markup': '{"keyboard": []}', 'text': "Ошибка при инициализации: 'такой пользователь уже существует' ", 'chat_id': '47111815'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:54:30,247]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:54:30,492]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?reply_markup=%7B%22keyboard%22%3A+%5B%5D%7D&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+&chat_id=47111815 HTTP/1.1" 200 667
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:54:30,496]  The server returned: 'b'{"ok":true,"result":{"message_id":37,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249270,"text":"\\u041e\\u0448\\u0438\\u0431\\u043a\\u0430 \\u043f\\u0440\\u0438 \\u0438\\u043d\\u0438\\u0446\\u0438\\u0430\\u043b\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438: \'\\u0442\\u0430\\u043a\\u043e\\u0439 \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c \\u0443\\u0436\\u0435 \\u0441\\u0443\\u0449\\u0435\\u0441\\u0442\\u0432\\u0443\\u0435\\u0442\'"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 18:54:30,497]  Task complete
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:54:50,455]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077735 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:54:50,459]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:54:50,461]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:54:50,461]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:54:50,462]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:54:50,462]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077735} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:54:50,466]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:55:10,703]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077735 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:55:10,709]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:55:10,710]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:55:10,711]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:55:10,713]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:55:10,714]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077735} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:55:10,718]  Starting new HTTPS connection (1): api.telegram.org
+__init__.py[LINE:235]# INFO     [2016-12-20 18:55:15,527]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 18:55:15,528]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 18:55:17,608]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 18:55:17,608]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:55:17,609]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 1, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:55:17,629]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:55:20,593]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 516
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:55:20,622]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077735,\n"message":{"message_id":38,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249320,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:55:20,647]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:55:20,649]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:55:20,650]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 18:55:20,653]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 18:55:20,653]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:55:20,654]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077736, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:55:20,658]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 18:55:20,677]  Sending message of length 2179 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:55:20,682]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'text': "Ошибка при инициализации: 'такой пользователь уже существует' ", 'reply_markup': '{"keyboard": []}', 'chat_id': '47111815'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:55:20,687]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:55:20,948]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+&reply_markup=%7B%22keyboard%22%3A+%5B%5D%7D&chat_id=47111815 HTTP/1.1" 200 667
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:55:20,953]  The server returned: 'b'{"ok":true,"result":{"message_id":39,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249321,"text":"\\u041e\\u0448\\u0438\\u0431\\u043a\\u0430 \\u043f\\u0440\\u0438 \\u0438\\u043d\\u0438\\u0446\\u0438\\u0430\\u043b\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438: \'\\u0442\\u0430\\u043a\\u043e\\u0439 \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c \\u0443\\u0436\\u0435 \\u0441\\u0443\\u0449\\u0435\\u0441\\u0442\\u0432\\u0443\\u0435\\u0442\'"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 18:55:20,954]  Task complete
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:55:40,952]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=559077736&timeout=20 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:55:40,956]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:55:40,957]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:55:40,958]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:55:40,958]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:55:40,959]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077736, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:55:40,962]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:56:01,253]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=559077736&timeout=20 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:56:01,259]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:56:01,301]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:56:01,301]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:56:01,302]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:56:01,302]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077736, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:56:01,305]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:56:21,593]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=559077736&timeout=20 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:56:21,597]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:56:21,598]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:56:21,598]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:56:21,600]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:56:21,600]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077736, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:56:21,603]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:56:41,910]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=559077736&timeout=20 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:56:41,913]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:56:41,914]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:56:41,914]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:56:41,915]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:56:41,915]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077736, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:56:41,918]  Starting new HTTPS connection (1): api.telegram.org
+__init__.py[LINE:235]# INFO     [2016-12-20 18:56:46,444]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 18:56:46,444]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 18:56:48,132]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 18:56:48,133]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:56:48,133]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 1, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:56:48,155]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:56:52,386]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 516
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:56:52,418]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077736,\n"message":{"message_id":40,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249412,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:56:52,419]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:56:52,420]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:56:52,420]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 18:56:52,423]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 18:56:52,424]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:56:52,424]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077737, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:56:52,428]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 18:56:52,447]  Sending message of length 2199 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:56:52,450]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'reply_markup': '{"keyboard": []}', 'chat_id': '47111815', 'text': "Ошибка при инициализации: 'такой пользователь уже существует' "} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:56:52,456]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:56:53,270]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?reply_markup=%7B%22keyboard%22%3A+%5B%5D%7D&chat_id=47111815&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+ HTTP/1.1" 200 667
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:56:53,276]  The server returned: 'b'{"ok":true,"result":{"message_id":41,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249413,"text":"\\u041e\\u0448\\u0438\\u0431\\u043a\\u0430 \\u043f\\u0440\\u0438 \\u0438\\u043d\\u0438\\u0446\\u0438\\u0430\\u043b\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438: \'\\u0442\\u0430\\u043a\\u043e\\u0439 \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c \\u0443\\u0436\\u0435 \\u0441\\u0443\\u0449\\u0435\\u0441\\u0442\\u0432\\u0443\\u0435\\u0442\'"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 18:56:53,277]  Task complete
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:57:12,944]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=559077737&timeout=20 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:57:12,948]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:57:12,949]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:57:12,950]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:57:12,950]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:57:12,951]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077737, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:57:12,954]  Starting new HTTPS connection (1): api.telegram.org
+__init__.py[LINE:235]# INFO     [2016-12-20 18:57:33,137]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 18:57:33,137]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 18:57:34,800]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 18:57:34,801]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:57:34,802]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 1, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:57:34,826]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:57:40,561]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 454
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:57:40,645]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077737,\n"message":{"message_id":42,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249460,"text":"Hh"}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:57:40,646]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:57:40,646]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:57:40,647]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:57:40,648]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'text': 'Не знаю такой команды! Список моих команд:', 'chat_id': '47111815'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:57:40,653]  Starting new HTTPS connection (1): api.telegram.org
+util.py[LINE:51]# DEBUG    [2016-12-20 18:57:40,654]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:57:40,654]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'offset': 559077738, 'timeout': 20} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:57:40,659]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:57:40,924]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?text=%D0%9D%D0%B5+%D0%B7%D0%BD%D0%B0%D1%8E+%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A&chat_id=47111815 HTTP/1.1" 200 558
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:57:40,929]  The server returned: 'b'{"ok":true,"result":{"message_id":43,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249461,"text":"\\u041d\\u0435 \\u0437\\u043d\\u0430\\u044e \\u0442\\u0430\\u043a\\u043e\\u0439 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434\\u044b! \\u0421\\u043f\\u0438\\u0441\\u043e\\u043a \\u043c\\u043e\\u0438\\u0445 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434:"}}''
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:57:40,931]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'text': 'добавить доход:\n+{сумма} {категория} {комментарий}\nдобавить расход:\n-{сумма} {категория} {комментарий}\nпоказать категории:\nпокажи категории {расходов} {доходов}\nдобавить категорию:\nдобавить категорию {название}\nудалить категорию:\nудалить категорию {название}\nпосмотреть отчет за день/неделю/месяц/год + график:\nотчет за {месяц/день/неделю/год} \nили\nотчет\nпосмотреть отчет за определенный период:\nотчет с {начальная дата} по {конечная дата}\nформат даты: xx-xx-xxxx\n', 'reply_markup': '{"keyboard": []}', 'chat_id': '47111815'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:57:40,941]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:57:41,213]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?text=%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%3A%0A%2B%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%3A%0A-%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8%3A%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8+%7B%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D+%7B%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B3%D0%BE%D0%B4+%2B+%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%7B%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%B3%D0%BE%D0%B4%7D+%0A%D0%B8%D0%BB%D0%B8%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D1%81+%7B%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D+%D0%BF%D0%BE+%7B%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D%0A%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82+%D0%B4%D0%B0%D1%82%D1%8B%3A+xx-xx-xxxx%0A&reply_markup=%7B%22keyboard%22%3A+%5B%5D%7D&chat_id=47111815 HTTP/1.1" 200 2615
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:57:41,216]  The server returned: 'b'{"ok":true,"result":{"message_id":44,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249461,"text":"\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u0434\\u043e\\u0445\\u043e\\u0434:\\n+{\\u0441\\u0443\\u043c\\u043c\\u0430} {\\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f} {\\u043a\\u043e\\u043c\\u043c\\u0435\\u043d\\u0442\\u0430\\u0440\\u0438\\u0439}\\n\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u0440\\u0430\\u0441\\u0445\\u043e\\u0434:\\n-{\\u0441\\u0443\\u043c\\u043c\\u0430} {\\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f} {\\u043a\\u043e\\u043c\\u043c\\u0435\\u043d\\u0442\\u0430\\u0440\\u0438\\u0439}\\n\\u043f\\u043e\\u043a\\u0430\\u0437\\u0430\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438:\\n\\u043f\\u043e\\u043a\\u0430\\u0436\\u0438 \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438 {\\u0440\\u0430\\u0441\\u0445\\u043e\\u0434\\u043e\\u0432} {\\u0434\\u043e\\u0445\\u043e\\u0434\\u043e\\u0432}\\n\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e:\\n\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e {\\u043d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435}\\n\\u0443\\u0434\\u0430\\u043b\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e:\\n\\u0443\\u0434\\u0430\\u043b\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e {\\u043d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435}\\n\\u043f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0435\\u0442\\u044c \\u043e\\u0442\\u0447\\u0435\\u0442 \\u0437\\u0430 \\u0434\\u0435\\u043d\\u044c/\\u043d\\u0435\\u0434\\u0435\\u043b\\u044e/\\u043c\\u0435\\u0441\\u044f\\u0446/\\u0433\\u043e\\u0434 + \\u0433\\u0440\\u0430\\u0444\\u0438\\u043a:\\n\\u043e\\u0442\\u0447\\u0435\\u0442 \\u0437\\u0430 {\\u043c\\u0435\\u0441\\u044f\\u0446/\\u0434\\u0435\\u043d\\u044c/\\u043d\\u0435\\u0434\\u0435\\u043b\\u044e/\\u0433\\u043e\\u0434} \\n\\u0438\\u043b\\u0438\\n\\u043e\\u0442\\u0447\\u0435\\u0442\\n\\u043f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0435\\u0442\\u044c \\u043e\\u0442\\u0447\\u0435\\u0442 \\u0437\\u0430 \\u043e\\u043f\\u0440\\u0435\\u0434\\u0435\\u043b\\u0435\\u043d\\u043d\\u044b\\u0439 \\u043f\\u0435\\u0440\\u0438\\u043e\\u0434:\\n\\u043e\\u0442\\u0447\\u0435\\u0442 \\u0441 {\\u043d\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0430\\u044f \\u0434\\u0430\\u0442\\u0430} \\u043f\\u043e {\\u043a\\u043e\\u043d\\u0435\\u0447\\u043d\\u0430\\u044f \\u0434\\u0430\\u0442\\u0430}\\n\\u0444\\u043e\\u0440\\u043c\\u0430\\u0442 \\u0434\\u0430\\u0442\\u044b: xx-xx-xxxx"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 18:57:41,217]  Task complete
+__init__.py[LINE:235]# INFO     [2016-12-20 18:57:57,354]  KeyboardInterrupt received.
+__init__.py[LINE:240]# INFO     [2016-12-20 18:57:57,354]  Stopped polling.
+__init__.py[LINE:201]# INFO     [2016-12-20 18:58:31,319]  Started polling.
+util.py[LINE:51]# DEBUG    [2016-12-20 18:58:31,321]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:58:31,321]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 1} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:58:31,347]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:58:41,783]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=1 HTTP/1.1" 200 516
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:58:41,815]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077738,\n"message":{"message_id":45,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249522,"text":"/start","entities":[{"type":"bot_command","offset":0,"length":6}]}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:58:41,815]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:58:41,816]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:58:41,816]  Received task
+peewee.py[LINE:3679]# DEBUG    [2016-12-20 18:58:41,820]  ('INSERT INTO "user" ("id") VALUES (?)', [47111815])
+util.py[LINE:51]# DEBUG    [2016-12-20 18:58:41,820]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:58:41,821]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077739} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:58:41,826]  Starting new HTTPS connection (1): api.telegram.org
+base.py[LINE:681]# DEBUG    [2016-12-20 18:58:41,853]  Sending message of length 2201 to https://sentry.io/api/120805/store/
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:58:41,855]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'reply_markup': '{"keyboard": [[{"text": "\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u0434\\u043e\\u0445\\u043e\\u0434"}, {"text": "\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u0440\\u0430\\u0441\\u0445\\u043e\\u0434"}, {"text": "\\u043f\\u043e\\u043a\\u0430\\u0437\\u0430\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438"}], [{"text": "\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e"}, {"text": "\\u0443\\u0434\\u0430\\u043b\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e"}, {"text": "\\u043f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0435\\u0442\\u044c \\u043e\\u0442\\u0447\\u0435\\u0442 \\u0437\\u0430 \\u043f\\u0435\\u0440\\u0438\\u043e\\u0434"}]]}', 'chat_id': '47111815', 'text': "Ошибка при инициализации: 'такой пользователь уже существует' "} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:58:41,858]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:58:42,158]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?reply_markup=%7B%22keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%5Cu0434%5Cu043e%5Cu0431%5Cu0430%5Cu0432%5Cu0438%5Cu0442%5Cu044c+%5Cu0434%5Cu043e%5Cu0445%5Cu043e%5Cu0434%22%7D%2C+%7B%22text%22%3A+%22%5Cu0434%5Cu043e%5Cu0431%5Cu0430%5Cu0432%5Cu0438%5Cu0442%5Cu044c+%5Cu0440%5Cu0430%5Cu0441%5Cu0445%5Cu043e%5Cu0434%22%7D%2C+%7B%22text%22%3A+%22%5Cu043f%5Cu043e%5Cu043a%5Cu0430%5Cu0437%5Cu0430%5Cu0442%5Cu044c+%5Cu043a%5Cu0430%5Cu0442%5Cu0435%5Cu0433%5Cu043e%5Cu0440%5Cu0438%5Cu0438%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%5Cu0434%5Cu043e%5Cu0431%5Cu0430%5Cu0432%5Cu0438%5Cu0442%5Cu044c+%5Cu043a%5Cu0430%5Cu0442%5Cu0435%5Cu0433%5Cu043e%5Cu0440%5Cu0438%5Cu044e%22%7D%2C+%7B%22text%22%3A+%22%5Cu0443%5Cu0434%5Cu0430%5Cu043b%5Cu0438%5Cu0442%5Cu044c+%5Cu043a%5Cu0430%5Cu0442%5Cu0435%5Cu0433%5Cu043e%5Cu0440%5Cu0438%5Cu044e%22%7D%2C+%7B%22text%22%3A+%22%5Cu043f%5Cu043e%5Cu0441%5Cu043c%5Cu043e%5Cu0442%5Cu0440%5Cu0435%5Cu0442%5Cu044c+%5Cu043e%5Cu0442%5Cu0447%5Cu0435%5Cu0442+%5Cu0437%5Cu0430+%5Cu043f%5Cu0435%5Cu0440%5Cu0438%5Cu043e%5Cu0434%22%7D%5D%5D%7D&chat_id=47111815&text=%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0+%D0%BF%D1%80%D0%B8+%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%3A+%27%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C+%D1%83%D0%B6%D0%B5+%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%27+ HTTP/1.1" 200 667
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:58:42,163]  The server returned: 'b'{"ok":true,"result":{"message_id":46,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249522,"text":"\\u041e\\u0448\\u0438\\u0431\\u043a\\u0430 \\u043f\\u0440\\u0438 \\u0438\\u043d\\u0438\\u0446\\u0438\\u0430\\u043b\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438: \'\\u0442\\u0430\\u043a\\u043e\\u0439 \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c \\u0443\\u0436\\u0435 \\u0441\\u0443\\u0449\\u0435\\u0441\\u0442\\u0432\\u0443\\u0435\\u0442\'"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 18:58:42,165]  Task complete
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:58:50,007]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077739 HTTP/1.1" 200 531
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:58:50,012]  The server returned: 'b'{"ok":true,"result":[{"update_id":559077739,\n"message":{"message_id":47,"from":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249530,"text":"\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u0434\\u043e\\u0445\\u043e\\u0434"}}]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:58:50,014]  Received 1 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:58:50,014]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:58:50,015]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:58:50,015]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'chat_id': '47111815', 'text': 'Не знаю такой команды! Список моих команд:'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:58:50,020]  Starting new HTTPS connection (1): api.telegram.org
+util.py[LINE:51]# DEBUG    [2016-12-20 18:58:50,016]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:58:50,021]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:58:50,024]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:58:50,278]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?chat_id=47111815&text=%D0%9D%D0%B5+%D0%B7%D0%BD%D0%B0%D1%8E+%D1%82%D0%B0%D0%BA%D0%BE%D0%B9+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%21+%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B8%D1%85+%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%3A HTTP/1.1" 200 558
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:58:50,284]  The server returned: 'b'{"ok":true,"result":{"message_id":48,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249530,"text":"\\u041d\\u0435 \\u0437\\u043d\\u0430\\u044e \\u0442\\u0430\\u043a\\u043e\\u0439 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434\\u044b! \\u0421\\u043f\\u0438\\u0441\\u043e\\u043a \\u043c\\u043e\\u0438\\u0445 \\u043a\\u043e\\u043c\\u0430\\u043d\\u0434:"}}''
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:58:50,286]  Request: method=post url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage params={'reply_markup': '{"keyboard": [[{"text": "\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u0434\\u043e\\u0445\\u043e\\u0434"}, {"text": "\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u0440\\u0430\\u0441\\u0445\\u043e\\u0434"}, {"text": "\\u043f\\u043e\\u043a\\u0430\\u0437\\u0430\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438"}], [{"text": "\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e"}, {"text": "\\u0443\\u0434\\u0430\\u043b\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e"}, {"text": "\\u043f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0435\\u0442\\u044c \\u043e\\u0442\\u0447\\u0435\\u0442 \\u0437\\u0430 \\u043f\\u0435\\u0440\\u0438\\u043e\\u0434"}]]}', 'chat_id': '47111815', 'text': 'добавить доход:\n+{сумма} {категория} {комментарий}\nдобавить расход:\n-{сумма} {категория} {комментарий}\nпоказать категории:\nпокажи категории {расходов} {доходов}\nдобавить категорию:\nдобавить категорию {название}\nудалить категорию:\nудалить категорию {название}\nпосмотреть отчет за день/неделю/месяц/год + график:\nотчет за {месяц/день/неделю/год} \nили\nотчет\nпосмотреть отчет за определенный период:\nотчет с {начальная дата} по {конечная дата}\nформат даты: xx-xx-xxxx\n'} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:58:50,294]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:58:50,542]  "POST /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/sendMessage?reply_markup=%7B%22keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%5Cu0434%5Cu043e%5Cu0431%5Cu0430%5Cu0432%5Cu0438%5Cu0442%5Cu044c+%5Cu0434%5Cu043e%5Cu0445%5Cu043e%5Cu0434%22%7D%2C+%7B%22text%22%3A+%22%5Cu0434%5Cu043e%5Cu0431%5Cu0430%5Cu0432%5Cu0438%5Cu0442%5Cu044c+%5Cu0440%5Cu0430%5Cu0441%5Cu0445%5Cu043e%5Cu0434%22%7D%2C+%7B%22text%22%3A+%22%5Cu043f%5Cu043e%5Cu043a%5Cu0430%5Cu0437%5Cu0430%5Cu0442%5Cu044c+%5Cu043a%5Cu0430%5Cu0442%5Cu0435%5Cu0433%5Cu043e%5Cu0440%5Cu0438%5Cu0438%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%5Cu0434%5Cu043e%5Cu0431%5Cu0430%5Cu0432%5Cu0438%5Cu0442%5Cu044c+%5Cu043a%5Cu0430%5Cu0442%5Cu0435%5Cu0433%5Cu043e%5Cu0440%5Cu0438%5Cu044e%22%7D%2C+%7B%22text%22%3A+%22%5Cu0443%5Cu0434%5Cu0430%5Cu043b%5Cu0438%5Cu0442%5Cu044c+%5Cu043a%5Cu0430%5Cu0442%5Cu0435%5Cu0433%5Cu043e%5Cu0440%5Cu0438%5Cu044e%22%7D%2C+%7B%22text%22%3A+%22%5Cu043f%5Cu043e%5Cu0441%5Cu043c%5Cu043e%5Cu0442%5Cu0440%5Cu0435%5Cu0442%5Cu044c+%5Cu043e%5Cu0442%5Cu0447%5Cu0435%5Cu0442+%5Cu0437%5Cu0430+%5Cu043f%5Cu0435%5Cu0440%5Cu0438%5Cu043e%5Cu0434%22%7D%5D%5D%7D&chat_id=47111815&text=%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%3A%0A%2B%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%3A%0A-%7B%D1%81%D1%83%D0%BC%D0%BC%D0%B0%7D+%7B%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%7D+%7B%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%7D%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8%3A%0A%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D0%B8+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8+%7B%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D+%7B%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%7D%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E%3A%0A%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8E+%7B%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%7D%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B3%D0%BE%D0%B4+%2B+%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%7B%D0%BC%D0%B5%D1%81%D1%8F%D1%86%2F%D0%B4%D0%B5%D0%BD%D1%8C%2F%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%2F%D0%B3%D0%BE%D0%B4%7D+%0A%D0%B8%D0%BB%D0%B8%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82%0A%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D0%B7%D0%B0+%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%3A%0A%D0%BE%D1%82%D1%87%D0%B5%D1%82+%D1%81+%7B%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D+%D0%BF%D0%BE+%7B%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D0%B4%D0%B0%D1%82%D0%B0%7D%0A%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82+%D0%B4%D0%B0%D1%82%D1%8B%3A+xx-xx-xxxx%0A HTTP/1.1" 200 2615
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:58:50,546]  The server returned: 'b'{"ok":true,"result":{"message_id":49,"from":{"id":270611235,"first_name":"MoneyMoney_krautcat","username":"moneymoney_odisharia_bot"},"chat":{"id":47111815,"first_name":"\\u0413\\u0435\\u043e\\u0440\\u0433\\u0438\\u0439","last_name":"\\u041e\\u0434\\u0438\\u0448\\u0430\\u0440\\u0438\\u044f","username":"krautcat","type":"private"},"date":1482249530,"text":"\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u0434\\u043e\\u0445\\u043e\\u0434:\\n+{\\u0441\\u0443\\u043c\\u043c\\u0430} {\\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f} {\\u043a\\u043e\\u043c\\u043c\\u0435\\u043d\\u0442\\u0430\\u0440\\u0438\\u0439}\\n\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u0440\\u0430\\u0441\\u0445\\u043e\\u0434:\\n-{\\u0441\\u0443\\u043c\\u043c\\u0430} {\\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f} {\\u043a\\u043e\\u043c\\u043c\\u0435\\u043d\\u0442\\u0430\\u0440\\u0438\\u0439}\\n\\u043f\\u043e\\u043a\\u0430\\u0437\\u0430\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438:\\n\\u043f\\u043e\\u043a\\u0430\\u0436\\u0438 \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438 {\\u0440\\u0430\\u0441\\u0445\\u043e\\u0434\\u043e\\u0432} {\\u0434\\u043e\\u0445\\u043e\\u0434\\u043e\\u0432}\\n\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e:\\n\\u0434\\u043e\\u0431\\u0430\\u0432\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e {\\u043d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435}\\n\\u0443\\u0434\\u0430\\u043b\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e:\\n\\u0443\\u0434\\u0430\\u043b\\u0438\\u0442\\u044c \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e {\\u043d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435}\\n\\u043f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0435\\u0442\\u044c \\u043e\\u0442\\u0447\\u0435\\u0442 \\u0437\\u0430 \\u0434\\u0435\\u043d\\u044c/\\u043d\\u0435\\u0434\\u0435\\u043b\\u044e/\\u043c\\u0435\\u0441\\u044f\\u0446/\\u0433\\u043e\\u0434 + \\u0433\\u0440\\u0430\\u0444\\u0438\\u043a:\\n\\u043e\\u0442\\u0447\\u0435\\u0442 \\u0437\\u0430 {\\u043c\\u0435\\u0441\\u044f\\u0446/\\u0434\\u0435\\u043d\\u044c/\\u043d\\u0435\\u0434\\u0435\\u043b\\u044e/\\u0433\\u043e\\u0434} \\n\\u0438\\u043b\\u0438\\n\\u043e\\u0442\\u0447\\u0435\\u0442\\n\\u043f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0435\\u0442\\u044c \\u043e\\u0442\\u0447\\u0435\\u0442 \\u0437\\u0430 \\u043e\\u043f\\u0440\\u0435\\u0434\\u0435\\u043b\\u0435\\u043d\\u043d\\u044b\\u0439 \\u043f\\u0435\\u0440\\u0438\\u043e\\u0434:\\n\\u043e\\u0442\\u0447\\u0435\\u0442 \\u0441 {\\u043d\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0430\\u044f \\u0434\\u0430\\u0442\\u0430} \\u043f\\u043e {\\u043a\\u043e\\u043d\\u0435\\u0447\\u043d\\u0430\\u044f \\u0434\\u0430\\u0442\\u0430}\\n\\u0444\\u043e\\u0440\\u043c\\u0430\\u0442 \\u0434\\u0430\\u0442\\u044b: xx-xx-xxxx"}}''
+util.py[LINE:55]# DEBUG    [2016-12-20 18:58:50,547]  Task complete
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:59:10,263]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:59:10,270]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:59:10,317]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:59:10,317]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:59:10,318]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:59:10,318]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:59:10,322]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:59:30,555]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:59:30,560]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:59:30,560]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:59:30,561]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:59:30,561]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:59:30,562]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:59:30,565]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 18:59:50,802]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 18:59:50,806]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 18:59:50,807]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 18:59:50,807]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 18:59:50,808]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 18:59:50,809]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 18:59:50,812]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:00:11,042]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:00:11,047]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:00:11,048]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:00:11,048]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:00:11,049]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:00:11,049]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:00:11,052]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:00:31,280]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:00:31,284]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:00:31,286]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:00:31,286]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:00:31,287]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:00:31,287]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:00:31,291]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:00:51,544]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:00:51,548]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:00:51,549]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:00:51,549]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:00:51,550]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:00:51,551]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:00:51,554]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:01:11,782]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:01:11,784]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:01:11,785]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:01:11,786]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:01:11,786]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:01:11,786]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:01:11,788]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:01:32,018]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:01:32,022]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:01:32,023]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:01:32,024]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:01:32,024]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:01:32,025]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:01:32,027]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:01:52,258]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:01:52,262]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:01:52,263]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:01:52,263]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:01:52,264]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:01:52,264]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:01:52,267]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:02:12,516]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:02:12,520]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:02:12,521]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:02:12,521]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:02:12,522]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:02:12,522]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:02:12,525]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:02:32,762]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:02:32,767]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:02:32,769]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:02:32,769]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:02:32,770]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:02:32,770]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:02:32,774]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:02:53,010]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:02:53,014]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:02:53,016]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:02:53,016]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:02:53,017]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:02:53,017]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:02:53,020]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:03:13,252]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:03:13,256]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:03:13,258]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:03:13,258]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:03:13,259]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:03:13,259]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:03:13,263]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:03:33,492]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:03:33,497]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:03:33,499]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:03:33,499]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:03:33,500]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:03:33,500]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:03:33,504]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:03:53,767]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:03:53,771]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:03:53,772]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:03:53,772]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:03:53,773]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:03:53,774]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:03:53,777]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:04:14,037]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:04:14,041]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:04:14,042]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:04:14,042]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:04:14,043]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:04:14,043]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:04:14,047]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:04:34,274]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:04:34,278]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:04:34,279]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:04:34,279]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:04:34,280]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:04:34,280]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:04:34,283]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:04:54,510]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:04:54,514]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:04:54,516]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:04:54,516]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:04:54,517]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:04:54,518]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:04:54,521]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:05:14,744]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:05:14,749]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:05:14,750]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:05:14,750]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:05:14,751]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:05:14,752]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:05:14,756]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:05:34,991]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:05:34,996]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:05:34,997]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:05:34,998]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:05:34,998]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:05:34,999]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:05:35,003]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:05:55,237]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:05:55,241]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:05:55,243]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:05:55,243]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:05:55,244]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:05:55,244]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:05:55,247]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:06:15,482]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:06:15,487]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:06:15,489]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:06:15,489]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:06:15,490]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:06:15,491]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:06:15,496]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:06:35,727]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:06:35,731]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:06:35,732]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:06:35,732]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:06:35,733]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:06:35,733]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:06:35,737]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:06:55,979]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:06:55,984]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:06:55,985]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:06:55,986]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:06:55,987]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:06:55,987]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:06:55,991]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:07:16,219]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:07:16,223]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:07:16,224]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:07:16,224]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:07:16,225]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:07:16,226]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:07:16,229]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:07:36,457]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:07:36,462]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:07:36,464]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:07:36,464]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:07:36,465]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:07:36,465]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:07:36,470]  Starting new HTTPS connection (1): api.telegram.org
+connectionpool.py[LINE:383]# DEBUG    [2016-12-20 19:07:56,733]  "GET /bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates?timeout=20&offset=559077740 HTTP/1.1" 200 23
+apihelper.py[LINE:35]# DEBUG    [2016-12-20 19:07:56,737]  The server returned: 'b'{"ok":true,"result":[]}''
+__init__.py[LINE:148]# DEBUG    [2016-12-20 19:07:56,738]  Received 0 new updates
+util.py[LINE:55]# DEBUG    [2016-12-20 19:07:56,739]  Task complete
+util.py[LINE:51]# DEBUG    [2016-12-20 19:07:56,739]  Received task
+apihelper.py[LINE:28]# DEBUG    [2016-12-20 19:07:56,739]  Request: method=get url=https://api.telegram.org/bot270611235:AAH4vZZZWhhrAzEAvW0NwvCW9d4VjKVO2KA/getUpdates params={'timeout': 20, 'offset': 559077740} files=None
+connectionpool.py[LINE:735]# INFO     [2016-12-20 19:07:56,743]  Starting new HTTPS connection (1): api.telegram.org
+util.py[LINE:60]# DEBUG    [2016-12-20 19:51:27,742]  Exception occurred
+base.py[LINE:681]# DEBUG    [2016-12-20 19:51:27,964]  Sending message of length 7984 to https://sentry.io/api/120805/store/

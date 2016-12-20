@@ -6,7 +6,7 @@ class BaseModel(Model):
         'money',
         **{
             'user': 'root',
-            'password': '7uy33HZ5',
+            'password': '',
             'host': 'localhost'
             }
         )

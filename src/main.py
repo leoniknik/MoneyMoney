@@ -17,20 +17,25 @@ report_periods = {'день', 'неделю', 'месяц', 'год'}
 category_mods = {'расходов', 'доходов'}
 format_error = Exception('Неправильный формат команды!')
 
+def create_reply_keyboard():
+    markup = telebot.types.ReplyKeyboardMarkup()
+    itembtn1 = telebot.types.KeyboardButton("добавить доход")
+    itembtn2 = telebot.types.KeyboardButton("добавить расход")
+    itembtn3 = telebot.types.KeyboardButton("показать категории")
+    itembtn4 = telebot.types.KeyboardButton("добавить категорию")
+    itembtn5 = telebot.types.KeyboardButton("удалить категорию")
+    itembtn6 = telebot.types.KeyboardButton("посмотреть отчет за период")
+    markup.row(itembtn1, itembtn2, itembtn3)
+    markup.row(itembtn4, itembtn5, itembtn6)
+    return markup
 
 @bot.message_handler(commands=['start'])
 def start(message):
     handler.user_id = message.chat.id
     handler_message = handler.start()
 
-    markup = telebot.types.ReplyKeyboardMarkup(row_width=2)
-    itembtn1 = telebot.types.KeyboardButton('a')
-    itembtn2 = telebot.types.KeyboardButton('v')
-    itembtn3 = telebot.types.KeyboardButton('d')
-    markup.add(itembtn1, itembtn2, itembtn3)
-    bot.send_message(message.chat.id, "Choose one letter:", reply_markup=markup)
-
-    # bot.send_message(message.chat.id, handler_message)
+    markup = create_reply_keyboard()
+    bot.send_message(message.chat.id, handler_message, reply_markup=markup)
 
 
 @bot.message_handler(commands=['help'])
@@ -143,7 +148,8 @@ def parse(message):
 
         else:
             bot.send_message(message.chat.id, 'Не знаю такой команды! Список моих команд:')
-            bot.send_message(message.chat.id, help_message)
+            markup = create_reply_keyboard()
+            bot.send_message(message.chat.id, help_message, reply_markup=markup)
 
     except Exception as e:
         handler_message = 'Ошибка: {} '.format(e)
