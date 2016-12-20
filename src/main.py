@@ -1,9 +1,15 @@
-from mmhandler import MmHandler
+# We store our config in config.yaml
+# So we need yaml parser :)
+from yaml import load, dump
+
 import config
 import telebot
 import re
 
-bot = telebot.TeleBot(config.token)
+from mmhandler import MmHandler
+
+TOKEN = ''
+bot = telebot.TeleBot(TOKEN)
 handler = MmHandler(0)  # по умолчанию user_id = 0
 help_file = open('help.txt', 'r')
 help_message = help_file.read()
@@ -33,7 +39,7 @@ def parse(message):
     try:
         str_array = message.text.lower().split()
         length = len(str_array)
- 
+
         # if empty line
         if length == 0:
             bot.send_message(message.chat.id, 'Забыл список команд? Держи:')
@@ -151,5 +157,32 @@ def callback_inline(call):
 
 
 # бесконечная петля опроса
-if __name__ == '__main__':
+if __name__ == '__main__':    token = ""
+    parser = argparse.ArgumentParser(description='Process some flags.')
+    # parser.add_argument('-o', '--output')
+    # parser.add_argument('-v', dest='verbose', action='store_true')
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument('--develop', help='Develop dirs', action="store_true")
+    group.add_argument('--production', help='Production dirs', action="store_true")
+    args = parser.parse_args()
+
+    if args.develop:
+        with open('../config/config.yaml', 'r') as f:
+            config = yaml.load(f)
+            TOKEN = config.token
+    elif args.prod:
+        with open('/etc/moneymoney.d/config.yaml', 'r') as f:
+            TOKEN = re.sub("\'\n", "", f.readline().split(' = ')[1])
+    else:
+        ArgumentParser.error("You should specify either --develop or --production option!")
+
+    print(token) # по умолчанию user_id = 0
+    # прикрутить вебхуки
+    # прикрутить разбор сообщения на естественном языке
+
+
+    logger = telebot.logger
+    telebot.logger.setLevel(logging.DEBUG)
+
+    bot.token = token
     bot.polling(none_stop=True)
