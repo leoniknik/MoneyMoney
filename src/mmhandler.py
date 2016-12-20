@@ -2,9 +2,9 @@ from sql_module.sql import SQL
 import datetime
 from dateutil import relativedelta
 import matplotlib.pyplot as plt
-from matplotlib import rc
 import matplotlib.cm as cm
 import os
+
 
 """
 MoneyMoney handler for all calculating functions.
@@ -133,8 +133,8 @@ class MmHandler:
             # graph design
             plt.rcParams['font.size'] = 24.0
             # for windows!
-            # font = {'family': 'Verdana'}
-            # rc('font', **font)
+            #font = {'family': 'Verdana'}
+            #rc('font', **font)
             labels_income = []
             labels_expense = []
             values_income = []
@@ -154,15 +154,18 @@ class MmHandler:
                             dict_expense[item[1]] = dict_expense[item[1]] + item[0]
 
             for key, val in dict_income.items():
-                    labels_income.append(key)
+                    if key == "other":
+                        labels_income.append("другое")
+                    else:
+                        labels_income.append(key)
                     values_income.append(val)
 
             for key, val in dict_expense.items():
-                    labels_expense.append(key)
+                    if key == "other":
+                        labels_expense.append("другое")
+                    else:
+                        labels_expense.append(key)
                     values_expense.append(abs(val))
-            # info from database!!
-            #labels = 'шоппинг', 'кино', 'учеба', 'подарки'
-            #values = [215, 130, 245, 210]
 
             # color scheme
             color_map = cm.get_cmap('Pastel1')
@@ -176,22 +179,22 @@ class MmHandler:
             fig_income = plt.figure()
             plt.pie(values_income, labels=labels_income, colors=colors_income, autopct=make_autopct(values_income), startangle=140)
             plt.axis('equal')
-            plt.close()
+
 
             if not os.path.exists('tmp'):
                 os.makedirs('tmp')
-            fig_income.savefig('tmp/income.png')
-
+            fig_income.savefig('tmp/income'+str(self.user_id)+'.png')
+            plt.close()
             fig_expense = plt.figure()
             plt.pie(values_expense, labels=labels_expense, colors=colors_expense, autopct=make_autopct(values_expense),
                     startangle=140)
             plt.axis('equal')
-            plt.close()
+
 
             if not os.path.exists('tmp'):
                 os.makedirs('tmp')
-            fig_expense.savefig('tmp/expense.png')
-
+            fig_expense.savefig('tmp/expense'+str(self.user_id)+'.png')
+            plt.close()
             message = 'История операций за'
             if period is not None:
                 message += ' {}'.format(period)
@@ -218,7 +221,3 @@ class MmHandler:
             for item in history:
                 str_history += str(item[1]) + ": " + str(item[0]) + " комментарий: " + item[3] + '\n'
             return message + '\n' + str_history
-
-m = MmHandler(224634311)
-m.view_report("день")
-pass
