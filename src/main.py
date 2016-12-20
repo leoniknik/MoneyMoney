@@ -1,23 +1,17 @@
-<<<<<<< HEAD
 from mmhandler import MmHandler
 import telebot
-=======
 import argparse
->>>>>>> 6a83fb8f81302a82db1b29ba55f65972225eec7a
 import re
 import logging
 
 import yaml
 import telebot
 
-<<<<<<< HEAD
 bot = telebot.TeleBot('280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg')
-=======
 from mmhandler import MmHandler
 
 TOKEN = ''
 bot = telebot.TeleBot(TOKEN)
->>>>>>> 6a83fb8f81302a82db1b29ba55f65972225eec7a
 handler = MmHandler(0)  # по умолчанию user_id = 0
 help_file = open('help.txt', 'r')
 help_message = help_file.read()
