@@ -10,6 +10,7 @@ font = {'family': 'Verdana',
         'weight': 'normal'}
 rc('font', **font)
 
+
 """
 MoneyMoney handler for all calculating functions.
 """
