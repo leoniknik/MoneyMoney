@@ -167,9 +167,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.develop:
-        yaml_config = file('../config/config.yaml', 'r')
+        yaml_config = open('../config/config.yaml', 'r')
     elif args.prod:
-        yaml_config = file('/etc/moneymoney.d/config.yaml', 'r')
+        yaml_config = open('/etc/moneymoney.d/config.yaml', 'r')
     else:
         ArgumentParser.error("You should specify either --develop or --production option!")
 
