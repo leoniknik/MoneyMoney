@@ -1,4 +1,4 @@
 virt*/
 **/__pycache__/
-config/config
+config/
 fabfile.py

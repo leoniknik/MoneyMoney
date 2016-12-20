@@ -1,8 +1,23 @@
+<<<<<<< HEAD
 from mmhandler import MmHandler
 import telebot
+=======
+import argparse
+>>>>>>> 6a83fb8f81302a82db1b29ba55f65972225eec7a
 import re
+import logging
 
+import yaml
+import telebot
+
+<<<<<<< HEAD
 bot = telebot.TeleBot('280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg')
+=======
+from mmhandler import MmHandler
+
+TOKEN = ''
+bot = telebot.TeleBot(TOKEN)
+>>>>>>> 6a83fb8f81302a82db1b29ba55f65972225eec7a
 handler = MmHandler(0)  # по умолчанию user_id = 0
 help_file = open('help.txt', 'r')
 help_message = help_file.read()
@@ -32,7 +47,7 @@ def parse(message):
     try:
         str_array = message.text.lower().split()
         length = len(str_array)
- 
+
         # if empty line
         if length == 0:
             bot.send_message(message.chat.id, 'Забыл список команд? Держи:')
@@ -155,4 +170,30 @@ def callback_inline(call):
 
 # бесконечная петля опроса
 if __name__ == '__main__':
+    token = ""
+    parser = argparse.ArgumentParser(description='Process some flags.')
+    # parser.add_argument('-o', '--output')
+    # parser.add_argument('-v', dest='verbose', action='store_true')
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument('--develop', help='Develop dirs', action="store_true")
+    group.add_argument('--production', help='Production dirs', action="store_true")
+    args = parser.parse_args()
+
+    if args.develop:
+        yaml_config = open('../config/config.yaml', 'r')
+    elif args.prod:
+        yaml_config = open('/etc/moneymoney.d/config.yaml', 'r')
+    else:
+        ArgumentParser.error("You should specify either --develop or --production option!")
+
+    config = yaml.load(yaml_config)
+    print(config)
+    TOKEN = config['token']
+
+    print(TOKEN)
+
+    logger = telebot.logger
+    telebot.logger.setLevel(logging.DEBUG)
+
+    bot.token = TOKEN
     bot.polling(none_stop=True)
