@@ -201,6 +201,9 @@ class MmHandler:
                 os.makedirs('tmp')
             fig_income.savefig('tmp/income'+str(self.user_id)+'.png')
             plt.close()
+
+            color_map = cm.get_cmap('Pastel2')
+            colors_expense = color_map([x / float(num_of_colors_expense) for x in range(num_of_colors_expense)])
             fig_expense = plt.figure()
             plt.pie(values_expense, labels=labels_expense, colors=colors_expense, autopct=make_autopct(values_expense),
                     startangle=140)
@@ -218,7 +221,19 @@ class MmHandler:
             for item in history:
                 str_history += str(item[1]) + ": " + str(item[0]) + " комментарий: " + item[3] + '\n'
             #str_history = str(history)[1:-1]
-            return message + '\n' + str_history + '\n' + str(legend_in) + '\n' + str(legend_ex)
+            str1 = "Доходы:\n"
+            str2 = "Расходы:\n"
+            if len(legend_in)==0:
+                str1=""
+            else:
+                for item in legend_in:
+                    str1 += item + '\n'
+            if len(legend_ex)==0:
+                str2=""
+            else:
+                for item in legend_ex:
+                    str2 += item + '\n'
+            return message + '\n' + str_history + '\n' + str1 + '\n' + str2
 
     def view_custom_report(self, date_from, date_to=None):
 

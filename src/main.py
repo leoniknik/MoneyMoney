@@ -120,13 +120,7 @@ def parse(message):
                     else:
                         handler_message = handler.view_custom_report(date_from)
                     bot.send_message(message.chat.id, handler_message)
-                    bot.send_chat_action(message.chat.id, 'typing')
-                    image_file = open('tmp/income'+str(handler.user_id)+'.png', 'rb')
-                    bot.send_photo(message.chat.id, image_file)
-                    os.remove('tmp/income'+str(handler.user_id)+'.png')
-                    image_file = open('tmp/expense'+str(handler.user_id)+'.png', 'rb')
-                    bot.send_photo(message.chat.id, image_file)
-                    os.remove('tmp/expense' + str(handler.user_id) + '.png')
+
                 else:
                     raise format_error
 
