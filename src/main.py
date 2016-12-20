@@ -3,7 +3,6 @@
 from yaml import load, dump
 
 import argparse
-import config
 import telebot
 import re
 
