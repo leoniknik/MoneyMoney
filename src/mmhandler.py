@@ -4,7 +4,11 @@ from dateutil import relativedelta
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import os
+from matplotlib import rc
 
+font = {'family': 'Verdana',
+        'weight': 'normal'}
+rc('font', **font)
 
 """
 MoneyMoney handler for all calculating functions.
@@ -152,19 +156,30 @@ class MmHandler:
                             dict_expense[item[1]] = item[0]
                         else:
                             dict_expense[item[1]] = dict_expense[item[1]] + item[0]
-
+            legend_in = []
+            legend_ex = []
+            in_i = 0
+            ex_i = 0
             for key, val in dict_income.items():
                     if key == "other":
-                        labels_income.append("другое")
+                        labels_income.append(str(in_i))
+                        legend_in.append(str(in_i)+' : '+ str(key))
+                        in_i += 1
                     else:
-                        labels_income.append(key)
+                        labels_income.append(str(in_i))
+                        legend_in.append(str(in_i) + ' : ' + str(key))
+                        in_i += 1
                     values_income.append(val)
 
             for key, val in dict_expense.items():
                     if key == "other":
-                        labels_expense.append("другое")
+                        labels_expense.append(str(ex_i))
+                        legend_ex.append(str(ex_i) + ' : ' + str(key))
+                        ex_i += 1
                     else:
-                        labels_expense.append(key)
+                        labels_expense.append(str(ex_i))
+                        legend_ex.append(str(ex_i) + ' : ' + str(key))
+                        ex_i += 1
                     values_expense.append(abs(val))
 
             # color scheme
@@ -202,7 +217,7 @@ class MmHandler:
             for item in history:
                 str_history += str(item[1]) + ": " + str(item[0]) + " комментарий: " + item[3] + '\n'
             #str_history = str(history)[1:-1]
-            return message + '\n' + str_history
+            return message + '\n' + str_history + '\n' + str(legend_in) + '\n' + str(legend_ex)
 
     def view_custom_report(self, date_from, date_to=None):
 

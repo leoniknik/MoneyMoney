@@ -163,10 +163,10 @@ def callback_inline(call):
             bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                   text=handler_message)
             bot.send_chat_action(call.message.chat.id, 'typing')
-            image_file = open('tmp/income' + handler.user_id + '.png', 'rb')
+            image_file = open('tmp/income' + str(handler.user_id) + '.png', 'rb')
             bot.send_photo(call.message.chat.id, image_file)
             os.remove('tmp/income' + str(handler.user_id) + '.png')
-            image_file = open('tmp/expense' + handler.user_id + '.png', 'rb')
+            image_file = open('tmp/expense' + str(handler.user_id) + '.png', 'rb')
             bot.send_photo(call.message.chat.id, image_file)
             os.remove('tmp/expense' + str(handler.user_id) + '.png')
 
