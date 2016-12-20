@@ -170,7 +170,6 @@ if __name__ == '__main__':
     if args.develop:
         with open('../config/config.yaml', 'r') as f:
             config = yaml.load(f)
-            print(config)
             TOKEN = config['token']
     elif args.prod:
         with open('/etc/moneymoney.d/config.yaml', 'r') as f:
@@ -181,10 +180,6 @@ if __name__ == '__main__':
     print(token) # по умолчанию user_id = 0
     # прикрутить вебхуки
     # прикрутить разбор сообщения на естественном языке
-
-
-    logger = telebot.logger
-    telebot.logger.setLevel(logging.DEBUG)
 
     bot.token = token
     bot.polling(none_stop=True)
