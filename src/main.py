@@ -174,6 +174,7 @@ if __name__ == '__main__':
         ArgumentParser.error("You should specify either --develop or --production option!")
 
     config = yaml.load(yaml_config)
+    print(config)
     TOKEN = config['token']
 
     print(TOKEN)
