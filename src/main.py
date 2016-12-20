@@ -1,9 +1,8 @@
 from mmhandler import MmHandler
-import config
 import telebot
 import re
 
-bot = telebot.TeleBot(config.token)
+bot = telebot.TeleBot('280771706:AAG2jJxVekewCG_aTgcr2WQ3S6CcS7EZ_cg')
 handler = MmHandler(0)  # по умолчанию user_id = 0
 help_file = open('help.txt', 'r')
 help_message = help_file.read()
@@ -38,12 +37,10 @@ def parse(message):
         if length == 0:
             bot.send_message(message.chat.id, 'Забыл список команд? Держи:')
             bot.send_message(message.chat.id, help_message)
-        #### Оберег от кода Яны
-        elif length == 2 and str_array[0]=="удалить" and str_array[1] == "другое":
+        elif length == 2 and (str_array[0] == "удалить" or str_array[0] == "удали") and str_array[1] == "другое":
             str_array[1]="other"
             handler_message = handler.del_category(str_array[1])
             bot.send_message(message.chat.id, handler_message)
-        #### Конец оберега
         # if format +/-....
         elif str_array[0][0] == '+' or str_array[0][0] == '-':
             if length == 1:
@@ -64,7 +61,7 @@ def parse(message):
                 else:
                     raise format_error
 
-        elif length >= 2 and str_array[0] == 'показать' and str_array[1] == 'категории':
+        elif length >= 2 and (str_array[0] == 'показать' or str_array[0] == "покажи") and str_array[1] == 'категории':
             if length == 3:
                 if str_array[2] in category_mods:
                     handler_message = handler.show_categories(str_array[2])
@@ -76,14 +73,14 @@ def parse(message):
                 bot.send_message(message.chat.id, handler_message)
 
         elif length == 3 and str_array[1] == 'категорию' and re.match('[а-яa-zA-ZА-Я]+', str_array[2]):
-            if str_array[0] == 'удалить':
+            if str_array[0] == 'удалить' or str_array[0] == "удали":
                 if str_array[2] == "другое":
-                    bot.send_message(message.chat.id, "Для того чтобы удалить категорию другое и все операции связанные с ней введите команду: удалить другое")
+                    bot.send_message(message.chat.id, "Для того чтобы удалить категорию другое и все операции связанные с ней, введите команду: удалить другое")
                     return
                 handler_message = handler.del_category(str_array[2])
                 bot.send_message(message.chat.id, handler_message)
 
-            elif str_array[0] == 'добавить':
+            elif str_array[0] == 'добавить' or str_array[0] == 'добавь':
                 handler_message = handler.add_category(str_array[2])
                 bot.send_message(message.chat.id, handler_message)
             else:
@@ -95,7 +92,9 @@ def parse(message):
                     handler_message = handler.view_report(str_array[2])
                     bot.send_message(message.chat.id, handler_message)
                     bot.send_chat_action(message.chat.id, 'typing')
-                    image_file = open('tmp/temp.png', 'rb')
+                    image_file = open('tmp/income.png', 'rb')
+                    bot.send_photo(message.chat.id, image_file)
+                    image_file = open('tmp/expense.png', 'rb')
                     bot.send_photo(message.chat.id, image_file)
 
                 elif str_array[1] == 'с' and re.match('\d{1,2}-\d{1,2}-\d{4}', str_array[2]):
@@ -109,7 +108,9 @@ def parse(message):
                         handler_message = handler.view_custom_report(date_from)
                     bot.send_message(message.chat.id, handler_message)
                     bot.send_chat_action(message.chat.id, 'typing')
-                    image_file = open('tmp/temp.png', 'rb')
+                    image_file = open('tmp/income.png', 'rb')
+                    bot.send_photo(message.chat.id, image_file)
+                    image_file = open('tmp/expense.png', 'rb')
                     bot.send_photo(message.chat.id, image_file)
                 else:
                     raise format_error
@@ -146,7 +147,9 @@ def callback_inline(call):
             bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                   text=handler_message)
             bot.send_chat_action(call.message.chat.id, 'typing')
-            image_file = open('tmp/temp.png', 'rb')
+            image_file = open('tmp/income.png', 'rb')
+            bot.send_photo(call.message.chat.id, image_file)
+            image_file = open('tmp/expense.png', 'rb')
             bot.send_photo(call.message.chat.id, image_file)
 
 

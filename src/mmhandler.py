@@ -58,7 +58,12 @@ class MmHandler:
             if category in categories:
                 self.sql.add_operation(self.user_id, amount, category, date, description)
             else:
-                return 'Такой категории не существует! Воспользуйтесь ' \
+                if category == "other":
+                    self.add_category(category)
+                    self.sql.add_operation(self.user_id, amount, category, date, description)
+                    return 'Операция успешно добавлена.'
+                else:
+                    return 'Такой категории не существует! Воспользуйтесь ' \
                        'функцией "добавить категорию".'
         except Exception as e:
             return 'Операция не была добавлена! Ошибка: {} '.format(e)
@@ -130,29 +135,70 @@ class MmHandler:
             # for windows!
             # font = {'family': 'Verdana'}
             # rc('font', **font)
+            labels_income = []
+            labels_expense = []
+            values_income = []
+            values_expense = []
+            dict_income = {}
+            dict_expense = {}
+            for item in history:
+                    if item[0] >= 0:
+                        if dict_income.get(item[1]) is None:
+                            dict_income[item[1]] = item[0]
+                        else:
+                            dict_income[item[1]] = dict_income[item[1]] + item[0]
+                    else:
+                        if dict_expense.get(item[1]) is None:
+                            dict_expense[item[1]] = item[0]
+                        else:
+                            dict_expense[item[1]] = dict_expense[item[1]] + item[0]
 
+            for key, val in dict_income.items():
+                    labels_income.append(key)
+                    values_income.append(val)
+
+            for key, val in dict_expense.items():
+                    labels_expense.append(key)
+                    values_expense.append(abs(val))
             # info from database!!
-            labels = 'шоппинг', 'кино', 'учеба', 'подарки'
-            values = [215, 130, 245, 210]
+            #labels = 'шоппинг', 'кино', 'учеба', 'подарки'
+            #values = [215, 130, 245, 210]
 
             # color scheme
             color_map = cm.get_cmap('Pastel1')
-            num_of_colors = len(values)
-            colors = color_map([x / float(num_of_colors) for x in range(num_of_colors)])
+            num_of_colors_income = len(values_income)
+            num_of_colors_expense = len(values_expense)
 
-            fig = plt.figure()
-            plt.pie(values, labels=labels, colors=colors, autopct=make_autopct(values), startangle=140)
+            colors_income = color_map([x / float(num_of_colors_income) for x in range(num_of_colors_income)])
+            colors_expense = color_map([x / float(num_of_colors_expense) for x in range(num_of_colors_expense)])
+
+            #income
+            fig_income = plt.figure()
+            plt.pie(values_income, labels=labels_income, colors=colors_income, autopct=make_autopct(values_income), startangle=140)
             plt.axis('equal')
             plt.close()
 
             if not os.path.exists('tmp'):
                 os.makedirs('tmp')
-            fig.savefig('tmp/temp.png')
+            fig_income.savefig('tmp/income.png')
+
+            fig_expense = plt.figure()
+            plt.pie(values_expense, labels=labels_expense, colors=colors_expense, autopct=make_autopct(values_expense),
+                    startangle=140)
+            plt.axis('equal')
+            plt.close()
+
+            if not os.path.exists('tmp'):
+                os.makedirs('tmp')
+            fig_expense.savefig('tmp/expense.png')
 
             message = 'История операций за'
             if period is not None:
                 message += ' {}'.format(period)
-            str_history = str(history)[1:-1]
+            str_history = ""
+            for item in history:
+                str_history += str(item[1]) + ": " + str(item[0]) + " комментарий: " + item[3] + '\n'
+            #str_history = str(history)[1:-1]
             return message + '\n' + str_history
 
     def view_custom_report(self, date_from, date_to=None):
@@ -168,5 +214,11 @@ class MmHandler:
             message = 'История операций c {}'.format(date_from)
             if date_to is not None:
                 message += ' по {}'.format(date_to)
-            str_history = str(history)[1:-1]
+            str_history = ""
+            for item in history:
+                str_history += str(item[1]) + ": " + str(item[0]) + " комментарий: " + item[3] + '\n'
             return message + '\n' + str_history
+
+m = MmHandler(224634311)
+m.view_report("день")
+pass
