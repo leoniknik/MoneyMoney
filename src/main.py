@@ -170,7 +170,7 @@ if __name__ == '__main__':
     if args.develop:
         with open('../config/config.yaml', 'r') as f:
             config = yaml.load(f)
-            TOKEN = config.token
+            TOKEN = config['token']
     elif args.prod:
         with open('/etc/moneymoney.d/config.yaml', 'r') as f:
             TOKEN = re.sub("\'\n", "", f.readline().split(' = ')[1])
